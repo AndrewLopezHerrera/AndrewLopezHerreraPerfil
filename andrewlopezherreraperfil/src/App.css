@@ -1,0 +1,44 @@
+.main_layout{
+  width: 100%;
+  height: 100%;
+}
+
+.menu_uno .ant-menu-item-selected {
+  background-color: #e05809 !important;
+  color: white !important;
+}
+
+.menu_uno {
+  padding-top: 5%;
+}
+
+.main_header{
+  padding-left: 1vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.greeting {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s ease-in-out, visibility 1s ease-in-out;
+}
+
+.greeting.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.div_content {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.div_content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
