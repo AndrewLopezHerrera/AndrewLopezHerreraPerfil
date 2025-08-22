@@ -19,6 +19,7 @@ import coffeeCup from './assets/greetings/TazaCafeIcono.png';
 import SRLGestock from './srlgestock/SRLGestock';
 import MIPSCompiler from './mipscompiler/MIPSCompiler';
 import WideWorldImporters from './wideworldimporters/WideWorldImporters';
+import Profile from './profile/Profile';
 
 const { Header, Sider, Content } = Layout;
 
@@ -38,7 +39,7 @@ const App: React.FC = () => {
   const renderContent = () => {
     switch (page) {
       case '1':
-        return <div>Welcome to my profile!</div>;
+        return <Profile />;
       case '2':
         return <SRLGestock />;
       case '3':

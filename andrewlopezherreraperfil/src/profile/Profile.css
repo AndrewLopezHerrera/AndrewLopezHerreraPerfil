@@ -1,0 +1,123 @@
+.mainContainerProfile{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    overflow-x: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.containerPresentationBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+}
+
+.presentationBar{
+    background-color: #e05809;
+    width: 90%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.spacePresentationBar{
+    width: 10%;
+}
+
+.containerPresentationName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+
+}
+
+.presentationName {
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.containerPresentationImage{
+    background-color: #e05809;
+    border-radius: 50%;
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentationImage {
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+}
+
+@media (max-width: 480px) { /* Celulares pequeños */
+    /* Estilos para pantallas muy pequeñas */
+    .presentationName {
+        font-size: 0.3rem;
+    }
+
+    .presentationBar{
+        margin-top: 5vh;
+        height: 30px;
+        width: 110%;
+    }
+}
+
+@media (max-width: 600px) { /* Celulares estándar */
+    /* Estilos para móviles */
+
+    .spacePresentationBar{
+        width: 10%;
+    }
+
+    .presentationName {
+        font-size: 0.7rem;
+    }
+
+    .presentationBar{
+        height: 50px;
+        width: 100%;
+    }
+
+    .containerPresentationImage{
+        width: 40%;
+    }
+}
+
+@media (max-width: 900px) { /* Tablets */
+    /* Estilos para tablets */
+
+    .presentationName {
+        font-size: 1.3rem;
+    }
+
+    .presentationBar{
+        height: 60px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) { /* Laptops */
+    /* Estilos para laptops y pantallas medianas */
+    .presentationName {
+        font-size: 1.3rem;
+    }
+
+    .presentationBar{
+        height: 60px;
+        width: 100%;
+    }
+}
