@@ -1,11 +1,11 @@
-import "../GeneralStyles.css"
+import "../../GeneralStyles.css"
 import { Button, Card, Carousel, Divider, Image } from 'antd';
-import mainMenu from '../assets/wideworldimporters/main_menu.png';
-import screenBuys from '../assets/wideworldimporters/screen_buys.png';
-import screenCustomers from '../assets/wideworldimporters/screen_customers.png';
-import screenSales from '../assets/wideworldimporters/screen_sales.png';
-import screenStock from '../assets/wideworldimporters/screen_stock.png';
-import screenSuppliers from '../assets/wideworldimporters/screen_supplier.png';
+import mainMenu from '../../assets/wideworldimporters/main_menu.png';
+import screenBuys from '../../assets/wideworldimporters/screen_buys.png';
+import screenCustomers from '../../assets/wideworldimporters/screen_customers.png';
+import screenSales from '../../assets/wideworldimporters/screen_sales.png';
+import screenStock from '../../assets/wideworldimporters/screen_stock.png';
+import screenSuppliers from '../../assets/wideworldimporters/screen_supplier.png';
 import { useState } from "react";
 import { GithubOutlined } from '@ant-design/icons';
 

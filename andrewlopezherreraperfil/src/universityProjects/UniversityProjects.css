@@ -1,0 +1,25 @@
+.containerUniversityProjects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rowProjects {
+    width: 90%;
+}
+
+.ant-card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectsCards {
+    border: 1px solid #213547;
+    box-shadow: 0 4px 8px rgba(21, 35, 47, 0.2);
+}
+
+.projectsCards .ant-card-body{
+    border-top: 1px solid #213547;
+    border-bottom: 1px solid #213547;
+}

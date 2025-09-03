@@ -1,11 +1,11 @@
-import "../GeneralStyles.css"
+import "../../GeneralStyles.css"
 import { Button, Card, Carousel, Divider, Image } from 'antd';
-import image1 from '../assets/mipscompiler/Image1.png'
-import image2 from '../assets/mipscompiler/Image2.png'
-import image3 from '../assets/mipscompiler/Image3.png'
-import image4 from '../assets/mipscompiler/Image4.png'
-import image5 from '../assets/mipscompiler/Image5.png'
-import image6 from '../assets/mipscompiler/Image6.png'
+import image1 from '../../assets/mipscompiler/Image1.png'
+import image2 from '../../assets/mipscompiler/Image2.png'
+import image3 from '../../assets/mipscompiler/Image3.png'
+import image4 from '../../assets/mipscompiler/Image4.png'
+import image5 from '../../assets/mipscompiler/Image5.png'
+import image6 from '../../assets/mipscompiler/Image6.png'
 import { useState } from "react";
 import { GithubOutlined } from '@ant-design/icons';
 

@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    aspect-ratio: 2 / 1;
+    aspect-ratio: 3 / 1;
 }
 
 .presentationBar{
@@ -63,6 +63,45 @@
     border-radius: 50%;
 }
 
+.profileTittles {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.rowSocials {
+    width: 100%;
+}
+
+.cardSocials {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: auto;
+}
+
+.containerImageSocials {
+    display: flex !important;
+    width: 100% !important;
+    height: auto;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.imageSocials {
+    width: 50% !important;
+    height: auto;
+}
+
+.sectionDownloadCV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
 @media (max-width: 480px) { /* Celulares pequeños */
     /* Estilos para pantallas muy pequeñas */
     .presentationName {
@@ -79,21 +118,13 @@
 @media (max-width: 600px) { /* Celulares estándar */
     /* Estilos para móviles */
 
-    .spacePresentationBar{
-        width: 10%;
-    }
-
     .presentationName {
         font-size: 0.7rem;
     }
 
     .presentationBar{
-        height: 50px;
+        height: 40px;
         width: 100%;
-    }
-
-    .containerPresentationImage{
-        width: 40%;
     }
 }
 
@@ -105,7 +136,7 @@
     }
 
     .presentationBar{
-        height: 60px;
+        height: 50px;
         width: 100%;
     }
 }

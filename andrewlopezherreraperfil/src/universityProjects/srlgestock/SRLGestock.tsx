@@ -1,9 +1,9 @@
-import "../GeneralStyles.css"
+import "../../GeneralStyles.css"
 import { Button, Card, Carousel, Divider, Image } from 'antd';
-import loginSRLGestock from '../assets/srlgestock/login.png';
-import billSRLGestock from '../assets/srlgestock/bill.png';
-import myUserSRLGestock from '../assets/srlgestock/my_user.png';
-import mainMenuSRLGestock from '../assets/srlgestock/main_menu.png';
+import loginSRLGestock from '../../assets/srlgestock/login.png';
+import billSRLGestock from '../../assets/srlgestock/bill.png';
+import myUserSRLGestock from '../../assets/srlgestock/my_user.png';
+import mainMenuSRLGestock from '../../assets/srlgestock/main_menu.png';
 import { useState } from "react";
 import { GithubOutlined } from '@ant-design/icons';
 

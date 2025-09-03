@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import {
-  AuditOutlined,
-  DatabaseOutlined,
-  CodeOutlined,
-  RocketOutlined,
-  RobotOutlined,
   MenuUnfoldOutlined,
   MenuFoldOutlined,
   SolutionOutlined,
+  HomeOutlined,
+  UserOutlined,
+  ProjectOutlined,
 } from '@ant-design/icons';
 import { Button, Layout, Menu, theme, Divider, Image } from 'antd';
 import './App.css'
@@ -16,10 +14,10 @@ import morning from './assets/greetings/iconoManana.png';
 import afternoon from './assets/greetings/iconoTarde.png';
 import night from './assets/greetings/iconoNoche.png';
 import coffeeCup from './assets/greetings/TazaCafeIcono.png';
-import SRLGestock from './srlgestock/SRLGestock';
-import MIPSCompiler from './mipscompiler/MIPSCompiler';
-import WideWorldImporters from './wideworldimporters/WideWorldImporters';
 import Profile from './profile/Profile';
+import Home from './home/Home';
+import PersonalProjects from './personalProjects/PersonalProjects';
+import UniversityProjects from './universityProjects/UniversityProjects';
 
 const { Header, Sider, Content } = Layout;
 
@@ -39,17 +37,13 @@ const App: React.FC = () => {
   const renderContent = () => {
     switch (page) {
       case '1':
-        return <Profile />;
+        return <Home />;
       case '2':
-        return <SRLGestock />;
+        return <Profile />;
       case '3':
-        return <WideWorldImporters />;
+        return <UniversityProjects />;
       case '4':
-        return <MIPSCompiler />;
-      case '5':
-        return <div>Parchís game content goes here.</div>;
-      case '7':
-        return <div>Robotic Arm Remote content goes here.</div>;
+        return <PersonalProjects />;
       default:
         return <div>Page not found</div>;
     }
@@ -97,7 +91,7 @@ const App: React.FC = () => {
         trigger={null}
         collapsible
         collapsed={collapsed}
-        width={220}
+        width={250}
         collapsedWidth={getCollapsedWidth()}
       >
         <Menu
@@ -109,7 +103,7 @@ const App: React.FC = () => {
           items={[
             {
               key: '1',
-              icon: <SolutionOutlined />,
+              icon: <HomeOutlined />,
               label: 'Inicio',
             },
           ]}
@@ -122,28 +116,18 @@ const App: React.FC = () => {
           items={[
             {
               key: '2',
-              icon: <AuditOutlined />,
-              label: 'SRL Gestock',
+              icon: <UserOutlined />,
+              label: 'Perfil',
             },
             {
               key: '3',
-              icon: <DatabaseOutlined />,
-              label: 'Wide World Importers',
+              icon: <ProjectOutlined />,
+              label: 'Proyectos universitarios',
             },
             {
               key: '4',
-              icon: <CodeOutlined />,
-              label: 'Compilador MIPS',
-            },
-            {
-              key: '5',
-              icon: <RocketOutlined />,
-              label: 'Parchís',
-            },
-            {
-              key: '7',
-              icon: <RobotOutlined />,
-              label: 'Brazo Robótico Remoto',
+              icon: <SolutionOutlined />,
+              label: 'Proyectos personales',
             },
           ]}
         />
