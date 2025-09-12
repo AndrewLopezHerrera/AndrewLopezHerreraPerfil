@@ -1,0 +1,17 @@
+{
+    "home": {
+        "title": "Inicio",
+        "introduction": "Hola, soy Andrew López Herrera. Soy estudiante de Ingeniería en Computación en el Centro Académico de Limón del Instituto Tecnológico de Costa Rica. Este es un portafolio profesional diseñado para mostrar mis actividades académicas y profesionales. Aquí encontrarás tanto habilidades técnicas como blandas, así como proyectos personales y académicos."
+    },
+    "base":{
+        "home": "Inicio",
+        "languageSpanish": "Español",
+        "languageEnglish": "English",
+        "greetingMorning": "Buenos días",
+        "greetingAfternoon": "Buenas tardes",
+        "greetingEvening": "Buenas noches",
+        "profile": "Perfil",
+        "universityProjects": "Proyectos Universitarios",
+        "personalProjects": "Proyectos Personales"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "spanish":{
+        "introductionSpanish": "Hola, mi nombre es Andrew López Herrera, soy un estudiante de Ingeniería en Computación en el Tecnológico de Costa Rica. Actualmente curso el tercer año de la carrera y me encuentro en el Centro Académico de Limón. Me gusta mucho la programación y todo lo relacionado con las computadoras, por lo que decidí estudiar esta carrera. En mi tiempo libre me gusta jugar videojuegos, ver series y películas, además de aprender sobre nuevas tecnologías y lenguajes de programación.",
+        "introductionEnglish": "Hello, my name is Andrew López Herrera, I am a student of Computer Engineering at the Costa Rica Institute of Technology. I am currently in my third year of the career and I am at the Limón Academic Center. I really like programming and everything related to computers, so I decided to study this career. In my free time I like to play video games, watch series and movies, as well as learn about new technologies and programming languages."
+    },
+    "english":{
+        "proposalPortfolioSpanish": "El propósito de este portafolio es mostrar mis habilidades y proyectos relacionados con la programación y el desarrollo web. A través de este portafolio, espero poder compartir mi experiencia y conocimientos con otros, así como también aprender de ellos. Además, este portafolio me servirá como una herramienta para buscar oportunidades laborales en el futuro.",
+        "proposalPortfolioEnglish": "The purpose of this portfolio is to showcase my skills and projects related to programming and web development. Through this portfolio, I hope to share my experience and knowledge with others, as well as learn from them. Additionally, this portfolio will serve as a tool for me to seek job opportunities in the future."
+    }
+}
