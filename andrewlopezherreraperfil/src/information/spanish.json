@@ -13,5 +13,53 @@
         "profile": "Perfil",
         "universityProjects": "Proyectos Universitarios",
         "personalProjects": "Proyectos Personales"
+    },
+    "profile": {
+        "presentation": {
+            "title": "Biografía",
+            "name": "Andrew López Herrera",
+            "biography": "Soy un estudiante de Ingeniería en Computación que actualmente está cursando en el Centro Académico de Limón del Tecnológico de Costa Rica. Me gusta mucho la carrera que estudio, siempre he tenido afinidad hacia las computadoras, por lo que no lo dudé mucho al entrar a la carrera. Me considero que se soy una persona que se adapta fácilmente a los cambios, por lo que trabajar en diferentes equipos no me supone un problema. Además, me interesan mucho los temas sobre compiladores e intérpretes, inteligencia artificial, robótica y ciberseguridad. Soy una persona que suele liderar a sus compañeros para que lleguemos a un mismo objetivo, aunque no tengo problema en tener un buen lider que también me guíe hacia un objetivo."
+        },
+        "technicalknowledge": {
+            "title": "Conocimiento técnico",
+            "programmingLanguages": {
+                "title": "Experiencia en lenguajes de programación"
+            },
+            "frameworks": {
+                "title": "Experiencia en frameworks"
+            },
+            "databases": {
+                "title": "Experiencia en bases de datos"
+            },
+            "developmentBoards": {
+                "title": "Experiencia en placas de desarrollo"
+            }
+        },
+        "certificates": {
+            "title": "Certificados",
+            "viewCertificate": "Ver certificado",
+            "courses": {
+                "programmingWorkshop": {
+                    "title": "Taller de Programación",
+                    "institute": "Instituto Tecnológico de Costa Rica",
+                    "description": "Certificado por haber impartido tutorías del curso Taller de Programación, impartido en el Centro Académico de Limón del Instituto Tecnológico de Costa Rica durante el primer semestre del 2023."
+                },
+                "introductionToProgramming": {
+                    "title": "Introducción a la Programación",
+                    "institute": "Instituto Tecnológico de Costa Rica",
+                    "description": "Certificado por haber impartido tutorías del curso Introducción a la Programación, impartido en el Centro Académico de Limón del Instituto Tecnológico de Costa Rica durante el primer semestre del 2023."
+                },
+                "computingElements": {
+                    "title": "Elementos de Computación",
+                    "institute": "Instituto Tecnológico de Costa Rica",
+                    "description": "Certificado por haber impartido tutorías del curso Elementos de Computación, impartido en el Centro Académico de Limón del Instituto Tecnológico de Costa Rica durante el primer semestre del 2024."
+                },
+                "attentionToEmotionalAndAcademicNeeds": {
+                    "title": "Atención a Necesidades Emocionales y Académicas",
+                    "institute": "Instituto Tecnológico de Costa Rica",
+                    "description": "Certificado por haber participado en la capacitación Atención a Necesidades Emocionales y Académicas, impartido en el Instituto Tecnológico de Costa Rica"
+                }
+            }
+        }
     }
 }

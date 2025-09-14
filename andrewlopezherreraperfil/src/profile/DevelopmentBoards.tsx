@@ -1,74 +1,48 @@
-import { Avatar, List, Progress } from "antd";
-import ModuleImageDevelopmentBoards from "./ModuleImageDevelopmentBoards";
+import { Card, Col, Progress, Row } from "antd";
+import { useTranslation } from "react-i18next";
+import developmentBoards from "../information/developmentboards.json"
+import Meta from "antd/es/card/Meta";
 
 const DevelopmentBoards : React.FC = () => {
+      const { t } = useTranslation();
     return (
       <section>
-            <h3>Placas de desarrollo</h3>
-            <List
-               itemLayout="horizontal"
-            >
-               <List.Item>
-                  <List.Item.Meta
-                     avatar={<Avatar src={ModuleImageDevelopmentBoards.raspberrypi} />}
-                     title={<label>Raspberry Pi</label>}
-                     description={
-                        <div>
-                           <p>"Una placa de desarrollo de bajo costo y tamaño reducido."</p>
-                           <div>
-                              <label><strong>Experiencia:</strong></label>
-                              <Progress percent={85} showInfo={true} strokeColor="#e05809" />
-                           </div>
-                        </div>
+            <h3>{t("profile.technicalknowledge.developmentBoards.title")}</h3>
+            <Row gutter={[32, 32]} justify="center" style={{ width: "100%", margin: 0 }}>
+               {developmentBoards.map((developmentBoard) => (
+                  <Col
+                     key={developmentBoard.name}
+                     xs={24}
+                     sm={12}
+                     md={8}
+                     lg={8}
+                     xl={8}
+                  >
+                     <Card
+                     hoverable
+                     style={{ width: "100%", margin: "0 auto" }}
+                     cover={
+                        <img
+                           alt={developmentBoard.name}
+                           src={developmentBoard.image}
+                           style={{ width: "100%", height: 180, objectFit: "contain" }}
+                        />
                      }
-                  />
-               </List.Item>
-               <List.Item>
-                  <List.Item.Meta
-                     avatar={<Avatar src={ModuleImageDevelopmentBoards.arduino} />}
-                     title={<label>Arduino</label>}
-                     description={
-                        <div>
-                           <p>"Una plataforma de hardware libre para la creación de proyectos interactivos."</p>
-                           <div>
-                              <label><strong>Experiencia:</strong></label>
-                              <Progress percent={90} showInfo={true} strokeColor="#e05809" />
-                           </div>
-                        </div>
-                     }
-                  />
-               </List.Item>
-               <List.Item>
-                  <List.Item.Meta
-                     avatar={<Avatar src={ModuleImageDevelopmentBoards.espressif} />}
-                     title={<label>ESP32</label>}
-                     description={
-                        <div>
-                           <p>"Un microcontrolador de bajo costo con capacidades Wi-Fi y Bluetooth."</p>
-                           <div>
-                              <label><strong>Experiencia:</strong></label>
-                              <Progress percent={80} showInfo={true} strokeColor="#e05809" />
-                           </div>
-                        </div>
-                     }
-                  />
-               </List.Item>
-               <List.Item>
-                  <List.Item.Meta
-                     avatar={<Avatar src={ModuleImageDevelopmentBoards.orangepi} />}
-                     title={<label>Orange Pi</label>}
-                     description={
-                        <div>
-                           <p>"Una placa de desarrollo de bajo costo y tamaño reducido."</p>
-                           <div>
-                              <label><strong>Experiencia:</strong></label>
-                              <Progress percent={75} showInfo={true} strokeColor="#e05809" />
-                           </div>
-                        </div>
-                     }
-                  />
-               </List.Item>
-            </List>
+                     >
+                     <Meta
+                        title={developmentBoard.name}
+                        description={
+                           <Progress
+                           percent={developmentBoard.experience}
+                           showInfo={true}
+                           strokeColor="#e05809"
+                           />
+                        }
+                     />
+                     </Card>
+                  </Col>
+               ))}
+               </Row>
          </section>
     )
 }

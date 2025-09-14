@@ -13,5 +13,53 @@
         "profile": "Profile",
         "universityProjects": "University Projects",
         "personalProjects": "Personal Projects"
+    },
+    "profile": {
+        "presentation": {
+            "title": "Biography",
+            "name": "Andrew López Herrera",
+            "biography": "I am a Computer Engineering student currently studying at the Limón Academic Center of the Costa Rica Institute of Technology. I really like the career I am pursuing; I have always had an affinity for computers, so I didn't hesitate much when entering this field. I consider myself a person who easily adapts to changes, so working in different teams is not a problem for me. Additionally, I am very interested in topics such as compilers and interpreters, artificial intelligence, robotics, and cybersecurity. I tend to lead my teammates to achieve a common goal, although I have no problem having a good leader who also guides me towards an objective."
+        },
+        "technicalknowledge": {
+            "title": "Technical Knowledge",
+            "programmingLanguages": {
+                "title": "Programming Languages Experience"
+            },
+            "frameworks": {
+                "title": "Frameworks Experience"
+            },
+            "databases": {
+                "title": "Database Experience"
+            },
+            "developmentBoards": {
+                "title": "Development Boards Experience"
+            }
+        },
+        "certificates": {
+            "title": "Certificates",
+            "viewCertificate": "View Certificate",
+            "courses": {
+                "programmingWorkshop": {
+                    "title": "Taller de Programación",
+                    "institute": "Costa Rica Institute of Technology",
+                    "description": "Certificate for having tutored the Programming Workshop course, taught at the Limón Academic Center of the Costa Rica Institute of Technology during the first semester of 2023."
+                },
+                "introductionToProgramming": {
+                    "title": "Introducción a la Programación",
+                    "institute": "Costa Rica Institute of Technology",
+                    "description": "Certificate for having tutored the Introducción a la Programación course, taught at the Limón Academic Center of the Costa Rica Institute of Technology during the first semester of 2023."
+                },
+                "computingElements": {
+                    "title": "Elementos de Computación",
+                    "institute": "Costa Rica Institute of Technology",
+                    "description": "Certificate for having tutored the Elementos de Computación course, taught at the Limón Academic Center of the Costa Rica Institute of Technology during the first semester of 2024."
+                },
+                "attentionToEmotionalAndAcademicNeeds": {
+                    "title": "Atención a las Necesidades Emocionales y Académicas",
+                    "institute": "Costa Rica Institute of Technology",
+                    "description": "Certificate for having participated in the training \"Attention to Emotional and Academic Needs,\" taught at the Costa Rica Institute of Technology."
+                }
+            }
+        }
     }
 }

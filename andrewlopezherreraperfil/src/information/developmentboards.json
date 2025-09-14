@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Raspberry Pi",
+    "image": "/assets/developmentboards/raspberrypilogo.png",
+    "experience": 85
+  },
+  {
+    "name": "Arduino",
+    "image": "/assets/developmentboards/arduinologo.png",
+    "experience": 90
+  },
+  {
+    "name": "ESP32",
+    "image": "/assets/developmentboards/espressiflogo.png",
+    "experience": 80
+  },
+  {
+    "name": "Orange Pi",
+    "image": "/assets/developmentboards/orangepilogo.png",
+    "experience": 75
+  }
+]

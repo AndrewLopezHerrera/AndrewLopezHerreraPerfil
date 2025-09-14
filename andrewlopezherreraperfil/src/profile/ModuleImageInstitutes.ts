@@ -1,4 +1,4 @@
-import tecLogo from "../assets/institutes/tecLogo.png"
+import tecLogo from "../assets/institutes/teclogo.webp"
 
 const ModuleImageInstitutes = {
   tecLogo

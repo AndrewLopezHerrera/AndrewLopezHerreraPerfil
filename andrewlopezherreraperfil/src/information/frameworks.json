@@ -1,0 +1,27 @@
+[
+    {
+        "name": "React",
+        "experience": 80,
+        "image": "assets/frameworks/reactlogo.png"
+    },
+    {
+        "name": "Deno",
+        "experience": 70,
+        "image": "assets/frameworks/denologo.png"
+    },
+    {
+        "name": "Next.js",
+        "experience": 75,
+        "image": "assets/frameworks/nextlogo.png"
+    },
+    {
+        "name": "Tauri",
+        "experience": 85,
+        "image": "assets/frameworks/taurilogo.png"
+    },
+    {
+        "name": "Node.js",
+        "experience": 80,
+        "image": "assets/frameworks/nodelogo.png"
+    }
+]

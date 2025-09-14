@@ -22,6 +22,8 @@ const { Header, Sider, Content } = Layout;
 const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
   const { t } = useTranslation();
   const navigator = useNavigate();
+  const [image, setImage] = useState<string>("");
+  const [greeting, setGreeting] = useState<string>("");
   const [collapsed, setCollapsed] = useState(true);
   const [renderContent, setRenderContent] = useState<React.ReactNode>();
   const {
@@ -65,32 +67,39 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
     return false;
   }
 
-  const giveImageGreeting = () : string => {
+  const giveImageGreeting = () : void => {
     const currentHour = new Date().getHours();
     if (currentHour < 12 && currentHour >= 6) {
-      return morning;
+      setImage(morning);
     } else if ((currentHour < 15 && currentHour >= 12) || (currentHour >= 16 && currentHour < 18)) {
-      return afternoon;
+      setImage(afternoon);
     } else if ((currentHour <= 23 && currentHour >= 18) || (currentHour >= 0 && currentHour < 6)) {
-      return night;
+      setImage(night);
     } else {
-      return coffeeCup;
+      setImage(coffeeCup);
     }
   }
 
-  const giveGreeting = () : string => {
+  const giveGreeting = () : void => {
     const currentHour = new Date().getHours();
     if (currentHour < 12 && currentHour >= 6) {
-      return t("base.greetingMorning");
+      setGreeting(t("base.greetingMorning"));
     } else if (currentHour < 18 && currentHour >= 12) {
-      return t("base.greetingAfternoon");
+      setGreeting(t("base.greetingAfternoon"));
     } else {
-      return t("base.greetingEvening");
+      setGreeting(t("base.greetingEvening"));
     }
   };
 
   useEffect(() => {
     setRenderContent(frame);
+    const interval = setInterval(() => {
+      giveImageGreeting();
+      giveGreeting();
+    }, 1000);
+    giveImageGreeting();
+    giveGreeting();
+    return () => clearInterval(interval);
   }, [frame]);
 
   return (
@@ -158,10 +167,10 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
             </Radio.Group>
           </div>
           <div className={`greeting ${changeVisibility() ? '' : 'hidden'}`}>
-            {giveGreeting()}
+            {greeting}
             <Image
               width={40}
-              src={giveImageGreeting()}
+              src={image}
               alt="Greeting Icon"
               preview={false}
             />

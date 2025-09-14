@@ -1,136 +1,51 @@
-import { Avatar, List, Progress } from "antd";
-import ModuleImageProgrammingLanguages from "./ModuleImageProgrammingLanguages";
+import { Card, Col, Progress, Row } from "antd";
+import { useTranslation } from "react-i18next";
+import programmingLanguageJSON from "../information/programmingLanguages.json";
+import Meta from "antd/es/card/Meta";
 
-const ProgrammingLanguage : React.FC = () => {
-    return (
-         <section>
-            <h3>Lenguajes de programación</h3>
-            <List
-               itemLayout="horizontal"
+const ProgrammingLanguage: React.FC = () => {
+  const { t } = useTranslation();
+
+  return (
+    <section style={{ width: "100%" }}>
+      <h3>{t("profile.technicalknowledge.programmingLanguages.title")}</h3>
+      <Row gutter={[32, 32]} justify="center" style={{ width: "100%", margin: 0 }}>
+        {programmingLanguageJSON.map((programmingLanguage) => (
+          <Col
+            key={programmingLanguage.name}
+            xs={24}
+            sm={12}
+            md={8}
+            lg={8}
+            xl={8}
+          >
+            <Card
+              hoverable
+              style={{ width: "100%", margin: "0 auto" }}
+              cover={
+                <img
+                  alt={programmingLanguage.name}
+                  src={programmingLanguage.image}
+                  style={{ width: "100%", height: 180, objectFit: "contain" }}
+                />
+              }
             >
-               <List.Item>
-                  <List.Item.Meta
-                     avatar={<Avatar src={ModuleImageProgrammingLanguages.python} />}
-                     title={<label>Python</label>}
-                     description={
-                       <div>
-                         <p>Un lenguaje de programación interpretado, de alto nivel y con semántica dinámica.</p>
-                         <div>
-                           <label><strong>Experiencia:</strong></label>
-                           <Progress percent={90} showInfo={true} strokeColor="#e05809" />
-                         </div>
-                       </div>
-                     }
+              <Meta
+                title={programmingLanguage.name}
+                description={
+                  <Progress
+                    percent={programmingLanguage.experience}
+                    showInfo={true}
+                    strokeColor="#e05809"
                   />
-               </List.Item>
-               <List.Item>
-                  <List.Item.Meta
-                     avatar={<Avatar src={ModuleImageProgrammingLanguages.java} />}
-                     title={<label>Java</label>}
-                     description={
-                        <div>
-                           <p>"Un lenguaje de programación de alto nivel, orientado a objetos y diseñado para tener la menor cantidad de dependencias de implementación."</p>
-                           <div>
-                              <label><strong>Experiencia:</strong></label>
-                              <Progress percent={85} showInfo={true} strokeColor="#e05809" />
-                           </div>
-                        </div>
-                     }
-                  />
-               </List.Item>
-               <List.Item>
-                  <List.Item.Meta
-                     avatar={<Avatar src={ModuleImageProgrammingLanguages.typescript} />}
-                     title={<label>TypeScript</label>}
-                     description={
-                        <div>
-                           <p>"Un superconjunto tipado de JavaScript que compila a JavaScript puro."</p>
-                           <div>
-                              <label><strong>Experiencia:</strong></label>
-                              <Progress percent={75} showInfo={true} strokeColor="#e05809" />
-                           </div>
-                        </div>
-                     }
-                  />
-               </List.Item>
-               <List.Item>
-                  <List.Item.Meta
-                     avatar={<Avatar src={ModuleImageProgrammingLanguages.javascript} />}
-                     title={<label>JavaScript</label>}
-                     description={
-                        <div>
-                           <p>"Un lenguaje de programación interpretado, de alto nivel y con tipado dinámico."</p>
-                           <div>
-                              <label><strong>Experiencia:</strong></label>
-                              <Progress percent={80} showInfo={true} strokeColor="#e05809" />
-                           </div>
-                        </div>
-                     }
-                  />
-               </List.Item>
-               <List.Item>
-                  <List.Item.Meta
-                     avatar={<Avatar src={ModuleImageProgrammingLanguages.asm} />}
-                     title={<label>Assembly</label>}
-                     description={
-                        <div>
-                           <p>"Utilizado en para crear compiladores y programas en Raspberry Pi."</p>
-                           <div>
-                              <label><strong>Experiencia:</strong></label>
-                              <Progress percent={70} showInfo={true} strokeColor="#e05809" />
-                           </div>
-                        </div>
-                     }
-                  />
-               </List.Item>
-               <List.Item>
-                  <List.Item.Meta
-                     avatar={<Avatar src={ModuleImageProgrammingLanguages.prolog} />}
-                     title={<label>Prolog</label>}
-                     description={
-                        <div>
-                           <p>"Un lenguaje de programación lógica asociado con la inteligencia artificial y la lingüística computacional."</p>
-                           <div>
-                              <label><strong>Experiencia:</strong></label>
-                              <Progress percent={60} showInfo={true} strokeColor="#e05809" />
-                           </div>
-                        </div>
-                     }
-                  />
-               </List.Item>
-               <List.Item>
-                  <List.Item.Meta
-                     avatar={<Avatar src={ModuleImageProgrammingLanguages.c} />}
-                     title={<label>C</label>}
-                     description={
-                        <div>
-                           <p>"Un lenguaje de programación de propósito general que es extremadamente popular en el desarrollo de sistemas."</p>
-                           <div>
-                              <label><strong>Experiencia:</strong></label>
-                              <Progress percent={85} showInfo={true} strokeColor="#e05809" />
-                           </div>
-                        </div>
-                     }
-                  />
-               </List.Item>
-               <List.Item>
-                  <List.Item.Meta
-                     avatar={<Avatar src={ModuleImageProgrammingLanguages.cpp} />}
-                     title={<label>C++</label>}
-                     description={
-                        <div>
-                           <p>"Un lenguaje de programación de propósito general que es una extensión de C y que incluye programación orientada a objetos."</p>
-                           <div>
-                              <label><strong>Experiencia:</strong></label>
-                              <Progress percent={80} showInfo={true} strokeColor="#e05809" />
-                           </div>
-                        </div>
-                     }
-                  />
-               </List.Item>
-            </List>
-         </section>
-    );
-}
+                }
+              />
+            </Card>
+          </Col>
+        ))}
+      </Row>
+    </section>
+  );
+};
 
 export default ProgrammingLanguage;

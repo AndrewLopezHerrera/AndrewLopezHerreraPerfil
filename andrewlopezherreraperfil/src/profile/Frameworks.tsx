@@ -1,90 +1,49 @@
-import { Avatar, List, Progress } from "antd";
-import ModuleImageFrameworks from "./ModuleImageFrameworks";
+import { Card, Col, Progress, Row } from "antd";
+import frameworksJSON from "../information/frameworks.json";
+import { useTranslation } from "react-i18next";
+import Meta from "antd/es/card/Meta";
 
 const Frameworks : React.FC = () => {
+    const { t } = useTranslation();
     return (
-      <section>
-            <h3>Frameworks</h3>
-            <List
-               itemLayout="horizontal"
+      <section style={{ width: "100%" }}>
+      <h3>{t("profile.technicalknowledge.frameworks.title")}</h3>
+      <Row gutter={[32, 32]} justify="center" style={{ width: "100%", margin: 0 }}>
+        {frameworksJSON.map((framework) => (
+          <Col
+            key={framework.name}
+            xs={24}
+            sm={12}
+            md={8}
+            lg={8}
+            xl={8}
+          >
+            <Card
+              hoverable
+              style={{ width: "100%", margin: "0 auto" }}
+              cover={
+                <img
+                  alt={framework.name}
+                  src={framework.image}
+                  style={{ width: "100%", height: 180, objectFit: "contain" }}
+                />
+              }
             >
-               <List.Item>
-                  <List.Item.Meta
-                     avatar={<Avatar src={ModuleImageFrameworks.react} />}
-                     title={<label>React</label>}
-                     description={
-                        <div>
-                           <p>"Una biblioteca de JavaScript para construir interfaces de usuario."</p>
-                           <div>
-                              <label><strong>Experiencia:</strong></label>
-                              <Progress percent={75} showInfo={true} strokeColor="#e05809" />
-                           </div>
-                        </div>
-                     }
+              <Meta
+                title={framework.name}
+                description={
+                  <Progress
+                    percent={framework.experience}
+                    showInfo={true}
+                    strokeColor="#e05809"
                   />
-               </List.Item>
-               <List.Item>
-                  <List.Item.Meta
-                     avatar={<Avatar src={ModuleImageFrameworks.deno} />}
-                     title={<label>Deno</label>}
-                     description={
-                        <div>
-                           <p>"Un entorno de ejecución para JavaScript y TypeScript."</p>
-                           <div>
-                              <label><strong>Experiencia:</strong></label>
-                              <Progress percent={70} showInfo={true} strokeColor="#e05809" />
-                           </div>
-                        </div>
-                     }
-                  />
-               </List.Item>
-               <List.Item>
-                  <List.Item.Meta
-                     avatar={<Avatar src={ModuleImageFrameworks.tauri} />}
-                     title={<label>Tauri</label>}
-                     description={
-                        <div>
-                           <p>"Un marco para construir aplicaciones de escritorio utilizando tecnologías web."</p>
-                           <div>
-                              <label><strong>Experiencia:</strong></label>
-                              <Progress percent={60} showInfo={true} strokeColor="#e05809" />
-                           </div>
-                        </div>
-                     }
-                  />
-               </List.Item>
-               <List.Item>
-                  <List.Item.Meta
-                     avatar={<Avatar src={ModuleImageFrameworks.node} />}
-                     title={<label>Node.js</label>}
-                     description={
-                        <div>
-                           <p>"Un entorno de ejecución para JavaScript en el lado del servidor."</p>
-                           <div>
-                              <label><strong>Experiencia:</strong></label>
-                              <Progress percent={85} showInfo={true} strokeColor="#e05809" />
-                           </div>
-                        </div>
-                     }
-                  />
-               </List.Item>
-               <List.Item>
-                  <List.Item.Meta
-                     avatar={<Avatar src={ModuleImageFrameworks.next} />}
-                     title={<label>Next.js</label>}
-                     description={
-                        <div>
-                           <p>"Un marco de trabajo para aplicaciones web basado en React."</p>
-                           <div>
-                              <label><strong>Experiencia:</strong></label>
-                              <Progress percent={80} showInfo={true} strokeColor="#e05809" />
-                           </div>
-                        </div>
-                     }
-                  />
-               </List.Item>
-            </List>
-         </section>
+                }
+              />
+            </Card>
+          </Col>
+        ))}
+      </Row>
+    </section>
     )
 }
 

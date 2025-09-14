@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Python",
+        "experience": 90,
+        "image": "assets/programminglanguages/pythonlogo.png"
+    },
+    {
+        "name": "Java",
+        "experience": 80,
+        "image": "assets/programminglanguages/javalogo.png"
+    },
+    {
+        "name": "C",
+        "experience": 85,
+        "image": "assets/programminglanguages/clogo.png"
+    },
+    {
+        "name": "C++",
+        "experience": 75,
+        "image": "assets/programminglanguages/c++logo.png"
+    },
+    {
+        "name": "JavaScript",
+        "experience": 80,
+        "image": "assets/programminglanguages/javascriptlogo.png"
+    },
+    {
+        "name": "Assembly",
+        "experience": 70,
+        "image": "assets/programminglanguages/asmlogo.png"
+    },
+    {
+        "name": "Prolog",
+        "experience": 60,
+        "image": "assets/programminglanguages/prologlogo.png"
+    },
+    {
+        "name": "TypeScript",
+        "experience": 85,
+        "image": "assets/programminglanguages/typescriptlogo.png"
+    }
+]

@@ -1,8 +1,12 @@
 import imageProfile from "../assets/profile/profile_image.jpg"
+import { useTranslation } from "react-i18next";
 
 const Presentation : React.FC = () => {
+
+   const { t } = useTranslation();
+
     return (
-      <section>
+      <section style={{ width: "98%" }}>
          <section className="containerPresentationBar">
             <div className="presentationBar">
                <div className="spacePresentationBar"/>
@@ -14,14 +18,14 @@ const Presentation : React.FC = () => {
                </div>
                <div className="containerPresentationName">
                   <label className="presentationName">
-                     Andrew Denilson López Herrera
+                     {t("profile.presentation.name")}
                   </label>
                </div>
             </div>
          </section>
          <section>
-            <h2>Biografía</h2>
-            <p>Hola, soy Andrew Denilson López Herrera, un apasionado por la tecnología y el desarrollo de software. Me encanta aprender sobre nuevas herramientas y lenguajes de programación, y siempre estoy buscando mejorar mis habilidades.</p>
+            <h2>{t("profile.presentation.title")}</h2>
+            <p>{t("profile.presentation.biography")}</p>
          </section>
       </section>
     );

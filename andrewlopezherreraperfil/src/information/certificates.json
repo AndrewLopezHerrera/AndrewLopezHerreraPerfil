@@ -1,0 +1,22 @@
+[
+    {
+        "name": "programmingWorkshop",
+        "instituteImage": "assets/institutes/teclogo.webp",
+        "pdf": "Certificado_Tutorías_Taller_Programación.pdf"
+    },
+    {
+        "name": "introductionToProgramming",
+        "instituteImage": "assets/institutes/teclogo.webp",
+        "pdf": "Certificado_Tutorías_Introducción_Programación.pdf"
+    },
+    {
+        "name": "computingElements",
+        "instituteImage": "assets/institutes/teclogo.webp",
+        "pdf": "Certificado_Tutorías_Elementos_Computación.pdf"
+    },
+    {
+        "name": "attentionToEmotionalAndAcademicNeeds",
+        "instituteImage": "assets/institutes/teclogo.webp",
+        "pdf": "Certificado_Capacitación_Tutorías.pdf"
+    }
+]
