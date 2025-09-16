@@ -60,6 +60,78 @@
                     "description": "Certificate for having participated in the training \"Attention to Emotional and Academic Needs,\" taught at the Costa Rica Institute of Technology."
                 }
             }
+        },
+        "professionalnetworks": {
+            "title": "Professional Networks",
+            "LinkedIn": {
+                "description": "Connect with me on LinkedIn to explore professional opportunities and share knowledge.",
+                "viewNetwork": "View LinkedIn"
+            },
+            "GitHub": {
+                "description": "Visit my GitHub profile to see my projects and contributions to open source.",
+                "viewNetwork": "View GitHub"
+            }
+        },
+        "technicalInterests": {
+            "title": "Technical Interests",
+            "list": [
+                "Robotics in the medical field to improve patient care.",
+                "Creating programming languages as a way to preserve indigenous languages.",
+                "Artificial intelligence as a tool for finding turtle nests for preservation.",
+                "Internet of Things to automate home processes and provide real-time information, such as weather updates for laundry."
+            ]
+        },
+        "curriculumVitae": {
+            "title": "Curriculum Vitae",
+            "viewCV": "View CV"
+        }
+    },
+    "universityProjects": {
+        "title": "University Projects - Courses",
+        "viewProjects": "View Projects",
+        "courses": {
+            "computingArchitecture": {
+                "name": "Arquitectura de Computadores",
+                "courseCode": "IC3101",
+                "description": "Course that studies the architecture and organization of computers, including topics such as data representation, instruction set, processor architecture, memory, and input/output systems.",
+                "line": "Computer Science"
+            },
+            "dataStructure": {
+                "name": "Estructuras de Datos",
+                "courseCode": "IC2001",
+                "description": "Course covering the fundamental concepts of data structures, including lists, stacks, queues, trees, and graphs, as well as algorithms to manipulate these structures.",
+                "line": "Computer Science"
+            },
+            "compilersAndInterpreters": {
+                "name": "Compiladores e Intérpretes",
+                "courseCode": "IC5701",
+                "description": "Course introducing the fundamental concepts and techniques for the design and implementation of compilers and interpreters, including lexical analysis, syntactic analysis, and code generation.",
+                "line": "Computer Science"
+            },
+            "operatingSystemsPrinciples": {
+                "name": "Principios de Sistemas Operativos",
+                "courseCode": "IC6600",
+                "description": "Course covering the fundamental principles and concepts of operating systems, including process management, memory management, file systems, and security.",
+                "line": "Computer Science"
+            },
+            "introductionToWebPageDevelopment": {
+                "name": "Introducción al Desarrollo de Páginas Web",
+                "courseCode": "IC8057",
+                "description": "Course introducing the fundamental concepts and technologies for web page development, including HTML, CSS, JavaScript, and popular frameworks.",
+                "line": "Software Engineering"
+            },
+            "engineeringSoftwareProject": {
+                "name": "Proyecto de Ingeniería de Software",
+                "courseCode": "IC7841",
+                "description": "Course where all concepts learned during the degree are applied to develop a complete software project, from planning to implementation and maintenance.",
+                "line": "Software Engineering"
+            },
+            "databasesII": {
+                "name": "Bases de Datos II",
+                "courseCode": "IC4302",
+                "description": "Course covering advanced database concepts, including database design, advanced SQL, transactions, and recovery.",
+                "line": "Databases"
+            }
         }
     }
 }

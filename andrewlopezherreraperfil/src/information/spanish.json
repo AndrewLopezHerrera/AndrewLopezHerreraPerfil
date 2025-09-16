@@ -60,6 +60,78 @@
                     "description": "Certificado por haber participado en la capacitación Atención a Necesidades Emocionales y Académicas, impartido en el Instituto Tecnológico de Costa Rica"
                 }
             }
+        },
+        "professionalnetworks": {
+            "title": "Redes profesionales",
+            "LinkedIn": {
+                "description": "Conéctate conmigo en LinkedIn para explorar oportunidades profesionales y compartir conocimientos.",
+                "viewNetwork": "Ver LinkedIn"
+            },
+            "GitHub": {
+                "description": "Visita mi perfil de GitHub para ver mis proyectos y contribuciones al código abierto.",
+                "viewNetwork": "Ver GitHub"
+            }
+        },
+        "technicalInterests": {
+            "title": "Intereses técnicos",
+            "list": [
+                "Robótica en el ámbito de la medicina para mejorar la atención de los pacientes.",
+                "Creación de lenguajes de programación como una forma de conservar lenguas indígenas.",
+                "Inteligencia artificial como herramienta para la busqueda de nidos de tortugas para su preservación.",
+                "Internet de las cosas para automatizar procesos de los hogares así como proporcionarles información en tiempo real, por ejemplo, el clima para tender ropa."
+            ]
+        },
+        "curriculumVitae": {
+            "title": "Currículum Vitae",
+            "viewCV": "Ver CV"
+        }
+    },
+    "universityProjects": {
+        "title": "Proyectos Universitarios - Cursos",
+        "viewProjects": "Ver Proyectos",
+        "courses": {
+            "computingArchitecture": {
+                "name": "Arquitectura de Computadores",
+                "courseCode": "IC3101",
+                "description": "Curso en el que se estudia la arquitectura y organización de computadores, incluyendo temas como la representación de datos, el conjunto de instrucciones, la arquitectura del procesador, la memoria y los sistemas de entrada/salida.",
+                "line": "Ciencias de la Computación"
+            },
+            "dataStructure" : {
+                "name": "Estructuras de Datos",
+                "courseCode": "IC2001",
+                "description": "Curso que cubre los conceptos fundamentales de las estructuras de datos, incluyendo listas, pilas, colas, árboles y grafos, así como algoritmos para manipular estas estructuras.",
+                "line": "Ciencias de la Computación"
+            },
+            "compilersAndInterpreters": {
+                "name": "Compiladores e Intérpretes",
+                "courseCode": "IC5701",
+                "description": "Curso que introduce los conceptos y técnicas fundamentales para el diseño e implementación de compiladores e intérpretes, incluyendo análisis léxico, análisis sintáctico y generación de código.",
+                "line": "Ciencias de la Computación"
+            },
+            "operatingSystemsPrinciples": {
+                "name": "Principios de Sistemas Operativos",
+                "courseCode": "IC6600",
+                "description": "Curso que cubre los principios y conceptos fundamentales de los sistemas operativos, incluyendo la gestión de procesos, la gestión de memoria, el sistema de archivos y la seguridad.",
+                "line": "Ciencias de la Computación"
+            },
+            "introductionToWebPageDevelopment": {
+                "name": "Introducción al Desarrollo de Páginas Web",
+                "courseCode": "IC8057",
+                "description": "Curso que introduce los conceptos y tecnologías fundamentales para el desarrollo de páginas web, incluyendo HTML, CSS, JavaScript y frameworks populares.",
+                "line": "Ingeniería de Software"
+            },
+            "engineeringSoftwareProject": {
+                "name": "Proyecto de Ingeniería de Software",
+                "courseCode": "IC7841",
+                "description": "Curso en el que se aplican todos los conceptos aprendidos en la carrera para desarrollar un proyecto de software completo, desde la planificación hasta la implementación y el mantenimiento.",
+                "line": "Ingeniería de Software"
+            },
+            "databasesII": {
+                "name": "Bases de Datos II",
+                "courseCode": "IC4302",
+                "description": "Curso que cubre los conceptos avanzados de bases de datos, incluyendo diseño de bases de datos, SQL avanzado, transacciones y recuperación.",
+                "line": "Bases de datos"
+            }
         }
     }
 }

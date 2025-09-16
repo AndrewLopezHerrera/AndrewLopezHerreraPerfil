@@ -3,13 +3,16 @@ import { Button } from "antd";
 
 const CurriculumVitae: React.FC = () => {
     return (
-        <section id="downloadCVSection" className="sectionDownloadCV">
+         <section id="downloadCVSection" className="sectionDownloadCV">
          <Button
             icon={
                <FilePdfOutlined />
             }
-            size="large"
+            href=""
             type="primary"
+            size="large"
+            color="volcano"
+            variant="solid"
          >
             Descargar CV
          </Button>

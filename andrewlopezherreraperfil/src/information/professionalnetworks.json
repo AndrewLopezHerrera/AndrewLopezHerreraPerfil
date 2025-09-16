@@ -1,0 +1,12 @@
+[
+    {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/andrew-lopez-herrera-6630ab2a3",
+        "icon": "assets/platforms/linkedin.png"
+    },
+    {
+        "name": "GitHub",
+        "url": "https://github.com/AndrewLopezHerrera",
+        "icon": "assets/platforms/github.png"
+    }
+]

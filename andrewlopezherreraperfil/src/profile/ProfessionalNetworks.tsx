@@ -1,60 +1,59 @@
 import { Card, Col, Row } from "antd";
-import ModuleImagePlatforms from "./ModuleImagePlatforms";
+import { useTranslation } from "react-i18next";
+import networksJSON from "../information/professionalnetworks.json";
+import { Button } from "antd";
+import { FilePdfOutlined } from "@ant-design/icons";
 import Meta from "antd/es/card/Meta";
 
 const ProfessionalNetworks : React.FC = () => {
-    return (
-        <section>
-         <h2 className="profileTittles">Redes Profesionales</h2>
-         <Row justify={"space-around"} gutter={[48, 24]} className="rowSocials">
-            <Col span={9} xs={24} sm={24} md={12} lg={12} xl={12}>
-               <Card
-                  className="cardSocials"
-                  cover={
-                     <div className="containerImageSocials">
-                        <img
-                           src={ModuleImagePlatforms.github}
-                           alt="Github Logo"
-                           className="imageSocials"
+   const { t } = useTranslation();
+   return (
+      <section style={{ width: "98%"}}>
+         <h2 className="profileTittles">{t("profile.professionalnetworks.title")}</h2>
+         <Row gutter={[32, 32]} justify="center" style={{ width: "100%", margin: 0 }}>
+            {
+               networksJSON.map((network) => (
+                  <Col
+                     xs={24}   // 1 card por fila en móvil
+                     sm={24}   // 1 card por fila en tablets pequeñas
+                     md={12}   // 2 cards por fila en PC y tablets grandes
+                     lg={12}
+                     xl={12}
+                     xxl={12}
+                     key={network.name}
+                  >
+                     <Card
+                        hoverable
+                        style={{ width: "100%", margin: "0 auto" , paddingTop: 10}}
+                        cover={
+                           <img
+                              alt="example"
+                              src={network.icon}
+                              style={{ width: "100%", height: 180, objectFit: "contain" }}
+                           />
+                        }
+                        actions={[
+                           <Button
+                              icon={
+                                 <FilePdfOutlined />
+                              }
+                              size="large"
+                              color="volcano"
+                              variant="link"
+                           >
+                              {t("profile.certificates.viewCertificate")}
+                           </Button>
+                        ]}
+                     >
+                        <Meta
+                           title={network.name}
+                           description={t("profile.professionalnetworks." + network.name + ".description")}
+                           style={{ color: "black"}}
                         />
-                     </div>
-                  }
-                  actions={[
-                     <a href="">
-                        Ir a Github
-                     </a>
-                  ]}
-               >
-                  <Meta
-                     title="AndrewLopezHerrera"
-                     description="Puedes observar los repositorios de los diferentes proyectos que he hecho en la carrera."
-                  />
-               </Card>
-            </Col>
-            <Col span={9} xs={24} sm={24} md={12} lg={12} xl={12}>
-               <Card
-                  className="cardSocials"
-                  cover={
-                     <div className="containerImageSocials">
-                        <img
-                           src={ModuleImagePlatforms.linkedin}
-                           alt="LinkedIn Logo"
-                           className="imageSocials"
-                        />
-                     </div>
-                  }
-                  actions={[
-                     <a href="www.linkedin.com/in/andrew-lopez-herrera-6630ab2a3">
-                        Ir a LinkedIn
-                     </a>
-                  ]}
-               >
-                  <Meta
-                     title="Andrew Lopez Herrera"
-                     description="Se puede ver el perfil profesional de LinkedIn, así como las habilidades que manejo."
-                  />
-               </Card>
-            </Col>
+                     </Card>
+                  </Col>
+               ))
+            }
          </Row>
       </section>
     );

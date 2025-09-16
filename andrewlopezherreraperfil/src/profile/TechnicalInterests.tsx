@@ -1,12 +1,17 @@
+import { useTranslation } from "react-i18next";
+
 const TechnicalInterests: React.FC = () => {
+    const { t } = useTranslation();
+
     return (
-        <section>
-            <h2 className="profileTittles">Intereses técnicos</h2>
+        <section style={{ width: '98%' }}>
+            <h2 className="profileTittles">{t("profile.technicalInterests.title")}</h2>
             <ul>
-                <li>Robótica en el ámbito de la medicina para mejorar la atención al paciente.</li>
-                <li>Creación de lenguajes de programación como una forma de conservar lenguas indígenas.</li>
-                <li>Inteligencia artificial como herramienta para la busqueda de nidos de tortugas para su preservación.</li>
-                <li>Internet de las cosas para automatizar procesos de los hogares así como proporcionarles información en tiempo real.</li>
+                {
+                    (t("profile.technicalInterests.list", { returnObjects: true }) as string[]).map((item: string, index: number) => (
+                        <li key={index}>{item}</li>
+                    ))
+                }
             </ul>
         </section>
     );

@@ -14,12 +14,12 @@ const Certificates : React.FC = () => {
             {
                certificatesJSON.map((certificate) => (
                   <Col
-                     xs={24}   // 1 card por fila en celular
-                     sm={12}   // 2 cards por fila en tablets
-                     md={8}    // 3 cards por fila en PC y pantallas grandes
-                     lg={8}
-                     xl={8}
-                     xxl={8}
+                     xs={24}   // 1 card por fila en móvil
+                     sm={24}   // 1 card por fila en tablets pequeñas
+                     md={12}   // 2 cards por fila en PC y tablets grandes
+                     lg={12}
+                     xl={12}
+                     xxl={12}
                      key={certificate.name}
                   >
                      <Card
@@ -34,10 +34,12 @@ const Certificates : React.FC = () => {
                         }
                         actions={[
                            <Button
-                              shape="round"
-                              href={certificate.pdf}
-                              icon={<FilePdfOutlined />}
-                              className="buttonViewCertificate"
+                              icon={
+                                 <FilePdfOutlined />
+                              }
+                              size="large"
+                              color="volcano"
+                              variant="link"
                            >
                               {t("profile.certificates.viewCertificate")}
                            </Button>
@@ -46,6 +48,7 @@ const Certificates : React.FC = () => {
                         <Meta
                            title={t("profile.certificates.courses." + certificate.name + ".title")}
                            description={t("profile.certificates.courses." + certificate.name + ".description")}
+                           style={{ color: "black"}}
                         />
                      </Card>
                   </Col>

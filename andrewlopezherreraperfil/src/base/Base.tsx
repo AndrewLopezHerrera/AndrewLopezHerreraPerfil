@@ -9,13 +9,13 @@ import {
   ProjectOutlined,
 } from '@ant-design/icons';
 import { Button, Layout, Menu, theme, Divider, Image, Radio } from 'antd';
-import "../App.css"
 import morning from '../assets/greetings/iconoManana.png';
 import afternoon from '../assets/greetings/iconoTarde.png';
 import night from '../assets/greetings/iconoNoche.png';
 import coffeeCup from '../assets/greetings/TazaCafeIcono.png';
 import { useNavigate } from 'react-router-dom';
 import i18n from "../i18n/i18n";
+import "../App.css"
 
 const { Header, Sider, Content } = Layout;
 
@@ -33,6 +33,20 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
   const getCollapsedWidth = () => {
     return window.matchMedia('(max-width: 767px)').matches ? 0 : 80;
   };
+
+  const allowColapse = () => {
+    const button = document.getElementById("buttonColapse");
+    if (window.matchMedia('(max-width: 767px)').matches) {
+      if (button) {
+      button.style.display = "inline-flex";
+    }
+      return true;
+    }
+    if (button) {
+      button.style.display = "none";
+    }
+    return false;
+  }
 
   const changeLanguage = (language: string) => {
     i18n.changeLanguage(language);
@@ -106,8 +120,7 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
     <Layout className='main_layout'>
       <Sider
         trigger={null}
-        collapsible
-        collapsed={collapsed}
+        collapsed={collapsed && allowColapse()}
         width={250}
         collapsedWidth={getCollapsedWidth()}
       >
@@ -148,10 +161,17 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
             },
           ]}
         />
+        <div>
+          <Radio.Group value={"small"} onChange={(e) => changeLanguage(e.target.value)}>
+            <Radio.Button value="es">{t("base.languageSpanish")}</Radio.Button>
+            <Radio.Button value="en">{t("base.languageEnglish")}</Radio.Button>
+          </Radio.Group>
+        </div>
       </Sider>
       <Layout>
         <Header style={{ background: colorBgContainer, fontSize: 'auto' }} className='main_header'>
           <Button
+            id='buttonColapse'
             type="text"
             icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
             onClick={() => setCollapsed(!collapsed)}
@@ -160,12 +180,6 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
               height: 64,
             }}
           />
-          <div>
-            <Radio.Group value={"small"} onChange={(e) => changeLanguage(e.target.value)}>
-              <Radio.Button value="es">{t("base.languageSpanish")}</Radio.Button>
-              <Radio.Button value="en">{t("base.languageEnglish")}</Radio.Button>
-            </Radio.Group>
-          </div>
           <div className={`greeting ${changeVisibility() ? '' : 'hidden'}`}>
             {greeting}
             <Image

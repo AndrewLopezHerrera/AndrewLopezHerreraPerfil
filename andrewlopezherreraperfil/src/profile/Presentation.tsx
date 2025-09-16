@@ -1,4 +1,3 @@
-import imageProfile from "../assets/profile/profile_image.jpg"
 import { useTranslation } from "react-i18next";
 
 const Presentation : React.FC = () => {
@@ -12,7 +11,7 @@ const Presentation : React.FC = () => {
                <div className="spacePresentationBar"/>
                <div className="containerPresentationImage">
                   <img
-                     src={imageProfile}
+                     src={"assets/profile/profile_image.jpg"}
                      className="presentationImage"
                   />
                </div>
