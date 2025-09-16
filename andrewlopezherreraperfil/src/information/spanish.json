@@ -89,48 +89,147 @@
     "universityProjects": {
         "title": "Proyectos Universitarios - Cursos",
         "viewProjects": "Ver Proyectos",
+        "nameCourse": "Nombre del curso",
+        "courseCode": "Código del curso",
+        "semester": "Semestre cursado",
+        "description": "Descripción del curso",
+        "line": "Línea del curso",
         "courses": {
             "computingArchitecture": {
                 "name": "Arquitectura de Computadores",
                 "courseCode": "IC3101",
+                "semester": "I Semestre 2023",
                 "description": "Curso en el que se estudia la arquitectura y organización de computadores, incluyendo temas como la representación de datos, el conjunto de instrucciones, la arquitectura del procesador, la memoria y los sistemas de entrada/salida.",
-                "line": "Ciencias de la Computación"
+                "line": "Ciencias de la Computación",
+                "projects": [
+                    {
+                        "name": "Battleship",
+                        "description": "Juego de hundir la flota implementado en lenguaje ensamblador ARM32.",
+                        "technologies": ["ARM32", "Assembly"],
+                        "id": "battleship"
+                    }
+                ]
             },
             "dataStructure" : {
                 "name": "Estructuras de Datos",
                 "courseCode": "IC2001",
+                "semester": "II Semestre 2022",
                 "description": "Curso que cubre los conceptos fundamentales de las estructuras de datos, incluyendo listas, pilas, colas, árboles y grafos, así como algoritmos para manipular estas estructuras.",
-                "line": "Ciencias de la Computación"
+                "line": "Ciencias de la Computación",
+                "projects": [
+                    {
+                        "name": "Librería XML",
+                        "description": "Librería en C++ para manipular archivos XML, incluyendo funciones para leer y modificar XML en memoria. Además se pueden hacer árboles binarios autobalanceados (AVL)",
+                        "technologies": ["C++", "XML", "g++", "Linux"],
+                        "id": "xmlLibrary"
+                    },
+                    {
+                        "name": "Visualizador de grafos",
+                        "description": "Aplicación de escritorio para visualizar grafos, matrices de adyacencia. Permite cargar grafos desde archivos de texto, crear grafos y mostrarlos gráficamente.",
+                        "technologies": ["C++", "Qt", "Linux"],
+                        "id": "graphViewer"
+                    }
+                ]
+                
             },
             "compilersAndInterpreters": {
                 "name": "Compiladores e Intérpretes",
                 "courseCode": "IC5701",
+                "semester": "I Semestre 2025",
                 "description": "Curso que introduce los conceptos y técnicas fundamentales para el diseño e implementación de compiladores e intérpretes, incluyendo análisis léxico, análisis sintáctico y generación de código.",
-                "line": "Ciencias de la Computación"
+                "line": "Ciencias de la Computación",
+                "projects": [
+                    {
+                        "name": "Compilador OLIAC",
+                        "description": "OLIAC es un lenguaje de programación inventado en el curso de Compiladores e Intérpretes. El compilador está implementado en Java con JavaCup y genera código en lenguaje ensamblador MIPS.",
+                        "technologies": ["Java", "JavaCup", "MIPS", "QtSpim", "Windows"],
+                        "id": "oliacCompiler"
+                    }
+                ]
             },
             "operatingSystemsPrinciples": {
                 "name": "Principios de Sistemas Operativos",
                 "courseCode": "IC6600",
+                "semester": "II Semestre 2025",
                 "description": "Curso que cubre los principios y conceptos fundamentales de los sistemas operativos, incluyendo la gestión de procesos, la gestión de memoria, el sistema de archivos y la seguridad.",
-                "line": "Ciencias de la Computación"
+                "line": "Ciencias de la Computación",
+                "projects": [
+                    {
+                        "name": "Simulador de planificación de procesos",
+                        "description": "Simulador en Java que implementa varios algoritmos de planificación de procesos, incluyendo FIFO, SJF, Round Robin y Multinivel.",
+                        "technologies": ["Java", "Swing", "Windows"],
+                        "id": "processSchedulerSimulator"
+                    }
+                ]
             },
             "introductionToWebPageDevelopment": {
                 "name": "Introducción al Desarrollo de Páginas Web",
                 "courseCode": "IC8057",
+                "semester": "II Semestre 2025",
                 "description": "Curso que introduce los conceptos y tecnologías fundamentales para el desarrollo de páginas web, incluyendo HTML, CSS, JavaScript y frameworks populares.",
-                "line": "Ingeniería de Software"
+                "line": "Ingeniería de Software",
+                "projects": [
+                    {
+                        "name": "Laboratorio 1 - Investigación en Markdown",
+                        "description": "Se debe investigar acerca de las características del desarrollo web moderno, así como las herramientas y tecnologías que se utilizan actualmente para el desarrollo web. El informe debe estar escrito en Markdown y debe incluir capturas de pantalla.",
+                        "technologies": ["Markdown"],
+                        "id": "lab1Markdown"
+                    },
+                    {
+                        "name": "Laboratorio 2 - Página Web Estática",
+                        "description": "Desarrollo de una página web estática utilizando HTML. La página debe contener únicamente la estructura HTML.",
+                        "technologies": ["HTML", "Netlify"],
+                        "id": "lab2StaticWebPage"
+                    },
+                    {
+                        "name": "Laboratorio 3 - Página Web Dinámica",
+                        "description": "La misma página del laboratorio 2, pero ahora utilizando CSS para el diseño y la maquetación de la página.",
+                        "technologies": ["HTML", "CSS", "Netlify"],
+                        "id": "lab3CSSWebPage"
+                    },
+                    {
+                        "name": "Laboratorio 4 - Cuestionario",
+                        "description": "Se debía contestar un cuestinario hecho por el profesor acerca del principio POUR, accesibilidad y la resolución de un caso con sprints.",
+                        "technologies": ["TEC Digital"],
+                        "id": "lab4Questionnaire"
+                    },
+                    {
+                        "name": "Laboratorio 5 - Página Web responsiva",
+                        "description": "La misma página del laboratorio 3, pero ahora utilizando media queries para que la página sea responsiva.",
+                        "technologies": ["HTML", "CSS", "Media Queries", "Netlify"],
+                        "id": "lab5ResponsiveWebPage"
+                    }
+                ]
             },
             "engineeringSoftwareProject": {
                 "name": "Proyecto de Ingeniería de Software",
                 "courseCode": "IC7841",
+                "semester": "I Semestre 2025",
                 "description": "Curso en el que se aplican todos los conceptos aprendidos en la carrera para desarrollar un proyecto de software completo, desde la planificación hasta la implementación y el mantenimiento.",
-                "line": "Ingeniería de Software"
+                "line": "Ingeniería de Software",
+                "projects":[
+                    {
+                        "name": "SRL GESTOCK",
+                        "description": "Sistema de gestión de inventarios y facturación desarrollado para la empresa SRL Technology. El sistema permite llevar un control de los productos, clientes y facturas, así como ingresar, modificar y eliminar productos y facturas.",
+                        "technologies": ["React", "Vite", "TypeScript", "Deno", "Oak", "PostgreSQL", "Tauri", "CSS", "Ant Design", "UpCloud", "Git", "GitHub", "SSH"],
+                        "id": "srlGestock"
+                    }
+                ]
             },
             "databasesII": {
                 "name": "Bases de Datos II",
                 "courseCode": "IC4302",
+                "semester": "II Semestre 2024",
                 "description": "Curso que cubre los conceptos avanzados de bases de datos, incluyendo diseño de bases de datos, SQL avanzado, transacciones y recuperación.",
-                "line": "Bases de datos"
+                "line": "Bases de datos",
+                "projects": [
+                    {
+                        "name": "Wide World Importers",
+                        "description": "Implementación de la base de datos Wide World Importers, que incluye tablas, relaciones, procedimientos almacenados, vistas e índices.",
+                        "technologies": ["SQLServer", "Management Studio", "Node.js", "Express", "TypeScript", "React", "Next.js", "CSS"],
+                        "id": "wideWorldImporters"
+                    }
+                ]
             }
         }
     }

@@ -8,14 +8,30 @@
   color: white !important;
 }
 
+.ant-layout-sider-children{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.main_sider{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .menu_uno {
   padding-top: 5%;
+  width: 100%1;
 }
 
 .main_header{
   padding-left: 1vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
 }
 
 .greeting {
@@ -45,4 +61,10 @@
 
 .ant-card-meta-description{
   color: black !important;  
+}
+
+@media (max-width: 768px) {
+  .main_header{
+    justify-content: space-between;
+  }
 }

@@ -1,23 +1,30 @@
 [
     {
-        "name": "computingArchitecture"
+        "name": "computingArchitecture",
+        "image": "assets/courses/computingArchitecture.png"
     },
     {
-        "name": "dataStructure"
+        "name": "dataStructure",
+        "image": "assets/courses/dataStructure.png"
     },
     {
-        "name": "compilersAndInterpreters"
+        "name": "compilersAndInterpreters",
+        "image": "assets/courses/compilersAndInterpreters.png"
     },
     {
-        "name": "operatingSystemsPrinciples"
+        "name": "operatingSystemsPrinciples",
+        "image": "assets/courses/operatingSystemsPrinciples.png"
     },
     {
-        "name": "introductionToWebPageDevelopment"
+        "name": "introductionToWebPageDevelopment",
+        "image": "assets/courses/introductionToWebPageDevelopment.png"
     },
     {
-        "name": "engineeringSoftwareProject"
+        "name": "engineeringSoftwareProject",
+        "image": "assets/courses/engineeringSoftwareProject.png"
     },
     {
-        "name": "databasesII"
+        "name": "databasesII",
+        "image": "assets/courses/databasesII.png"
     }
 ]

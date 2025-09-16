@@ -26,6 +26,7 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
   const [greeting, setGreeting] = useState<string>("");
   const [collapsed, setCollapsed] = useState(true);
   const [renderContent, setRenderContent] = useState<React.ReactNode>();
+  const [language, setLanguage] = useState<string>("es");
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
@@ -50,6 +51,7 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
 
   const changeLanguage = (language: string) => {
     i18n.changeLanguage(language);
+    setLanguage(language);
   }
 
   const [isMobile] = useState<boolean>(window.innerWidth <= 767);
@@ -107,6 +109,7 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
 
   useEffect(() => {
     setRenderContent(frame);
+    setLanguage(i18n.language);
     const interval = setInterval(() => {
       giveImageGreeting();
       giveGreeting();
@@ -123,46 +126,48 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
         collapsed={collapsed && allowColapse()}
         width={250}
         collapsedWidth={getCollapsedWidth()}
+        className='main_sider'
       >
-        <Menu
-          theme="dark"
-          mode="inline"
-          defaultSelectedKeys={['1']}
-          onClick={(e) => changeContent(e.key)}
-          className='menu_uno'
-          items={[
-            {
-              key: '1',
-              icon: <HomeOutlined />,
-              label: t("base.home"),
-            },
-          ]}
-        />
-        <Divider size="small" />
-        <Menu
-          theme="dark"
-          mode="inline"
-          onClick={(e) => changeContent(e.key)}
-          items={[
-            {
-              key: '2',
-              icon: <UserOutlined />,
-              label: t("base.profile"),
-            },
-            {
-              key: '3',
-              icon: <ProjectOutlined />,
-              label: t("base.universityProjects"),
-            },
-            {
-              key: '4',
-              icon: <SolutionOutlined />,
-              label: t("base.personalProjects"),
-            },
-          ]}
-        />
-        <div>
-          <Radio.Group value={"small"} onChange={(e) => changeLanguage(e.target.value)}>
+        <div style={{ width: "90%" }}>
+          <Menu
+            theme="dark"
+            mode="inline"
+            defaultSelectedKeys={['1']}
+            onClick={(e) => changeContent(e.key)}
+            className='menu_uno'
+            items={[
+              {
+                key: '1',
+                icon: <HomeOutlined />,
+                label: t("base.home"),
+              },
+            ]}
+          />
+          <Divider size="small" />
+          <Menu
+            theme="dark"
+            onClick={(e) => changeContent(e.key)}
+            items={[
+              {
+                key: '2',
+                icon: <UserOutlined />,
+                label: t("base.profile"),
+              },
+              {
+                key: '3',
+                icon: <ProjectOutlined />,
+                label: t("base.universityProjects"),
+              },
+              {
+                key: '4',
+                icon: <SolutionOutlined />,
+                label: t("base.personalProjects"),
+              },
+            ]}
+          />
+        </div>
+        <div style={{ bottom: 0, width: '100%', padding: '10px 0', textAlign: 'center' }}>
+          <Radio.Group value={language} onChange={(e) => changeLanguage(e.target.value)}>
             <Radio.Button value="es">{t("base.languageSpanish")}</Radio.Button>
             <Radio.Button value="en">{t("base.languageEnglish")}</Radio.Button>
           </Radio.Group>
@@ -192,12 +197,10 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
         </Header>
         <Content
           style={{
-            margin: '24px 16px',
-            padding: 24,
-            height: '90vh',
-            width: '95%',
-            background: colorBgContainer,
+            margin: 16,
+            backgroundColor: 'white',
             borderRadius: borderRadiusLG,
+            padding: 10
           }}
         >
           <div className={`div_content ${changeVisibility() ? '' : 'hidden'}`}>

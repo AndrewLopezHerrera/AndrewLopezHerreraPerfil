@@ -88,49 +88,147 @@
     },
     "universityProjects": {
         "title": "University Projects - Courses",
+        "nameCourse": "Course Name",
+        "courseCode": "Course Code",
+        "semester": "Semester Taken",
+        "description": "Course Description",
+        "line": "Course Line",
         "viewProjects": "View Projects",
         "courses": {
             "computingArchitecture": {
                 "name": "Arquitectura de Computadores",
                 "courseCode": "IC3101",
+                "semester": "I Semester 2023",
                 "description": "Course that studies the architecture and organization of computers, including topics such as data representation, instruction set, processor architecture, memory, and input/output systems.",
-                "line": "Computer Science"
+                "line": "Computer Science",
+                "projects": [
+                    {
+                        "name": "Simulador de Arquitectura de Computadores",
+                        "description": "Simulator developed in C++ that allows users to visualize and understand the functioning of a simple computer architecture, including instruction execution, memory management, and input/output operations.",
+                        "technologies": ["C++", "Qt", "Linux"],
+                        "id": "computerArchitectureSimulator"
+                    }
+                ]
             },
             "dataStructure": {
                 "name": "Estructuras de Datos",
                 "courseCode": "IC2001",
+                "semester": "II Semester 2022",
                 "description": "Course covering the fundamental concepts of data structures, including lists, stacks, queues, trees, and graphs, as well as algorithms to manipulate these structures.",
-                "line": "Computer Science"
+                "line": "Computer Science",
+                "projects": [
+                    {
+                        "name": "Librería XML",
+                        "description": "C++ library to manipulate XML files, including functions to read and modify XML in memory. It also supports creating self-balancing binary trees (AVL).",
+                        "technologies": ["C++", "XML", "g++", "Linux"],
+                        "id": "xmlLibrary"
+                    },
+                    {
+                        "name": "Graph Viewer",
+                        "description": "Desktop application to visualize graphs and adjacency matrices. It allows loading graphs from text files, creating graphs, and displaying them graphically.",
+                        "technologies": ["C++", "Qt", "Linux"],
+                        "id": "graphViewer"
+                    }
+                ]
             },
             "compilersAndInterpreters": {
                 "name": "Compiladores e Intérpretes",
                 "courseCode": "IC5701",
+                "semester": "I Semester 2025",
                 "description": "Course introducing the fundamental concepts and techniques for the design and implementation of compilers and interpreters, including lexical analysis, syntactic analysis, and code generation.",
-                "line": "Computer Science"
+                "line": "Computer Science",
+                "projects": [
+                    {
+                        "name": "OLIAC Compiler",
+                        "description": "OLIAC is a programming language invented in the Compilers and Interpreters course. The compiler is implemented in Java using JavaCup and generates code in MIPS assembly language.",
+                        "technologies": ["Java", "JavaCup", "MIPS", "QtSpim", "Windows"],
+                        "id": "oliacCompiler"
+                    }
+                ]
             },
             "operatingSystemsPrinciples": {
                 "name": "Principios de Sistemas Operativos",
                 "courseCode": "IC6600",
+                "semester": "II Semester 2025",
                 "description": "Course covering the fundamental principles and concepts of operating systems, including process management, memory management, file systems, and security.",
-                "line": "Computer Science"
+                "line": "Computer Science",
+                "projects": [
+                    {
+                        "name": "Process Scheduling Simulator",
+                        "description": "Java simulator that implements various process scheduling algorithms, including FIFO, SJF, Round Robin, and Multilevel.",
+                        "technologies": ["Java", "Swing", "Windows"],
+                        "id": "processSchedulerSimulator"
+                    }
+                ]
             },
             "introductionToWebPageDevelopment": {
                 "name": "Introducción al Desarrollo de Páginas Web",
                 "courseCode": "IC8057",
+                "semester": "II Semester 2025",
                 "description": "Course introducing the fundamental concepts and technologies for web page development, including HTML, CSS, JavaScript, and popular frameworks.",
-                "line": "Software Engineering"
+                "line": "Software Engineering",
+                "projects": [
+                    {
+                        "name": "Lab 1 - Research in Markdown",
+                        "description": "Research about the characteristics of modern web development, as well as the tools and technologies currently used for web development. The report must be written in Markdown and include screenshots.",
+                        "technologies": ["Markdown"],
+                        "id": "lab1Markdown"
+                    },
+                    {
+                        "name": "Lab 2 - Static Web Page",
+                        "description": "Development of a static web page using HTML. The page should only contain the HTML structure.",
+                        "technologies": ["HTML", "Netlify"],
+                        "id": "lab2StaticWebPage"
+                    },
+                    {
+                        "name": "Lab 3 - Dynamic Web Page",
+                        "description": "The same page from Lab 2, but now using CSS for the design and layout of the page.",
+                        "technologies": ["HTML", "CSS", "Netlify"],
+                        "id": "lab3CSSWebPage"
+                    },
+                    {
+                        "name": "Lab 4 - Questionnaire",
+                        "description": "A questionnaire created by the professor about the POUR principle, accessibility, and solving a case with sprints had to be answered.",
+                        "technologies": ["TEC Digital"],
+                        "id": "lab4Questionnaire"
+                    },
+                    {
+                        "name": "Lab 5 - Responsive Web Page",
+                        "description": "The same page from Lab 3, but now using media queries so that the page is responsive.",
+                        "technologies": ["HTML", "CSS", "Media Queries", "Netlify"],
+                        "id": "lab5ResponsiveWebPage"
+                    }
+                ]
             },
             "engineeringSoftwareProject": {
                 "name": "Proyecto de Ingeniería de Software",
                 "courseCode": "IC7841",
+                "semester": "I Semester 2025",
                 "description": "Course where all concepts learned during the degree are applied to develop a complete software project, from planning to implementation and maintenance.",
-                "line": "Software Engineering"
+                "line": "Software Engineering",
+                "projects": [
+                    {
+                        "name": "SRL GESTOCK",
+                        "description": "Inventory and billing management system developed for the company SRL Technology. The system allows controlling products, clients, and invoices, as well as entering, modifying, and deleting products and invoices.",
+                        "technologies": ["React", "Vite", "TypeScript", "Deno", "Oak", "PostgreSQL", "Tauri", "CSS", "Ant Design", "UpCloud", "Git", "GitHub", "SSH"],
+                        "id": "srlGestock"
+                    }
+                ]
             },
             "databasesII": {
                 "name": "Bases de Datos II",
                 "courseCode": "IC4302",
+                "semester": "II Semester 2024",
                 "description": "Course covering advanced database concepts, including database design, advanced SQL, transactions, and recovery.",
-                "line": "Databases"
+                "line": "Databases",
+                "projects": [
+                    {
+                        "name": "Wide World Importers",
+                        "description": "Implementation of the Wide World Importers database, which includes tables, relationships, stored procedures, views, and indexes.",
+                        "technologies": ["SQLServer", "Management Studio", "Node.js", "Express", "TypeScript", "React", "Next.js", "CSS"],
+                        "id": "wideWorldImporters"
+                    }
+                ]
             }
         }
     }

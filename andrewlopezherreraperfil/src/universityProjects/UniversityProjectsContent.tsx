@@ -1,32 +1,37 @@
-import { Button, Card, Col, Row } from "antd";
+import { Avatar, Button, Card, Col, List, Row } from "antd";
 import { EyeOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 import coursesJSON from "../information/courses.json";
-import Meta from "antd/es/card/Meta";
+import { useNavigate } from "react-router-dom";
 import "./UniversityProjects.css"
 
 const UniversityProjectsContent : React.FC = () => {
     const { t } = useTranslation();
+    const navigate = useNavigate();
     return (
         <section className="containerUniversityProjects">
             <h1>{t('universityProjects.title')}</h1>
-            <Row className="rowProjects" gutter={[48, 24]} justify={'space-around'}>
+            <Row className="rowProjects" gutter={[32, 32]} justify={'center'} style={{ width: "100%", margin: 0 }}>
                 {coursesJSON.map((course, index) => (
-                    <Col key={index} className="colProject">
+                    <Col
+                        xs={24}
+                        sm={12}
+                        md={8}
+                        lg={8}
+                        xl={8}
+                        key={course.name}
+                    >
                         <Card
                             hoverable
                             key={index}
                             style={{
-                                width: "100%",
-                                maxWidth: 300,
-                                minHeight: 380,
+                                minHeight: 570,
                                 display: "flex",
                                 flexDirection: "column",
-                                justifyContent: "space-between",
-                                borderColor: "#011528"
+                                justifyContent: "space-between"
                             }}
                             cover={
-                                <h2 style={{textAlign: "center"}}>
+                                <h2 style={{ textAlign: "center", marginTop: 16 }}>
                                     {t("universityProjects.courses." + course.name + ".name")}
                                 </h2>
                             }
@@ -35,15 +40,32 @@ const UniversityProjectsContent : React.FC = () => {
                                     icon={<EyeOutlined />}
                                     color="volcano"
                                     variant="link"
+                                    onClick={() => navigate(`/course/${course.name}`)}
                                 >
                                     {t("universityProjects.viewProjects")}
                                 </Button>    
                             ]}
                         >
-                            <Meta
-                                title={t("universityProjects.courses." + course.name + ".courseCode")}
-                                description={t("universityProjects.courses." + course.name + ".description")}
-                            />
+                            <List itemLayout="vertical">
+                                <List.Item>
+                                    <List.Item.Meta
+                                        title={t("universityProjects.courseCode")}
+                                        description={t("universityProjects.courses." + course.name + ".courseCode")}
+                                    />
+                                    <List.Item.Meta
+                                        title={t("universityProjects.line")}
+                                        description={t("universityProjects.courses." + course.name + ".line")}
+                                    />
+                                    <List.Item.Meta
+                                        title={t("universityProjects.semester")}
+                                        description={t("universityProjects.courses." + course.name + ".semester")}
+                                    />
+                                    <List.Item.Meta
+                                        title={t("universityProjects.description")}
+                                        description={t("universityProjects.courses." + course.name + ".description")}
+                                    />
+                                </List.Item>
+                            </List>
                         </Card>
                     </Col>
                 ))}
