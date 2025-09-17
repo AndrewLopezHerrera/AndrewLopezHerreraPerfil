@@ -1,235 +1,277 @@
 {
-    "home": {
-        "title": "Home",
-        "introduction": "Hello, I'm Andrew López Herrera. I'm a Computer Engineering student at the Limón Academic Center of the Costa Rica Institute of Technology. This is a professional portfolio designed to showcase my academic and professional activities. Here you will find both technical and soft skills, as well as personal and academic projects."
+  "home": {
+    "title": "Home",
+    "introduction": "Hello, I am Andrew López Herrera. I am a Computer Engineering student at the Limón Academic Center of the Costa Rica Institute of Technology. This is a professional portfolio designed to showcase my academic and professional activities. Here you will find both technical and soft skills, as well as personal and academic projects."
+  },
+  "base": {
+    "home": "Home",
+    "languageSpanish": "Spanish",
+    "languageEnglish": "English",
+    "greetingMorning": "Good morning",
+    "greetingAfternoon": "Good afternoon",
+    "greetingEvening": "Good evening",
+    "profile": "Profile",
+    "universityProjects": "University Projects",
+    "personalProjects": "Personal Projects"
+  },
+  "profile": {
+    "presentation": {
+      "title": "Biography",
+      "name": "Andrew López Herrera",
+      "biography": "I am a Computer Engineering student currently studying at the Limón Academic Center of the Costa Rica Institute of Technology. I really enjoy my career; I have always been fond of computers, so I did not hesitate much when choosing this path. I consider myself someone who adapts easily to changes, so working in different teams is not a problem for me. I am also very interested in topics such as compilers and interpreters, artificial intelligence, robotics, and cybersecurity. I am a person who often leads my peers to achieve a common goal, although I have no problem following a good leader who also guides me towards an objective."
     },
-    "base":{
-        "home": "Home",
-        "languageSpanish": "Español",
-        "languageEnglish": "English",
-        "greetingMorning": "Good morning",
-        "greetingAfternoon": "Good afternoon",
-        "greetingEvening": "Good evening",
-        "profile": "Profile",
-        "universityProjects": "University Projects",
-        "personalProjects": "Personal Projects"
+    "technicalknowledge": {
+      "title": "Technical Knowledge",
+      "programmingLanguages": {
+        "title": "Experience in Programming Languages"
+      },
+      "frameworks": {
+        "title": "Experience in Frameworks"
+      },
+      "databases": {
+        "title": "Experience in Databases"
+      },
+      "developmentBoards": {
+        "title": "Experience in Development Boards"
+      }
     },
-    "profile": {
-        "presentation": {
-            "title": "Biography",
-            "name": "Andrew López Herrera",
-            "biography": "I am a Computer Engineering student currently studying at the Limón Academic Center of the Costa Rica Institute of Technology. I really like the career I am pursuing; I have always had an affinity for computers, so I didn't hesitate much when entering this field. I consider myself a person who easily adapts to changes, so working in different teams is not a problem for me. Additionally, I am very interested in topics such as compilers and interpreters, artificial intelligence, robotics, and cybersecurity. I tend to lead my teammates to achieve a common goal, although I have no problem having a good leader who also guides me towards an objective."
+    "certificates": {
+      "title": "Certificates",
+      "viewCertificate": "View Certificate",
+      "courses": {
+        "programmingWorkshop": {
+          "title": "Programming Workshop",
+          "institute": "Costa Rica Institute of Technology",
+          "description": "Certified for tutoring the Programming Workshop course, taught at the Limón Academic Center of the Costa Rica Institute of Technology during the first semester of 2023."
         },
-        "technicalknowledge": {
-            "title": "Technical Knowledge",
-            "programmingLanguages": {
-                "title": "Programming Languages Experience"
-            },
-            "frameworks": {
-                "title": "Frameworks Experience"
-            },
-            "databases": {
-                "title": "Database Experience"
-            },
-            "developmentBoards": {
-                "title": "Development Boards Experience"
-            }
+        "introductionToProgramming": {
+          "title": "Introduction to Programming",
+          "institute": "Costa Rica Institute of Technology",
+          "description": "Certified for tutoring the Introduction to Programming course, taught at the Limón Academic Center of the Costa Rica Institute of Technology during the first semester of 2023."
         },
-        "certificates": {
-            "title": "Certificates",
-            "viewCertificate": "View Certificate",
-            "courses": {
-                "programmingWorkshop": {
-                    "title": "Taller de Programación",
-                    "institute": "Costa Rica Institute of Technology",
-                    "description": "Certificate for having tutored the Programming Workshop course, taught at the Limón Academic Center of the Costa Rica Institute of Technology during the first semester of 2023."
-                },
-                "introductionToProgramming": {
-                    "title": "Introducción a la Programación",
-                    "institute": "Costa Rica Institute of Technology",
-                    "description": "Certificate for having tutored the Introducción a la Programación course, taught at the Limón Academic Center of the Costa Rica Institute of Technology during the first semester of 2023."
-                },
-                "computingElements": {
-                    "title": "Elementos de Computación",
-                    "institute": "Costa Rica Institute of Technology",
-                    "description": "Certificate for having tutored the Elementos de Computación course, taught at the Limón Academic Center of the Costa Rica Institute of Technology during the first semester of 2024."
-                },
-                "attentionToEmotionalAndAcademicNeeds": {
-                    "title": "Atención a las Necesidades Emocionales y Académicas",
-                    "institute": "Costa Rica Institute of Technology",
-                    "description": "Certificate for having participated in the training \"Attention to Emotional and Academic Needs,\" taught at the Costa Rica Institute of Technology."
-                }
-            }
+        "computingElements": {
+          "title": "Computing Elements",
+          "institute": "Costa Rica Institute of Technology",
+          "description": "Certified for tutoring the Computing Elements course, taught at the Limón Academic Center of the Costa Rica Institute of Technology during the first semester of 2024."
         },
-        "professionalnetworks": {
-            "title": "Professional Networks",
-            "LinkedIn": {
-                "description": "Connect with me on LinkedIn to explore professional opportunities and share knowledge.",
-                "viewNetwork": "View LinkedIn"
-            },
-            "GitHub": {
-                "description": "Visit my GitHub profile to see my projects and contributions to open source.",
-                "viewNetwork": "View GitHub"
-            }
-        },
-        "technicalInterests": {
-            "title": "Technical Interests",
-            "list": [
-                "Robotics in the medical field to improve patient care.",
-                "Creating programming languages as a way to preserve indigenous languages.",
-                "Artificial intelligence as a tool for finding turtle nests for preservation.",
-                "Internet of Things to automate home processes and provide real-time information, such as weather updates for laundry."
-            ]
-        },
-        "curriculumVitae": {
-            "title": "Curriculum Vitae",
-            "viewCV": "View CV"
+        "attentionToEmotionalAndAcademicNeeds": {
+          "title": "Attention to Emotional and Academic Needs",
+          "institute": "Costa Rica Institute of Technology",
+          "description": "Certified for participating in the training 'Attention to Emotional and Academic Needs', held at the Costa Rica Institute of Technology."
         }
+      }
     },
-    "universityProjects": {
-        "title": "University Projects - Courses",
-        "nameCourse": "Course Name",
-        "courseCode": "Course Code",
-        "semester": "Semester Taken",
-        "description": "Course Description",
-        "line": "Course Line",
-        "viewProjects": "View Projects",
-        "courses": {
-            "computingArchitecture": {
-                "name": "Arquitectura de Computadores",
-                "courseCode": "IC3101",
-                "semester": "I Semester 2023",
-                "description": "Course that studies the architecture and organization of computers, including topics such as data representation, instruction set, processor architecture, memory, and input/output systems.",
-                "line": "Computer Science",
-                "projects": [
-                    {
-                        "name": "Simulador de Arquitectura de Computadores",
-                        "description": "Simulator developed in C++ that allows users to visualize and understand the functioning of a simple computer architecture, including instruction execution, memory management, and input/output operations.",
-                        "technologies": ["C++", "Qt", "Linux"],
-                        "id": "computerArchitectureSimulator"
-                    }
-                ]
-            },
-            "dataStructure": {
-                "name": "Estructuras de Datos",
-                "courseCode": "IC2001",
-                "semester": "II Semester 2022",
-                "description": "Course covering the fundamental concepts of data structures, including lists, stacks, queues, trees, and graphs, as well as algorithms to manipulate these structures.",
-                "line": "Computer Science",
-                "projects": [
-                    {
-                        "name": "Librería XML",
-                        "description": "C++ library to manipulate XML files, including functions to read and modify XML in memory. It also supports creating self-balancing binary trees (AVL).",
-                        "technologies": ["C++", "XML", "g++", "Linux"],
-                        "id": "xmlLibrary"
-                    },
-                    {
-                        "name": "Graph Viewer",
-                        "description": "Desktop application to visualize graphs and adjacency matrices. It allows loading graphs from text files, creating graphs, and displaying them graphically.",
-                        "technologies": ["C++", "Qt", "Linux"],
-                        "id": "graphViewer"
-                    }
-                ]
-            },
-            "compilersAndInterpreters": {
-                "name": "Compiladores e Intérpretes",
-                "courseCode": "IC5701",
-                "semester": "I Semester 2025",
-                "description": "Course introducing the fundamental concepts and techniques for the design and implementation of compilers and interpreters, including lexical analysis, syntactic analysis, and code generation.",
-                "line": "Computer Science",
-                "projects": [
-                    {
-                        "name": "OLIAC Compiler",
-                        "description": "OLIAC is a programming language invented in the Compilers and Interpreters course. The compiler is implemented in Java using JavaCup and generates code in MIPS assembly language.",
-                        "technologies": ["Java", "JavaCup", "MIPS", "QtSpim", "Windows"],
-                        "id": "oliacCompiler"
-                    }
-                ]
-            },
-            "operatingSystemsPrinciples": {
-                "name": "Principios de Sistemas Operativos",
-                "courseCode": "IC6600",
-                "semester": "II Semester 2025",
-                "description": "Course covering the fundamental principles and concepts of operating systems, including process management, memory management, file systems, and security.",
-                "line": "Computer Science",
-                "projects": [
-                    {
-                        "name": "Process Scheduling Simulator",
-                        "description": "Java simulator that implements various process scheduling algorithms, including FIFO, SJF, Round Robin, and Multilevel.",
-                        "technologies": ["Java", "Swing", "Windows"],
-                        "id": "processSchedulerSimulator"
-                    }
-                ]
-            },
-            "introductionToWebPageDevelopment": {
-                "name": "Introducción al Desarrollo de Páginas Web",
-                "courseCode": "IC8057",
-                "semester": "II Semester 2025",
-                "description": "Course introducing the fundamental concepts and technologies for web page development, including HTML, CSS, JavaScript, and popular frameworks.",
-                "line": "Software Engineering",
-                "projects": [
-                    {
-                        "name": "Lab 1 - Research in Markdown",
-                        "description": "Research about the characteristics of modern web development, as well as the tools and technologies currently used for web development. The report must be written in Markdown and include screenshots.",
-                        "technologies": ["Markdown"],
-                        "id": "lab1Markdown"
-                    },
-                    {
-                        "name": "Lab 2 - Static Web Page",
-                        "description": "Development of a static web page using HTML. The page should only contain the HTML structure.",
-                        "technologies": ["HTML", "Netlify"],
-                        "id": "lab2StaticWebPage"
-                    },
-                    {
-                        "name": "Lab 3 - Dynamic Web Page",
-                        "description": "The same page from Lab 2, but now using CSS for the design and layout of the page.",
-                        "technologies": ["HTML", "CSS", "Netlify"],
-                        "id": "lab3CSSWebPage"
-                    },
-                    {
-                        "name": "Lab 4 - Questionnaire",
-                        "description": "A questionnaire created by the professor about the POUR principle, accessibility, and solving a case with sprints had to be answered.",
-                        "technologies": ["TEC Digital"],
-                        "id": "lab4Questionnaire"
-                    },
-                    {
-                        "name": "Lab 5 - Responsive Web Page",
-                        "description": "The same page from Lab 3, but now using media queries so that the page is responsive.",
-                        "technologies": ["HTML", "CSS", "Media Queries", "Netlify"],
-                        "id": "lab5ResponsiveWebPage"
-                    }
-                ]
-            },
-            "engineeringSoftwareProject": {
-                "name": "Proyecto de Ingeniería de Software",
-                "courseCode": "IC7841",
-                "semester": "I Semester 2025",
-                "description": "Course where all concepts learned during the degree are applied to develop a complete software project, from planning to implementation and maintenance.",
-                "line": "Software Engineering",
-                "projects": [
-                    {
-                        "name": "SRL GESTOCK",
-                        "description": "Inventory and billing management system developed for the company SRL Technology. The system allows controlling products, clients, and invoices, as well as entering, modifying, and deleting products and invoices.",
-                        "technologies": ["React", "Vite", "TypeScript", "Deno", "Oak", "PostgreSQL", "Tauri", "CSS", "Ant Design", "UpCloud", "Git", "GitHub", "SSH"],
-                        "id": "srlGestock"
-                    }
-                ]
-            },
-            "databasesII": {
-                "name": "Bases de Datos II",
-                "courseCode": "IC4302",
-                "semester": "II Semester 2024",
-                "description": "Course covering advanced database concepts, including database design, advanced SQL, transactions, and recovery.",
-                "line": "Databases",
-                "projects": [
-                    {
-                        "name": "Wide World Importers",
-                        "description": "Implementation of the Wide World Importers database, which includes tables, relationships, stored procedures, views, and indexes.",
-                        "technologies": ["SQLServer", "Management Studio", "Node.js", "Express", "TypeScript", "React", "Next.js", "CSS"],
-                        "id": "wideWorldImporters"
-                    }
-                ]
-            }
-        }
+    "professionalnetworks": {
+      "title": "Professional Networks",
+      "LinkedIn": {
+        "description": "Connect with me on LinkedIn to explore professional opportunities and share knowledge.",
+        "viewNetwork": "View LinkedIn"
+      },
+      "GitHub": {
+        "description": "Visit my GitHub profile to see my projects and open-source contributions.",
+        "viewNetwork": "View GitHub"
+      }
+    },
+    "technicalInterests": {
+      "title": "Technical Interests",
+      "list": [
+        "Robotics in the medical field to improve patient care.",
+        "Creating programming languages as a way to preserve indigenous languages.",
+        "Artificial intelligence as a tool for finding turtle nests for their preservation.",
+        "Internet of Things to automate home processes and provide real-time information, for example, weather updates for hanging clothes."
+      ]
+    },
+    "curriculumVitae": {
+      "title": "Curriculum Vitae",
+      "viewCV": "View CV"
     }
+  },
+  "universityProjects": {
+    "title": "University Projects - Courses",
+    "viewProjects": "View Projects",
+    "nameCourse": "Course Name",
+    "courseCode": "Course Code",
+    "semester": "Semester Taken",
+    "description": "Course Description",
+    "line": "Course Area",
+    "viewRepository": "View Repository",
+    "viewFunction": "View Functionality",
+    "type": "Evaluation Type",
+    "dueDate": "Due Date",
+    "projectDescription": "Project Description",
+    "technologies": "Technologies Used",
+    "repository": "Repository",
+    "functionality": "Functionality",
+    "courses": {
+      "computingArchitecture": {
+        "name": "Computer Architecture",
+        "courseCode": "IC3101",
+        "semester": "First Semester 2023",
+        "description": "Course covering the architecture and organization of computers, including topics such as data representation, instruction set, processor architecture, memory, and input/output systems.",
+        "line": "Computer Science",
+        "projects": [
+          {
+            "name": "Battleship",
+            "type": "Project",
+            "dueDate": "May 21, 2023",
+            "description": "Battleship game implemented in ARM32 assembly language.",
+            "technologies": ["ARM32", "Assembly"],
+            "git": "https://git.mora.co.cr/andrewlopezherrera/battleship.git",
+            "id": "battleship"
+          }
+        ]
+      },
+      "dataStructure": {
+        "name": "Data Structures",
+        "courseCode": "IC2001",
+        "semester": "Second Semester 2022",
+        "description": "Course covering the fundamental concepts of data structures, including lists, stacks, queues, trees, and graphs, as well as algorithms to manipulate these structures.",
+        "line": "Computer Science",
+        "projects": [
+          {
+            "name": "XML Library",
+            "type": "Project",
+            "dueDate": "October 20, 2022",
+            "description": "C++ library for manipulating XML files, including functions to read and modify XML in memory. Also supports self-balancing binary trees (AVL).",
+            "technologies": ["C++", "XML", "g++", "Linux"],
+            "git": "https://git.mora.co.cr/andrewlopezherrera/iiproyecto-estructuras-de-datos.git",
+            "id": "xmlLibrary"
+          },
+          {
+            "name": "Graph Viewer",
+            "type": "Project",
+            "dueDate": "November 24, 2022",
+            "description": "Desktop application to visualize graphs and adjacency matrices. Allows loading graphs from text files, creating graphs, and displaying them graphically.",
+            "technologies": ["C++", "Qt", "Linux"],
+            "git": "https://git.mora.co.cr/andrewlopezherrera/proyecto-iii-estructuras-de-datos.git",
+            "id": "graphViewer"
+          }
+        ]
+      },
+      "compilersAndInterpreters": {
+        "name": "Compilers and Interpreters",
+        "courseCode": "IC5701",
+        "semester": "First Semester 2025",
+        "description": "Course introducing the fundamental concepts and techniques for designing and implementing compilers and interpreters, including lexical analysis, syntax analysis, and code generation.",
+        "line": "Computer Science",
+        "projects": [
+          {
+            "name": "OLIAC Compiler",
+            "type": "Project",
+            "dueDate": "June 28, 2025",
+            "description": "OLIAC is a programming language invented in the Compilers and Interpreters course. The compiler is implemented in Java with JavaCup and generates MIPS assembly code.",
+            "technologies": ["Java", "JavaCup", "MIPS", "QtSpim", "Windows"],
+            "git": "https://git.mora.co.cr/andrewlopezherrera/oliac-compiler.git",
+            "id": "oliacCompiler"
+          }
+        ]
+      },
+      "operatingSystemsPrinciples": {
+        "name": "Operating Systems Principles",
+        "courseCode": "IC6600",
+        "semester": "Second Semester 2025",
+        "description": "Course covering the fundamental principles and concepts of operating systems, including process management, memory management, file systems, and security.",
+        "line": "Computer Science",
+        "projects": [
+          {
+            "name": "Process Scheduler Simulator",
+            "type": "Assignment",
+            "dueDate": "September 8, 2025",
+            "description": "Java simulator implementing various process scheduling algorithms, including FIFO, SJF, Round Robin, and Multilevel.",
+            "technologies": ["Java", "Swing", "Windows"],
+            "git": "https://github.com/AndrewLopezHerrera/MiniPCVirtualTarea1.git",
+            "id": "processSchedulerSimulator"
+          }
+        ]
+      },
+      "introductionToWebPageDevelopment": {
+        "name": "Introduction to Web Page Development",
+        "courseCode": "IC8057",
+        "semester": "Second Semester 2025",
+        "description": "Course introducing the fundamental concepts and technologies for web development, including HTML, CSS, JavaScript, and popular frameworks.",
+        "line": "Software Engineering",
+        "projects": [
+          {
+            "name": "Lab 1 - Markdown Research",
+            "type": "Lab",
+            "dueDate": "August 10, 2024",
+            "description": "Research on the features of modern web development, as well as the tools and technologies currently used. The report must be written in Markdown and include screenshots.",
+            "technologies": ["Markdown"],
+            "git": "https://github.com/AndrewLopezHerrera/desarrollo-moderno-Andrew.git",
+            "id": "lab1Markdown"
+          },
+          {
+            "name": "Lab 2 - Static Web Page",
+            "type": "Lab",
+            "dueDate": "August 16, 2024",
+            "description": "Development of a static web page using HTML. The page should only contain the HTML structure.",
+            "technologies": ["HTML", "Netlify"],
+            "id": "lab2StaticWebPage"
+          },
+          {
+            "name": "Lab 3 - Dynamic Web Page",
+            "type": "Lab",
+            "dueDate": "August 25, 2024",
+            "description": "The same page from Lab 2, but now using CSS for design and layout.",
+            "technologies": ["HTML", "CSS", "Netlify"],
+            "git": "https://github.com/AndrewLopezHerrera/Laboratorio2PaginasWeb/tree/lab3-selectores-boxmodel",
+            "id": "lab3CSSWebPage"
+          },
+          {
+            "name": "Lab 4 - Questionnaire",
+            "type": "Lab",
+            "dueDate": "August 29, 2024",
+            "description": "A questionnaire made by the professor about the POUR principle, accessibility, and solving a case with sprints.",
+            "technologies": ["TEC Digital"],
+            "id": "lab4Questionnaire"
+          },
+          {
+            "name": "Lab 5 - Responsive Web Page",
+            "type": "Lab",
+            "dueDate": "September 7, 2024",
+            "description": "The same page from Lab 3, but now using media queries to make the page responsive.",
+            "technologies": ["HTML", "CSS", "Media Queries", "Netlify"],
+            "git": "https://github.com/AndrewLopezHerrera/Laboratorio2PaginasWeb.git",
+            "id": "lab5ResponsiveWebPage"
+          }
+        ]
+      },
+      "engineeringSoftwareProject": {
+        "name": "Software Engineering Project",
+        "courseCode": "IC7841",
+        "semester": "First Semester 2025",
+        "description": "Course where all the concepts learned throughout the degree are applied to develop a complete software project, from planning to implementation and maintenance.",
+        "line": "Software Engineering",
+        "projects": [
+          {
+            "name": "SRL GESTOCK",
+            "type": "Project",
+            "dueDate": "December 15, 2024",
+            "description": "Inventory and billing management system developed for SRL Technology. The system allows control of products, clients, and invoices, as well as adding, modifying, and deleting products and invoices.",
+            "technologies": ["React", "Vite", "TypeScript", "Deno", "Oak", "PostgreSQL", "Tauri", "CSS", "Ant Design", "UpCloud", "Git", "GitHub", "SSH"],
+            "git": "https://github.com/AndrewLopezHerrera/SRLGestock.git",
+            "id": "srlGestock"
+          }
+        ]
+      },
+      "databasesII": {
+        "name": "Databases II",
+        "courseCode": "IC4302",
+        "semester": "Second Semester 2024",
+        "description": "Course covering advanced database concepts, including database design, advanced SQL, transactions, and recovery.",
+        "line": "Databases",
+        "projects": [
+          {
+            "name": "Wide World Importers",
+            "type": "Project",
+            "dueDate": "November 3, 2024",
+            "description": "Implementation of the Wide World Importers database, including tables, relationships, stored procedures, views, and indexes.",
+            "technologies": ["SQLServer", "Management Studio", "Node.js", "Express", "TypeScript", "React", "Next.js", "CSS"],
+            "git": "https://github.com/AndrewLopezHerrera/Prueba-Aseguramiento",
+            "id": "wideWorldImporters"
+          }
+        ]
+      }
+    }
+  }
 }

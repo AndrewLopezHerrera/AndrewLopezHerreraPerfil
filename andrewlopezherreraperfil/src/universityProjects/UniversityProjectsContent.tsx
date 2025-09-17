@@ -1,4 +1,4 @@
-import { Avatar, Button, Card, Col, List, Row } from "antd";
+import { Button, Card, Col, List, Row } from "antd";
 import { EyeOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 import coursesJSON from "../information/courses.json";
@@ -16,8 +16,8 @@ const UniversityProjectsContent : React.FC = () => {
                     <Col
                         xs={24}
                         sm={12}
-                        md={8}
-                        lg={8}
+                        md={12}
+                        lg={12}
                         xl={8}
                         key={course.name}
                     >

@@ -94,6 +94,14 @@
         "semester": "Semestre cursado",
         "description": "Descripción del curso",
         "line": "Línea del curso",
+        "viewRepository": "Ver Repositorio",
+        "viewFunction": "Ver Funcionalidad",
+        "type": "Tipo de evaluación",
+        "dueDate": "Fecha de entrega",
+        "projectDescription": "Descripción del proyecto",
+        "technologies": "Tecnologías utilizadas",
+        "repository": "Repositorio",
+        "functionality": "Funcionalidad",
         "courses": {
             "computingArchitecture": {
                 "name": "Arquitectura de Computadores",
@@ -104,8 +112,11 @@
                 "projects": [
                     {
                         "name": "Battleship",
+                        "type": "Proyecto",
+                        "dueDate": "21 de mayo del 2023",
                         "description": "Juego de hundir la flota implementado en lenguaje ensamblador ARM32.",
                         "technologies": ["ARM32", "Assembly"],
+                        "git": "https://git.mora.co.cr/andrewlopezherrera/battleship.git",
                         "id": "battleship"
                     }
                 ]
@@ -119,14 +130,20 @@
                 "projects": [
                     {
                         "name": "Librería XML",
+                        "type": "Proyecto",
+                        "dueDate": "20 de octubre del 2022",
                         "description": "Librería en C++ para manipular archivos XML, incluyendo funciones para leer y modificar XML en memoria. Además se pueden hacer árboles binarios autobalanceados (AVL)",
                         "technologies": ["C++", "XML", "g++", "Linux"],
+                        "git": "https://git.mora.co.cr/andrewlopezherrera/iiproyecto-estructuras-de-datos.git",
                         "id": "xmlLibrary"
                     },
                     {
                         "name": "Visualizador de grafos",
+                        "type": "Proyecto",
+                        "dueDate": "24 de noviembre del 2022",
                         "description": "Aplicación de escritorio para visualizar grafos, matrices de adyacencia. Permite cargar grafos desde archivos de texto, crear grafos y mostrarlos gráficamente.",
                         "technologies": ["C++", "Qt", "Linux"],
+                        "git": "https://git.mora.co.cr/andrewlopezherrera/proyecto-iii-estructuras-de-datos.git",
                         "id": "graphViewer"
                     }
                 ]
@@ -141,8 +158,11 @@
                 "projects": [
                     {
                         "name": "Compilador OLIAC",
+                        "type": "Proyecto",
+                        "dueDate": "28 de junio del 2025",
                         "description": "OLIAC es un lenguaje de programación inventado en el curso de Compiladores e Intérpretes. El compilador está implementado en Java con JavaCup y genera código en lenguaje ensamblador MIPS.",
                         "technologies": ["Java", "JavaCup", "MIPS", "QtSpim", "Windows"],
+                        "git": "https://github.com/AndrewLopezHerrera/IProyectoCompiladoresEInterpretes.git",
                         "id": "oliacCompiler"
                     }
                 ]
@@ -156,8 +176,11 @@
                 "projects": [
                     {
                         "name": "Simulador de planificación de procesos",
+                        "type": "Tarea",
+                        "dueDate": "8 de setiembre del 2025",
                         "description": "Simulador en Java que implementa varios algoritmos de planificación de procesos, incluyendo FIFO, SJF, Round Robin y Multinivel.",
                         "technologies": ["Java", "Swing", "Windows"],
+                        "git": "https://github.com/AndrewLopezHerrera/MiniPCVirtualTarea1.git",
                         "id": "processSchedulerSimulator"
                     }
                 ]
@@ -171,32 +194,45 @@
                 "projects": [
                     {
                         "name": "Laboratorio 1 - Investigación en Markdown",
+                        "type": "Laboratorio",
+                        "dueDate": "10 de agosto del 2024",
                         "description": "Se debe investigar acerca de las características del desarrollo web moderno, así como las herramientas y tecnologías que se utilizan actualmente para el desarrollo web. El informe debe estar escrito en Markdown y debe incluir capturas de pantalla.",
                         "technologies": ["Markdown"],
+                        "git": "https://github.com/AndrewLopezHerrera/desarrollo-moderno-Andrew.git",
                         "id": "lab1Markdown"
                     },
                     {
                         "name": "Laboratorio 2 - Página Web Estática",
+                        "type": "Laboratorio",
+                        "dueDate": "16 de agosto del 2024",
                         "description": "Desarrollo de una página web estática utilizando HTML. La página debe contener únicamente la estructura HTML.",
                         "technologies": ["HTML", "Netlify"],
                         "id": "lab2StaticWebPage"
                     },
                     {
                         "name": "Laboratorio 3 - Página Web Dinámica",
+                        "type": "Laboratorio",
+                        "dueDate": "25 de agosto del 2024",
                         "description": "La misma página del laboratorio 2, pero ahora utilizando CSS para el diseño y la maquetación de la página.",
                         "technologies": ["HTML", "CSS", "Netlify"],
+                        "git": "https://github.com/AndrewLopezHerrera/Laboratorio2PaginasWeb/tree/lab3-selectores-boxmodel",
                         "id": "lab3CSSWebPage"
                     },
                     {
                         "name": "Laboratorio 4 - Cuestionario",
+                        "type": "Laboratorio",
+                        "dueDate": "29 de agosto del 2024",
                         "description": "Se debía contestar un cuestinario hecho por el profesor acerca del principio POUR, accesibilidad y la resolución de un caso con sprints.",
                         "technologies": ["TEC Digital"],
                         "id": "lab4Questionnaire"
                     },
                     {
                         "name": "Laboratorio 5 - Página Web responsiva",
+                        "type": "Laboratorio",
+                        "dueDate": "7 de setiembre del 2024",
                         "description": "La misma página del laboratorio 3, pero ahora utilizando media queries para que la página sea responsiva.",
                         "technologies": ["HTML", "CSS", "Media Queries", "Netlify"],
+                        "git": "https://github.com/AndrewLopezHerrera/Laboratorio2PaginasWeb.git",
                         "id": "lab5ResponsiveWebPage"
                     }
                 ]
@@ -210,8 +246,11 @@
                 "projects":[
                     {
                         "name": "SRL GESTOCK",
+                        "type": "Proyecto",
+                        "dueDate": "15 de diciembre del 2024",
                         "description": "Sistema de gestión de inventarios y facturación desarrollado para la empresa SRL Technology. El sistema permite llevar un control de los productos, clientes y facturas, así como ingresar, modificar y eliminar productos y facturas.",
                         "technologies": ["React", "Vite", "TypeScript", "Deno", "Oak", "PostgreSQL", "Tauri", "CSS", "Ant Design", "UpCloud", "Git", "GitHub", "SSH"],
+                        "git": "https://github.com/AndrewLopezHerrera/SRLGestock.git",
                         "id": "srlGestock"
                     }
                 ]
@@ -225,8 +264,11 @@
                 "projects": [
                     {
                         "name": "Wide World Importers",
+                        "type": "Proyecto",
+                        "dueDate": "3 de noviembre del 2024",
                         "description": "Implementación de la base de datos Wide World Importers, que incluye tablas, relaciones, procedimientos almacenados, vistas e índices.",
                         "technologies": ["SQLServer", "Management Studio", "Node.js", "Express", "TypeScript", "React", "Next.js", "CSS"],
+                        "git": "https://github.com/AndrewLopezHerrera/Prueba-Aseguramiento",
                         "id": "wideWorldImporters"
                     }
                 ]

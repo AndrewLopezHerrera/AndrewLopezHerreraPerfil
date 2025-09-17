@@ -27,34 +27,43 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
   const [collapsed, setCollapsed] = useState(true);
   const [renderContent, setRenderContent] = useState<React.ReactNode>();
   const [language, setLanguage] = useState<string>("es");
+  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 767);
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
 
-  const getCollapsedWidth = () => {
-    return window.matchMedia('(max-width: 767px)').matches ? 0 : 80;
-  };
+  // Escucha cambios de tamaño para modo móvil
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 767px)');
+    const handler = (e: MediaQueryListEvent) => {
+      setIsMobile(e.matches);
+    };
+    // Compatibilidad con navegadores antiguos
+    if (mediaQuery.addEventListener) {
+      mediaQuery.addEventListener('change', handler);
+    } else {
+      mediaQuery.addListener(handler);
+    }
+    setIsMobile(mediaQuery.matches);
+    return () => {
+      if (mediaQuery.removeEventListener) {
+        mediaQuery.removeEventListener('change', handler);
+      } else {
+        mediaQuery.removeListener(handler);
+      }
+    };
+  }, []);
 
-  const allowColapse = () => {
-    const button = document.getElementById("buttonColapse");
-    if (window.matchMedia('(max-width: 767px)').matches) {
-      if (button) {
-      button.style.display = "inline-flex";
+  useEffect(() => {
+    if (!isMobile) {
+      setCollapsed(false);
     }
-      return true;
-    }
-    if (button) {
-      button.style.display = "none";
-    }
-    return false;
-  }
+  }, [isMobile]);
 
   const changeLanguage = (language: string) => {
     i18n.changeLanguage(language);
     setLanguage(language);
   }
-
-  const [isMobile] = useState<boolean>(window.innerWidth <= 767);
 
   const changeContent = (key: string) => {
     switch (key) {
@@ -77,11 +86,9 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
   }
 
   const changeVisibility = () => {
-    if(!isMobile || (isMobile && collapsed)) {
-      return true;
-    } 
-    return false;
-  }
+    if (!isMobile) return true; // Desktop siempre visible
+    return collapsed; // En móvil, solo visible cuando el sider está colapsado
+  };
 
   const giveImageGreeting = () : void => {
     const currentHour = new Date().getHours();
@@ -123,9 +130,9 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
     <Layout className='main_layout'>
       <Sider
         trigger={null}
-        collapsed={collapsed && allowColapse()}
+        collapsed={isMobile ? collapsed : false}
         width={250}
-        collapsedWidth={getCollapsedWidth()}
+        collapsedWidth={0}
         className='main_sider'
       >
         <div style={{ width: "90%" }}>
@@ -157,12 +164,7 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
                 key: '3',
                 icon: <ProjectOutlined />,
                 label: t("base.universityProjects"),
-              },
-              {
-                key: '4',
-                icon: <SolutionOutlined />,
-                label: t("base.personalProjects"),
-              },
+              }
             ]}
           />
         </div>
@@ -175,16 +177,18 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
       </Sider>
       <Layout>
         <Header style={{ background: colorBgContainer, fontSize: 'auto' }} className='main_header'>
-          <Button
-            id='buttonColapse'
-            type="text"
-            icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-            onClick={() => setCollapsed(!collapsed)}
-            style={{
-              width: 64,
-              height: 64,
-            }}
-          />
+          {isMobile && (
+            <Button
+              id='buttonColapse'
+              type="text"
+              icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+              onClick={() => setCollapsed(!collapsed)}
+              style={{
+                width: 64,
+                height: 64,
+              }}
+            />
+          )}
           <div className={`greeting ${changeVisibility() ? '' : 'hidden'}`}>
             {greeting}
             <Image
