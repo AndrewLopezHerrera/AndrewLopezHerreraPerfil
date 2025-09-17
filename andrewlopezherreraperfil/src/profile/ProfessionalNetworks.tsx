@@ -40,8 +40,9 @@ const ProfessionalNetworks : React.FC = () => {
                               size="large"
                               color="volcano"
                               variant="link"
+                              onClick={() => window.open(network.url, "_blank")}
                            >
-                              {t("profile.certificates.viewCertificate")}
+                              {t("profile.professionalnetworks.viewNetwork")}
                            </Button>
                         ]}
                      >

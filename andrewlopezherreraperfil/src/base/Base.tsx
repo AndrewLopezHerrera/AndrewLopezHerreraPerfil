@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
-  SolutionOutlined,
   HomeOutlined,
   UserOutlined,
   ProjectOutlined,

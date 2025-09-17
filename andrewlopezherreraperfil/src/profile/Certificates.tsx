@@ -40,6 +40,7 @@ const Certificates : React.FC = () => {
                               size="large"
                               color="volcano"
                               variant="link"
+                              onClick={() => window.open(certificate.pdf, "_blank")}
                            >
                               {t("profile.certificates.viewCertificate")}
                            </Button>

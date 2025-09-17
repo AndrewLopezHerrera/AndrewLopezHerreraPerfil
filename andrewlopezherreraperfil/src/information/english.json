@@ -63,6 +63,7 @@
     },
     "professionalnetworks": {
       "title": "Professional Networks",
+      "viewNetwork": "View Professional Network",
       "LinkedIn": {
         "description": "Connect with me on LinkedIn to explore professional opportunities and share knowledge.",
         "viewNetwork": "View LinkedIn"

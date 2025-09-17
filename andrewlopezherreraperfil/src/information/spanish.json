@@ -63,6 +63,7 @@
         },
         "professionalnetworks": {
             "title": "Redes profesionales",
+            "viewNetwork": "Ver red profesional",
             "LinkedIn": {
                 "description": "Conéctate conmigo en LinkedIn para explorar oportunidades profesionales y compartir conocimientos.",
                 "viewNetwork": "Ver LinkedIn"

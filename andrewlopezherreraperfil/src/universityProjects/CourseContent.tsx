@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
-import "./UniversityProjects.css";
 import { Button, Collapse, List } from "antd";
 import { useEffect, useState } from "react";
 import i18n from "../i18n/i18n";
 import { EyeOutlined } from "@ant-design/icons";
+import "./CourseContent.css";
 
 const CourseContent: React.FC = () => {
     const { t } = useTranslation();
@@ -68,7 +68,7 @@ const CourseContent: React.FC = () => {
     }, [i18n.language]);
 
     return (
-        <section style={{ width: "100%" }}>
+        <section style={{ width: "100%" }} className="containerCourseContent">
             <h1>{t('universityProjects.courses.' + id + '.name')}</h1>
             <Collapse accordion items={projectsData}/>
         </section>
