@@ -18,7 +18,20 @@
     "presentation": {
       "title": "Biography",
       "name": "Andrew López Herrera",
-      "biography": "I am a Computer Engineering student currently studying at the Limón Academic Center of the Costa Rica Institute of Technology. I really enjoy my career; I have always been fond of computers, so I did not hesitate much when choosing this path. I consider myself someone who adapts easily to changes, so working in different teams is not a problem for me. I am also very interested in topics such as compilers and interpreters, artificial intelligence, robotics, and cybersecurity. I am a person who often leads my peers to achieve a common goal, although I have no problem following a good leader who also guides me towards an objective."
+      "career": "Computer Engineering Student",
+      "biography": "I am a Computer Engineering student currently studying at the Limón Academic Center of the Costa Rica Institute of Technology. I really enjoy my career; I have always been fond of computers, so I did not hesitate much when choosing this path. I consider myself someone who adapts easily to changes, so working in different teams is not a problem for me. I am also very interested in topics such as compilers and interpreters, artificial intelligence, robotics, and cybersecurity. I am a person who often leads my peers to achieve a common goal, although I have no problem following a good leader who also guides me towards an objective.",
+      "personalData": {
+        "cedulaLabel": "ID",
+        "cedula": "702950158",
+        "birthdateLabel": "Date of Birth",
+        "birthdate": "09/22/2002",
+        "addressLabel": "Address",
+        "address": "150m east from Pandora Oeste School, Valle La Estrella, Limón, Limón, Costa Rica",
+        "phoneLabel": "Phone",
+        "phone": "+506 6067 8713",
+        "emailLabel": "Email",
+        "email": "andrewlopezherrera@proton.me"
+      }
     },
     "technicalknowledge": {
       "title": "Technical Knowledge",
@@ -84,7 +97,8 @@
     },
     "curriculumVitae": {
       "title": "Curriculum Vitae",
-      "viewCV": "View CV"
+      "viewCV": "View CV",
+      "generating": "Generating..."
     }
   },
   "universityProjects": {

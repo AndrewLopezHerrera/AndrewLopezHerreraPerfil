@@ -18,7 +18,20 @@
         "presentation": {
             "title": "Biografía",
             "name": "Andrew López Herrera",
-            "biography": "Soy un estudiante de Ingeniería en Computación que actualmente está cursando en el Centro Académico de Limón del Tecnológico de Costa Rica. Me gusta mucho la carrera que estudio, siempre he tenido afinidad hacia las computadoras, por lo que no lo dudé mucho al entrar a la carrera. Me considero que se soy una persona que se adapta fácilmente a los cambios, por lo que trabajar en diferentes equipos no me supone un problema. Además, me interesan mucho los temas sobre compiladores e intérpretes, inteligencia artificial, robótica y ciberseguridad. Soy una persona que suele liderar a sus compañeros para que lleguemos a un mismo objetivo, aunque no tengo problema en tener un buen lider que también me guíe hacia un objetivo."
+            "career": "Estudiante de Ingeniería en Computación",
+            "biography": "Soy un estudiante de Ingeniería en Computación que actualmente está cursando en el Centro Académico de Limón del Tecnológico de Costa Rica. Me gusta mucho la carrera que estudio, siempre he tenido afinidad hacia las computadoras, por lo que no lo dudé mucho al entrar a la carrera. Me considero que se soy una persona que se adapta fácilmente a los cambios, por lo que trabajar en diferentes equipos no me supone un problema. Además, me interesan mucho los temas sobre compiladores e intérpretes, inteligencia artificial, robótica y ciberseguridad. Soy una persona que suele liderar a sus compañeros para que lleguemos a un mismo objetivo, aunque no tengo problema en tener un buen lider que también me guíe hacia un objetivo.",
+            "personalData": {
+                "cedulaLabel": "Cédula",
+                "cedula": "702950158",
+                "birthdateLabel": "Fecha de Nacimiento",
+                "birthdate": "22/09/2002",
+                "addressLabel": "Dirección",
+                "address": "150m este de la Escuela Pandora Oeste, Valle La Estrella, Limón, Limón, Costa Rica",
+                "phoneLabel": "Teléfono",
+                "phone": "+506 6067 8713",
+                "emailLabel": "Correo Electrónico",
+                "email": "andrewlopezherrera@proton.me"
+            }
         },
         "technicalknowledge": {
             "title": "Conocimiento técnico",
@@ -84,7 +97,8 @@
         },
         "curriculumVitae": {
             "title": "Currículum Vitae",
-            "viewCV": "Ver CV"
+            "viewCV": "Ver CV",
+            "generating": "Generando..."
         }
     },
     "universityProjects": {
