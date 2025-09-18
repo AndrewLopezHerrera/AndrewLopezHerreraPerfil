@@ -30,7 +30,9 @@
                 "phoneLabel": "Teléfono",
                 "phone": "+506 6067 8713",
                 "emailLabel": "Correo Electrónico",
-                "email": "andrewlopezherrera@proton.me"
+                "email": "andrewlopezherrera@proton.me",
+                "websiteLabel": "Sitio Web",
+                "website": "andrewlopezherrera.vercel.app"
             }
         },
         "technicalknowledge": {
