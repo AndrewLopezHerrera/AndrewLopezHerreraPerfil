@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     wordBreak: "keep-all"
   },
   leftColumn: {
-    width: "30%",
+    width: "33%",
     paddingRight: 18,
     backgroundColor: "#f7f7fa",
     minHeight: "100%",
@@ -31,14 +31,14 @@ const styles = StyleSheet.create({
     border: "2px solid #f7f7fa"
   },
   rightColumn: {
-    width: "70%",
+    width: "65%",
     paddingLeft: 24,
     minHeight: "100%",
     marginLeft: "1%",
     marginRight: "1%"
   },
   section: { marginBottom: 16 },
-  title: { fontSize: 22, fontWeight: "bold", marginBottom: 10, color: "#2c3e50", textAlign: "center", lineHeight: 1.4 },
+  title: { fontSize: 22, fontWeight: "bold", marginBottom: 10, color: "#2c3e50", textAlign: "center", lineHeight: 1.15 },
   subtitle: { fontSize: 14, fontWeight: "bold", marginBottom: 6, color: "#6366f1" },
   text: { marginBottom: 4, color: "#222" },
   link: { color: "#6366f1", textDecoration: "underline", wordBreak: "break-all", width: '100%' },
@@ -85,6 +85,8 @@ const CurriculumPDF: React.FC = () => {
   const phone = t("profile.presentation.personalData.phone");
   const emailLabel = t("profile.presentation.personalData.emailLabel");
   const email = t("profile.presentation.personalData.email");
+  const websiteLabel = t("profile.presentation.personalData.websiteLabel");
+  const website = t("profile.presentation.personalData.website");
 
   // Conocimientos técnicos
   const technicalKnowledge = t("profile.technicalknowledge.title");
@@ -131,7 +133,11 @@ const CurriculumPDF: React.FC = () => {
         </View>
         <View style={{ marginBottom: 6 }}>
           <Text style={styles.label}>{emailLabel}</Text>
-          <Text style={styles.small}>{email}</Text>
+          <Link style={styles.small} src={`mailto:${email}`}>{email}</Link>
+        </View>
+        <View style={{ marginBottom: 6 }}>
+          <Text style={styles.label}>{websiteLabel}</Text>
+          <Link style={styles.small} src={website}>{website}</Link>
         </View>
       </View>
          </View>
