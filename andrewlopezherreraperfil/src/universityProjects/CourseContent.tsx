@@ -48,10 +48,13 @@ const CourseContent: React.FC = () => {
                                     href={value.git}>
                                         {t("universityProjects.viewRepository")}
                                     </Button>}
-                                {value.functionality && <List.Item.Meta
-                                    title={t("universityProjects.functionality")}
-                                    description={value.functionality}
-                                />}
+                                {value.website && <Button
+                                    icon={<EyeOutlined />}
+                                    color="volcano"
+                                    variant="link"
+                                    href={value.website}>
+                                        {t("universityProjects.viewWebsite")}
+                                    </Button>}
                             </List.Item>
                         </List>
                 });

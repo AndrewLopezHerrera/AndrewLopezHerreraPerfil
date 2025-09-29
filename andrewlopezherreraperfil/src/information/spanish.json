@@ -154,7 +154,7 @@
         "projectDescription": "Descripción del proyecto",
         "technologies": "Tecnologías utilizadas",
         "repository": "Repositorio",
-        "functionality": "Funcionalidad",
+        "viewWebsite": "Ver Sitio Web",
         "courses": {
             "computingArchitecture": {
                 "name": "Arquitectura de Computadores",
@@ -248,7 +248,7 @@
                     {
                         "name": "Laboratorio 1 - Investigación en Markdown",
                         "type": "Laboratorio",
-                        "dueDate": "10 de agosto del 2024",
+                        "dueDate": "10 de agosto del 2025",
                         "description": "Se debe investigar acerca de las características del desarrollo web moderno, así como las herramientas y tecnologías que se utilizan actualmente para el desarrollo web. El informe debe estar escrito en Markdown y debe incluir capturas de pantalla.",
                         "technologies": ["Markdown"],
                         "git": "https://github.com/AndrewLopezHerrera/desarrollo-moderno-Andrew.git",
@@ -257,7 +257,7 @@
                     {
                         "name": "Laboratorio 2 - Página Web Estática",
                         "type": "Laboratorio",
-                        "dueDate": "16 de agosto del 2024",
+                        "dueDate": "16 de agosto del 2025",
                         "description": "Desarrollo de una página web estática utilizando HTML. La página debe contener únicamente la estructura HTML.",
                         "technologies": ["HTML", "Netlify"],
                         "id": "lab2StaticWebPage"
@@ -265,7 +265,7 @@
                     {
                         "name": "Laboratorio 3 - Página Web Dinámica",
                         "type": "Laboratorio",
-                        "dueDate": "25 de agosto del 2024",
+                        "dueDate": "25 de agosto del 2025",
                         "description": "La misma página del laboratorio 2, pero ahora utilizando CSS para el diseño y la maquetación de la página.",
                         "technologies": ["HTML", "CSS", "Netlify"],
                         "git": "https://github.com/AndrewLopezHerrera/Laboratorio2PaginasWeb/tree/lab3-selectores-boxmodel",
@@ -274,7 +274,7 @@
                     {
                         "name": "Laboratorio 4 - Cuestionario",
                         "type": "Laboratorio",
-                        "dueDate": "29 de agosto del 2024",
+                        "dueDate": "29 de agosto del 2025",
                         "description": "Se debía contestar un cuestinario hecho por el profesor acerca del principio POUR, accesibilidad y la resolución de un caso con sprints.",
                         "technologies": ["TEC Digital"],
                         "id": "lab4Questionnaire"
@@ -282,11 +282,22 @@
                     {
                         "name": "Laboratorio 5 - Página Web responsiva",
                         "type": "Laboratorio",
-                        "dueDate": "7 de setiembre del 2024",
+                        "dueDate": "7 de setiembre del 2025",
                         "description": "La misma página del laboratorio 3, pero ahora utilizando media queries para que la página sea responsiva.",
                         "technologies": ["HTML", "CSS", "Media Queries", "Netlify"],
                         "git": "https://github.com/AndrewLopezHerrera/Laboratorio2PaginasWeb.git",
-                        "id": "lab5ResponsiveWebPage"
+                        "id": "lab5ResponsiveWebPage",
+                        "website": "https://laboratorio2-paginas-web.vercel.app/"
+                    },
+                    {
+                        "name": "Proyecto 1 - Prototipo de una entidad bancaria",
+                        "type": "Proyecto",
+                        "dueDate": "30 de setiembre del 2025",
+                        "description": "Este proyecto consiste en desarrollar un prototipo de una página web para una entidad bancaria ficticia llamada Banco Órbita. La página debe ser responsiva y debe incluir las siguientes secciones: Inicio, Inicio de Sesión, Recuperación de Contraseña, Dashboard de usuario, Módulo de Transferencias, Consulta de Pin y Revisión de Cuentas. El usuario y contraseña para ingresar al sistema es usuario@ejemplo.com y 123456 respectivamente, todos los códigos de verificación son 123456.",
+                        "technologies": ["React", "CSS", "Media Queries", "Netlify", "GitHub"],
+                        "git": "https://github.com/AndrewLopezHerrera/Laboratorio2PaginasWeb.git",
+                        "id": "lab5ResponsiveWebPage",
+                        "website": "https://bancoorbita.netlify.app/"
                     }
                 ]
             },
