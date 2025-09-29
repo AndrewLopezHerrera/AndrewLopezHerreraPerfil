@@ -101,6 +101,42 @@
             "title": "Currículum Vitae",
             "viewCV": "Ver CV",
             "generating": "Generando..."
+        },
+        "references" : {
+            "title": "Referencias",
+            "list" : [
+                {
+                    "name": "Yanielca Araya Gaboa",
+                    "career": "Ingeniera en Producción Industrial",
+                    "jobTitle": "Analista de Optimización de Procesos",
+                    "company": "BAC LATAM   ",
+                    "email": "yaniaraya@gmail.com",
+                    "phone": "+506 86866814"
+                },
+                {
+                    "name": "Cristian Campos Agüero MGP, MBA",
+                    "career": "Ingeniera en Computación",
+                    "jobTitle": "Profesor - Investigador",
+                    "company": "Instituto Tecnológico de Costa Rica",
+                    "email": "crcamps@itcr.ac.cr",
+                    "phone": "+506 8802 5569"
+                }
+            ]
+        },
+        "academicBackground": {
+            "title": "Formación académica",
+            "titles" : [
+                {
+                    "degree": "Técnico Medio en Contabilidad",
+                    "institution": "Colegio Técnico Profesional de Talamanca",
+                    "year": "2017 - 2020"
+                },
+                {
+                    "degree": "Bachillerato en Ingeniería en Computación",
+                    "institution": "Instituto Tecnológico de Costa Rica",
+                    "year": "2021 - En curso"
+                }
+            ]
         }
     },
     "universityProjects": {

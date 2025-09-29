@@ -56,23 +56,23 @@
       "courses": {
         "programmingWorkshop": {
           "title": "Programming Workshop",
-          "institute": "Costa Rica Institute of Technology",
-          "description": "Certified for tutoring the Programming Workshop course, taught at the Limón Academic Center of the Costa Rica Institute of Technology during the first semester of 2023."
+          "institute": "Instituto Tecnológico de Costa Rica",
+          "description": "Certified for tutoring the Programming Workshop course, taught at the Limón Academic Center of the Instituto Tecnológico de Costa Rica during the first semester of 2023."
         },
         "introductionToProgramming": {
           "title": "Introduction to Programming",
-          "institute": "Costa Rica Institute of Technology",
-          "description": "Certified for tutoring the Introduction to Programming course, taught at the Limón Academic Center of the Costa Rica Institute of Technology during the first semester of 2023."
+          "institute": "Instituto Tecnológico de Costa Rica",
+          "description": "Certified for tutoring the Introduction to Programming course, taught at the Limón Academic Center of the Instituto Tecnológico de Costa Rica during the first semester of 2023."
         },
         "computingElements": {
           "title": "Computing Elements",
-          "institute": "Costa Rica Institute of Technology",
-          "description": "Certified for tutoring the Computing Elements course, taught at the Limón Academic Center of the Costa Rica Institute of Technology during the first semester of 2024."
+          "institute": "Instituto Tecnológico de Costa Rica",
+          "description": "Certified for tutoring the Computing Elements course, taught at the Limón Academic Center of the Instituto Tecnológico de Costa Rica during the first semester of 2024."
         },
         "attentionToEmotionalAndAcademicNeeds": {
           "title": "Attention to Emotional and Academic Needs",
-          "institute": "Costa Rica Institute of Technology",
-          "description": "Certified for participating in the training 'Attention to Emotional and Academic Needs', held at the Costa Rica Institute of Technology."
+          "institute": "Instituto Tecnológico de Costa Rica",
+          "description": "Certified for participating in the training 'Attention to Emotional and Academic Needs', held at the Instituto Tecnológico de Costa Rica."
         }
       }
     },
@@ -101,6 +101,42 @@
       "title": "Curriculum Vitae",
       "viewCV": "View CV",
       "generating": "Generating..."
+    },
+    "references": {
+      "title": "References",
+      "list": [
+        {
+          "name": "Yanielca Araya Gaboa",
+          "career": "Industrial Production Engineer",
+          "jobTitle": "Process Optimization Analyst",
+          "company": "BAC LATAM",
+          "email": "yaniaraya@gmail.com",
+          "phone": "+506 86866814"
+        },
+        {
+          "name": "Cristian Campos Agüero MGP, MBA",
+          "career": "Computer Engineer",
+          "jobTitle": "Professor - Researcher",
+          "company": "Instituto Tecnológico de Costa Rica",
+          "email": "crcamps@itcr.ac.cr",
+          "phone": "+506 8802 5569"
+        }
+      ]
+    },
+    "academicBackground" : {
+      "title": "Academic Background",
+      "list": [
+        {
+          "degree": "Tecnico Medio en Contabilidad",
+          "institution": "Instituto Tecnológico de Costa Rica",
+          "year" : "2017 - 2020"
+        },
+        {
+          "degree": "Bachillerato en Ingeniería en Computación",
+          "institution": "Instituto Tecnológico de Costa Rica",
+          "year" : "2021 - In Progress"
+        }
+      ]
     }
   },
   "universityProjects": {

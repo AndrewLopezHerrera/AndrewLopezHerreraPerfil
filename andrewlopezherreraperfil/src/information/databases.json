@@ -1,12 +1,12 @@
 [
     {
         "name": "MS SQL Server",
-        "experience": 80,
+        "experience": 50,
         "image": "assets/databases/sqlserverlogo.png"
     },
     {
         "name": "PostgreSQL",
-        "experience": 70,
+        "experience": 60,
         "image": "assets/databases/postgresqllogo.png"
     }
 ]

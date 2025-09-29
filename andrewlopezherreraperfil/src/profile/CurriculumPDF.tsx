@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   text: { marginBottom: 4, color: "#222" },
   link: { color: "#6366f1", textDecoration: "underline", wordBreak: "break-all", width: '100%' },
   list: { marginLeft: 10, marginBottom: 4 },
-  listItem: { marginBottom: 2 },
+  listItem: { marginBottom: 2, whiteSpace: "pre" },
   label: { fontWeight: "bold", color: "#6366f1" },
   small: { fontSize: 10, color: "#666" },
   chipContainer: {
@@ -65,22 +65,21 @@ const styles = StyleSheet.create({
     display: "flex",
     alignItems: "center",
     justifyContent: "center"
+  },
+  elementList: {
+    marginBottom: 15,
+    display: "flex",
+    flexDirection: "column",
   }
 });
 
 const CurriculumPDF: React.FC = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
   // Datos personales
   const name = t("profile.presentation.name");
   const biography = t("profile.presentation.biography");
   const career = t("profile.presentation.career");
-  const cedulaLabel = t("profile.presentation.personalData.cedulaLabel");
-  const cedula = t("profile.presentation.personalData.cedula");
-  const birthdateLabel = t("profile.presentation.personalData.birthdateLabel");
-  const birthdate = t("profile.presentation.personalData.birthdate");
-  const addressLabel = t("profile.presentation.personalData.addressLabel");
-  const address = t("profile.presentation.personalData.address");
   const phoneLabel = t("profile.presentation.personalData.phoneLabel");
   const phone = t("profile.presentation.personalData.phone");
   const emailLabel = t("profile.presentation.personalData.emailLabel");
@@ -95,16 +94,21 @@ const CurriculumPDF: React.FC = () => {
   const databases = t("profile.technicalknowledge.databases.title");
   const developmentBoards = t("profile.technicalknowledge.developmentBoards.title");
 
+  //Referencias
+  const titleReferences = t("profile.references.title");
+  const references = t("profile.references.list", { returnObjects: true }) as
+    Array<{ name: string; career: string; jobTitle: string; company: string; email?: string; phone?: string }>;
+
+  // Formación académica
+  const academicFormationTitle = t("profile.academicBackground.title");
+  const academicFormation = t("profile.academicBackground.titles", { returnObjects: true }) as Array<{ degree: string; institution: string; year: string }>;
+
   // Certificados
   const certificatesTitle = t("profile.certificates.title");
   const certificates = t("profile.certificates.courses", { returnObjects: true }) as Record<string, any>;
 
   // Redes profesionales
   const networksTitle = t("profile.professionalnetworks.title");
-
-  // Intereses técnicos
-  const technicalInterestsTitle = t("profile.technicalInterests.title");
-  const technicalInterests = t("profile.technicalInterests.list", { returnObjects: true }) as string[];
 
   return (
     <Document>
@@ -113,34 +117,33 @@ const CurriculumPDF: React.FC = () => {
         <View style={styles.leftColumn}>
           <View style={styles.section}>
             <Text style={styles.title}>{name}</Text>
-      <Text style={styles.small}>{career}</Text>
-      <View style={styles.list}>
-        <View style={{ marginBottom: 6 }}>
-          <Text style={styles.label}>{cedulaLabel}</Text>
-          <Text style={styles.small}>{cedula}</Text>
-        </View>
-        <View style={{ marginBottom: 6 }}>
-          <Text style={styles.label}>{birthdateLabel}</Text>
-          <Text style={styles.small}>{birthdate}</Text>
-        </View>
-        <View style={{ marginBottom: 6 }}>
-          <Text style={styles.label}>{addressLabel}</Text>
-          <Text style={styles.small}>{address}</Text>
-        </View>
-        <View style={{ marginBottom: 6 }}>
-          <Text style={styles.label}>{phoneLabel}</Text>
-          <Text style={styles.small}>{phone}</Text>
-        </View>
-        <View style={{ marginBottom: 6 }}>
-          <Text style={styles.label}>{emailLabel}</Text>
-          <Link style={styles.small} src={`mailto:${email}`}>{email}</Link>
-        </View>
-        <View style={{ marginBottom: 6 }}>
-          <Text style={styles.label}>{websiteLabel}</Text>
-          <Link style={styles.small} src={website}>{website}</Link>
-        </View>
-      </View>
-         </View>
+            <Text style={styles.small}>{career}</Text>
+            <View style={styles.list}>
+              <View style={{ marginBottom: 6 }}>
+                <Text style={styles.label}>{phoneLabel}</Text>
+                <Text style={styles.small}>{phone}</Text>
+              </View>
+              <View style={{ marginBottom: 6 }}>
+                <Text style={styles.label}>{emailLabel}</Text>
+                <Link style={styles.small} src={`mailto:${email}`}>{email}</Link>
+              </View>
+              <View style={{ marginBottom: 6 }}>
+                <Text style={styles.label}>{websiteLabel}</Text>
+                <Link style={styles.small} src={website}>{website}</Link>
+              </View>
+            </View>
+          </View>
+          <View style={styles.section}>
+            <Text style={styles.subtitle}>{academicFormationTitle}</Text>
+            <View style={styles.list}>
+              {academicFormation.map((item, idx) => (
+                <View key={idx} style={{ marginBottom: 6 }}>
+                  <Text style={styles.label}>{item.degree}</Text>
+                  <Text style={styles.small}>{item.institution} - {item.year}</Text>
+                </View>
+              ))}
+            </View>
+          </View>
           <View style={styles.section}>
             <Text style={styles.subtitle}>{certificatesTitle}</Text>
             <View style={styles.list}>
@@ -152,21 +155,21 @@ const CurriculumPDF: React.FC = () => {
               ))}
             </View>
           </View>
-          <View style={styles.section}>
+          <View style={[styles.section, { marginBottom: 0 }]}>
             <Text style={styles.subtitle}>{networksTitle}</Text>
             <View style={styles.list} >
-                {professionalNetworksJSON.map((network) => (
-                  <Text style={styles.text}>
-                    {network.name}: 
-                    <Link src={network.url}>
-                        {t("profile.professionalnetworks.viewNetwork")}
-                    </Link>
-                  </Text>
-                ))}
+              {professionalNetworksJSON.map((network) => (
+                <Text style={styles.text}>
+                  {network.name}:
+                  <Link src={network.url}>
+                    {t("profile.professionalnetworks.viewNetwork")}
+                  </Link>
+                </Text>
+              ))}
             </View>
           </View>
         </View>
-        {/* Columna derecha: biografía, conocimientos, tecnologías, intereses */}
+        {/* Columna derecha: biografía, conocimientos, tecnologías, referencias */}
         <View style={styles.rightColumn}>
           <View style={styles.section}>
             <Text style={styles.subtitle}>{t("profile.presentation.title")}</Text>
@@ -199,11 +202,18 @@ const CurriculumPDF: React.FC = () => {
               ))}
             </View>
           </View>
+          {/* Referncias */}
           <View style={styles.section}>
-            <Text style={styles.subtitle}>{technicalInterestsTitle}</Text>
+            <Text style={styles.subtitle}>{titleReferences}</Text>
             <View style={styles.list}>
-              {technicalInterests.map((item, idx) => (
-                <Text key={idx} style={styles.listItem}>• {item}</Text>
+              {references.map((item, idx) => (
+                <View key={idx} style={[styles.elementList, idx === references.length - 1 ? { marginBottom: 0 } : {}]}>
+                  <Text style={styles.listItem}>{item.name} - {item.career}</Text>
+                  <Text style={[styles.listItem, {marginLeft: 10}]}>{item.jobTitle}</Text>
+                  <Text style={[styles.listItem, {marginLeft: 10}]}>{item.company}</Text>
+                  <Text style={[styles.listItem, {marginLeft: 10}]}>{item.email}</Text>
+                  <Text style={[styles.listItem, {marginLeft: 10}]}>{item.phone}</Text>
+                </View>
               ))}
             </View>
           </View>

@@ -11,17 +11,17 @@
     },
     {
         "name": "Next.js",
-        "experience": 75,
+        "experience": 60,
         "image": "assets/frameworks/nextlogo.png"
     },
     {
         "name": "Tauri",
-        "experience": 85,
+        "experience": 50,
         "image": "assets/frameworks/taurilogo.png"
     },
     {
         "name": "Node.js",
-        "experience": 80,
+        "experience": 70,
         "image": "assets/frameworks/nodelogo.png"
     }
 ]
