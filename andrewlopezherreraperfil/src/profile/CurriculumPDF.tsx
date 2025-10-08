@@ -203,7 +203,7 @@ const CurriculumPDF: React.FC = () => {
             </View>
           </View>
           {/* Referncias */}
-          <View style={styles.section}>
+          <View style={[styles.section, { marginBottom: 0 }]}>
             <Text style={styles.subtitle}>{titleReferences}</Text>
             <View style={styles.list}>
               {references.map((item, idx) => (
