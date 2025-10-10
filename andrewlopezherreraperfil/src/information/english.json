@@ -19,7 +19,7 @@
       "title": "Biography",
       "name": "Andrew López Herrera",
       "career": "Computer Engineering Student",
-      "biography": "I am a Computer Engineering student at the Instituto Tecnológico de Costa Rica with a solid background in programming, data structures, databases, software design, networks, and operating systems. I have practical experience developing projects that integrate hardware and software, including ESP32 and Arduino microcontrollers, web servers, and WebSocket-based communication. I possess strong analytical and problem-solving skills, along with knowledge in algorithms, applied mathematics, and project management. I am a proactive and responsible individual with a deep interest in technological innovation. I am seeking an opportunity to apply my technical knowledge in real-world software or engineering projects while continuing to develop my professional and technical skills.",
+      "biography": "I am a Computer Engineering student currently studying at the Limón Academic Center of the Costa Rica Institute of Technology. I am interested in topics such as robotics in healthcare, software security, web servers, compilers as a way to preserve indigenous languages, and artificial intelligence for the conservation of sea turtles. In short, I aim to improve the quality of life for people and living beings by using current technology or creating new technology.",
       "personalData": {
         "cedulaLabel": "ID",
         "cedula": "702950158",
@@ -50,27 +50,44 @@
         "title": "Experience in Development Boards"
       }
     },
+    "softSkills": {
+      "title": "Soft Skills",
+      "list": [
+        {
+            "title": "Teaching Complex Topics",
+            "description": "I have provided tutoring to help students understand difficult concepts and improve their programming skills."
+        },
+        {
+            "title": "Social Responsibility",
+            "description": "I have participated by teaching basic Excel classes to indigenous Bribri women in the Talamanca community, Costa Rica."
+        },
+        {
+            "title": "Teamwork",
+            "description": "I have experience working in multidisciplinary teams, collaborating with others to achieve common goals."
+        }
+      ]
+    },
     "certificates": {
       "title": "Certificates",
       "viewCertificate": "View Certificate",
       "courses": {
         "programmingWorkshop": {
-          "title": "Programming Workshop",
+          "title": "Tutoring - Programming Workshop",
           "institute": "Instituto Tecnológico de Costa Rica",
           "description": "Certified for tutoring the Programming Workshop course, taught at the Limón Academic Center of the Instituto Tecnológico de Costa Rica during the first semester of 2023."
         },
         "introductionToProgramming": {
-          "title": "Introduction to Programming",
+          "title": "Tutoring - Introduction to Programming",
           "institute": "Instituto Tecnológico de Costa Rica",
           "description": "Certified for tutoring the Introduction to Programming course, taught at the Limón Academic Center of the Instituto Tecnológico de Costa Rica during the first semester of 2023."
         },
         "computingElements": {
-          "title": "Computing Elements",
+          "title": "Tutoring - Computing Elements",
           "institute": "Instituto Tecnológico de Costa Rica",
           "description": "Certified for tutoring the Computing Elements course, taught at the Limón Academic Center of the Instituto Tecnológico de Costa Rica during the first semester of 2024."
         },
         "attentionToEmotionalAndAcademicNeeds": {
-          "title": "Attention to Emotional and Academic Needs",
+          "title": "Training - Attention to Emotional and Academic Needs",
           "institute": "Instituto Tecnológico de Costa Rica",
           "description": "Certified for participating in the training 'Attention to Emotional and Academic Needs', held at the Instituto Tecnológico de Costa Rica."
         }
@@ -78,7 +95,7 @@
     },
     "professionalnetworks": {
       "title": "Professional Networks",
-      "viewNetwork": "View Professional Network",
+      "viewNetwork": "View Network",
       "LinkedIn": {
         "description": "Connect with me on LinkedIn to explore professional opportunities and share knowledge.",
         "viewNetwork": "View LinkedIn"
@@ -118,23 +135,23 @@
           "career": "Computer Engineer",
           "jobTitle": "Professor - Researcher",
           "company": "Instituto Tecnológico de Costa Rica",
-          "email": "crcamps@itcr.ac.cr",
+          "email": "crcampos@itcr.ac.cr",
           "phone": "+506 8802 5569"
         }
       ]
     },
     "academicBackground" : {
       "title": "Academic Background",
-      "list": [
+      "titles": [
+        {
+          "degree": "Bachiller en Ingeniería en Computación",
+          "institution": "Instituto Tecnológico de Costa Rica",
+          "year" : "2021 - penultimate semester"
+        },
         {
           "degree": "Tecnico Medio en Contabilidad",
           "institution": "Instituto Tecnológico de Costa Rica",
           "year" : "2017 - 2020"
-        },
-        {
-          "degree": "Bachiller en Ingeniería en Computación",
-          "institution": "Instituto Tecnológico de Costa Rica",
-          "year" : "2021 - In Progress"
         }
       ]
     }

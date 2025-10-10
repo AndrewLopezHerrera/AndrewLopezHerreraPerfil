@@ -37,10 +37,10 @@ const styles = StyleSheet.create({
     marginLeft: "1%",
     marginRight: "1%"
   },
-  section: { marginBottom: 16 },
+  section: { marginBottom: 4 },
   title: { fontSize: 22, fontWeight: "bold", marginBottom: 10, color: "#2c3e50", textAlign: "center", lineHeight: 1.15 },
   subtitle: { fontSize: 14, fontWeight: "bold", marginBottom: 6, color: "#6366f1" },
-  text: { marginBottom: 4, color: "#222" },
+  text: { marginBottom: 0, color: "#222" },
   link: { color: "#6366f1", textDecoration: "underline", wordBreak: "break-all", width: '100%' },
   list: { marginLeft: 10, marginBottom: 4 },
   listItem: { marginBottom: 2, whiteSpace: "pre" },
@@ -49,25 +49,25 @@ const styles = StyleSheet.create({
   chipContainer: {
     flexDirection: "row",
     flexWrap: "wrap",
-    marginTop: 4,
-    marginBottom: 8
+    marginBottom: 3
   },
   chip: {
     backgroundColor: "#e0e7ff",
     color: "#3730a3",
     borderRadius: 8,
     paddingVertical: 2,
-    paddingHorizontal: 8,
+    paddingHorizontal: 6,
     fontSize: 10,
     marginRight: 6,
-    marginBottom: 6,
+    marginTop: 4,
+    marginBottom: 0,
     fontWeight: "bold",
     display: "flex",
     alignItems: "center",
     justifyContent: "center"
   },
   elementList: {
-    marginBottom: 15,
+    marginBottom: 10,
     display: "flex",
     flexDirection: "column",
   }
@@ -93,6 +93,10 @@ const CurriculumPDF: React.FC = () => {
   const frameworks = t("profile.technicalknowledge.frameworks.title");
   const databases = t("profile.technicalknowledge.databases.title");
   const developmentBoards = t("profile.technicalknowledge.developmentBoards.title");
+
+  //Aptitudes y habilidades blandas
+  const softSkillsTitle = t("profile.softSkills.title");
+  const softSkills = t("profile.softSkills.list", { returnObjects: true }) as Array<{ title: string , description: string }>;
 
   //Referencias
   const titleReferences = t("profile.references.title");
@@ -174,6 +178,16 @@ const CurriculumPDF: React.FC = () => {
           <View style={styles.section}>
             <Text style={styles.subtitle}>{t("profile.presentation.title")}</Text>
             <Text style={styles.text}>{biography}</Text>
+          </View>
+          <View style={styles.section}>
+            <Text style={styles.subtitle}>{softSkillsTitle}</Text>
+            <View style={styles.list}>
+              {softSkills.map((skill, idx) => (
+                <Text key={idx} style={styles.listItem}>
+                  <Text style={{ fontWeight: 'bold' }}>• {skill.title}</Text>: {skill.description}
+                </Text>
+              ))}
+            </View>
           </View>
           <View style={styles.section}>
             <Text style={styles.subtitle}>{technicalKnowledge}</Text>

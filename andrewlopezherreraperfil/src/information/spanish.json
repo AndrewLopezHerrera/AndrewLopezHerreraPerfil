@@ -19,7 +19,7 @@
             "title": "Biografía",
             "name": "Andrew López Herrera",
             "career": "Estudiante de Ingeniería en Computación",
-            "biography": "Soy estudiante de Ingeniería en Computación en el Tecnológico de Costa Rica, con formación en programación, estructuras de datos, bases de datos, diseño y desarrollo de software, redes y sistemas operativos. Cuento con experiencia práctica en proyectos que integran hardware y software, incluyendo microcontroladores ESP32 y Arduino, servidores web y comunicación mediante WebSockets. Tengo sólidos conocimientos en análisis de algoritmos, matemáticas aplicadas y administración de proyectos. Me considero una persona analítica, responsable y con gran interés por la innovación tecnológica. Busco aplicar mis conocimientos en entornos reales de desarrollo e ingeniería de software, contribuyendo al crecimiento de proyectos tecnológicos mientras continuo fortaleciendo mis habilidades profesionales.",
+            "biography": "Soy un estudiante de Ingeniería en Computación que actualmente está cursando en el Centro Académico de Limón del Tecnológico de Costa Rica. Tengo interés en temas como robóticas en el área de salud, seguridad del software, servidores web, compiladores como una manera de preservar lenguas indígenas e inteligencia artificial para la preservación de las tortugas marinas. En pocas palabras, quiero mejorar la calidad de vida de las personas y los seres vivos utilizando la tecnología actual o creando nueva tecnología.",
             "personalData": {
                 "cedulaLabel": "Cédula",
                 "cedula": "702950158",
@@ -50,27 +50,45 @@
                 "title": "Experiencia en placas de desarrollo"
             }
         },
+        "softSkills": {
+            "title": "Aptitudes y habilidades blandas",
+            "list":
+            [
+                {
+                    "title": "Enseñanza de temas complejos",
+                    "description": "He impartido tutorías ayudando a estudiantes a comprender conceptos difíciles y mejorar sus habilidades de programación."
+                },
+                {
+                    "title": "Responsabilidad social",
+                    "description": "He participado dando clases de Excel básico a mujeres indígenas de la comunidad Bribri en Talamanca, Costa Rica."
+                },
+                {
+                    "title": "Trabajo en equipo",
+                    "description": "Tengo experiencia trabajando en equipos multidisciplinarios, colaborando con otros para alcanzar objetivos comunes."
+                }
+            ]
+        },
         "certificates": {
             "title": "Certificados",
             "viewCertificate": "Ver certificado",
             "courses": {
                 "programmingWorkshop": {
-                    "title": "Taller de Programación",
+                    "title": "Tutoría - Taller de Programación",
                     "institute": "Instituto Tecnológico de Costa Rica",
                     "description": "Certificado por haber impartido tutorías del curso Taller de Programación, impartido en el Centro Académico de Limón del Instituto Tecnológico de Costa Rica durante el primer semestre del 2023."
                 },
                 "introductionToProgramming": {
-                    "title": "Introducción a la Programación",
+                    "title": "Tutoría - Introducción a la Programación",
                     "institute": "Instituto Tecnológico de Costa Rica",
                     "description": "Certificado por haber impartido tutorías del curso Introducción a la Programación, impartido en el Centro Académico de Limón del Instituto Tecnológico de Costa Rica durante el primer semestre del 2023."
                 },
                 "computingElements": {
-                    "title": "Elementos de Computación",
+                    "title": "Tutoría - Elementos de Computación",
                     "institute": "Instituto Tecnológico de Costa Rica",
                     "description": "Certificado por haber impartido tutorías del curso Elementos de Computación, impartido en el Centro Académico de Limón del Instituto Tecnológico de Costa Rica durante el primer semestre del 2024."
                 },
                 "attentionToEmotionalAndAcademicNeeds": {
-                    "title": "Atención a Necesidades Emocionales y Académicas",
+                    "title": "Capacitación - Atención a Necesidades Emocionales y Académicas",
                     "institute": "Instituto Tecnológico de Costa Rica",
                     "description": "Certificado por haber participado en la capacitación Atención a Necesidades Emocionales y Académicas, impartido en el Instituto Tecnológico de Costa Rica"
                 }
@@ -118,7 +136,7 @@
                     "career": "Ingeniera en Computación",
                     "jobTitle": "Profesor - Investigador",
                     "company": "Instituto Tecnológico de Costa Rica",
-                    "email": "crcamps@itcr.ac.cr",
+                    "email": "crcampos@itcr.ac.cr",
                     "phone": "+506 8802 5569"
                 }
             ]
@@ -127,14 +145,14 @@
             "title": "Formación académica",
             "titles" : [
                 {
+                    "degree": "Bachiller en Ingeniería en Computación",
+                    "institution": "Instituto Tecnológico de Costa Rica",
+                    "year": "2021 - penúltimo semestre"
+                },
+                {
                     "degree": "Técnico Medio en Contabilidad",
                     "institution": "Colegio Técnico Profesional de Talamanca",
                     "year": "2017 - 2020"
-                },
-                {
-                    "degree": "Bachiller en Ingeniería en Computación",
-                    "institution": "Instituto Tecnológico de Costa Rica",
-                    "year": "2021 - En curso"
                 }
             ]
         }
