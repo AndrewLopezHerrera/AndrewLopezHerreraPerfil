@@ -12,7 +12,8 @@
     "greetingEvening": "Good evening",
     "profile": "Profile",
     "universityProjects": "University Projects",
-    "personalProjects": "Personal Projects"
+    "personalProjects": "Personal Projects",
+    "comments": "Comments"
   },
   "profile": {
     "presentation": {
@@ -21,12 +22,6 @@
       "career": "Computer Engineering Student",
       "biography": "I am a Computer Engineering student currently studying at the Limón Academic Center of the Costa Rica Institute of Technology. I am interested in topics such as robotics in healthcare, software security, web servers, compilers as a way to preserve indigenous languages, and artificial intelligence for the conservation of sea turtles. In short, I aim to improve the quality of life for people and living beings by using current technology or creating new technology.",
       "personalData": {
-        "cedulaLabel": "ID",
-        "cedula": "702950158",
-        "birthdateLabel": "Date of Birth",
-        "birthdate": "09/22/2002",
-        "addressLabel": "Address",
-        "address": "150m east from Pandora Oeste School, Valle La Estrella, Limón, Limón, Costa Rica",
         "phoneLabel": "Phone",
         "phone": "+506 6067 8713",
         "emailLabel": "Email",

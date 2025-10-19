@@ -21,7 +21,7 @@ const { Header, Sider, Content } = Layout;
 const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
   const { t } = useTranslation();
   const navigator = useNavigate();
-  const [image, setImage] = useState<string>("");
+  const [image, setImage] = useState<string>(morning);
   const [greeting, setGreeting] = useState<string>("");
   const [collapsed, setCollapsed] = useState(true);
   const [renderContent, setRenderContent] = useState<React.ReactNode>();
@@ -77,6 +77,9 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
         break;
       case '4':
         navigator('/personalProjects');
+        break;
+      case '5':
+        navigator('/comments');
         break;
       default:
         navigator('/');
@@ -163,6 +166,11 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
                 key: '3',
                 icon: <ProjectOutlined />,
                 label: t("base.universityProjects"),
+              },
+              {
+                key: '5',
+                icon: <ProjectOutlined />,
+                label: t("base.comments"),
               }
             ]}
           />

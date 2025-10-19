@@ -12,7 +12,8 @@
         "greetingEvening": "Buenas noches",
         "profile": "Perfil",
         "universityProjects": "Proyectos Universitarios",
-        "personalProjects": "Proyectos Personales"
+        "personalProjects": "Proyectos Personales",
+        "comments": "Comentarios"
     },
     "profile": {
         "presentation": {
@@ -21,12 +22,6 @@
             "career": "Estudiante de Ingeniería en Computación",
             "biography": "Soy un estudiante de Ingeniería en Computación que actualmente está cursando en el Centro Académico de Limón del Tecnológico de Costa Rica. Tengo interés en temas como robóticas en el área de salud, seguridad del software, servidores web, compiladores como una manera de preservar lenguas indígenas e inteligencia artificial para la preservación de las tortugas marinas. En pocas palabras, quiero mejorar la calidad de vida de las personas y los seres vivos utilizando la tecnología actual o creando nueva tecnología.",
             "personalData": {
-                "cedulaLabel": "Cédula",
-                "cedula": "702950158",
-                "birthdateLabel": "Fecha de Nacimiento",
-                "birthdate": "22/09/2002",
-                "addressLabel": "Dirección",
-                "address": "150m este de la Escuela Pandora Oeste, Valle La Estrella, Limón, Limón, Costa Rica",
                 "phoneLabel": "Teléfono",
                 "phone": "+506 6067 8713",
                 "emailLabel": "Correo Electrónico",
@@ -316,6 +311,40 @@
                         "git": "https://github.com/AndrewLopezHerrera/Laboratorio2PaginasWeb.git",
                         "id": "lab5ResponsiveWebPage",
                         "website": "https://bancoorbita.netlify.app/"
+                    },
+                    {
+                        "name": "Laboratorio 6 - Aprendiendo a usar los eventos en JavaScript",
+                        "type": "Laboratorio",
+                        "dueDate": "19 de setiembre del 2025",
+                        "description": "Laboratorio enfocado en el uso de eventos en JavaScript para crear interactividad en las páginas web.",
+                        "technologies": ["HTML", "CSS", "JavaScript"],
+                        "id": "lab6JavaScriptEvents"
+                    },
+                    {
+                        "name": "Laboratorio 7 - Exposición sobre APIs",
+                        "type": "Laboratorio",
+                        "dueDate": "24 de setiembre del 2025", 
+                        "description": "Laboratorio enfocado en los tipos de APIs, su funcionamiento y ejemplos de uso.",
+                        "technologies": ["Canva"],
+                        "id": "lab7ApiExhibition"
+                    },
+                    {
+                        "name": "Laboratorio 8 - Creación y pruebas de una API RESTful",
+                        "type": "Laboratorio",
+                        "dueDate": "3 de octubre del 2025",
+                        "description": "Laboratorio enfocado en la creación y pruebas de una API RESTful utilizando Node.js, Express y Postman.",
+                        "technologies": ["Node.js", "Express", "JavaScript", "Postman"],
+                        "git": "https://github.com/AndrewLopezHerrera/Laboratorio8DesarrolloAPI.git",
+                        "id": "lab8RestApi"
+                    },
+                    {
+                        "name": "Laboratorio 9 - Creación de una API con GraphQL",
+                        "type": "Laboratorio",
+                        "dueDate": "12 de octubre del 2025",
+                        "description": "Laboratorio enfocado en la creación de una API utilizando GraphQL y Apollo Server. Además, se realizaron pruebas de la API utilizando Postman.",
+                        "technologies": ["Node.js", "Express", "JavaScript", "GraphQL", "Apollo Server"],
+                        "git": "https://github.com/AndrewLopezHerrera/Laboratorio9DesarrolloWeb.git",
+                        "id": "lab9GraphQLApi"
                     }
                 ]
             },

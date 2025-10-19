@@ -3,6 +3,7 @@ import Home from "./home/Home";
 import Profile from "./profile/Profile";
 import UniversityProjects from "./universityProjects/UniversityProjects";
 import Course from "./universityProjects/Course";
+import Comment from "./comments/Comment";
 import { Helmet } from "react-helmet";
 
 const App: React.FC = () => {
@@ -18,18 +19,12 @@ const App: React.FC = () => {
             "jobTitle": "Computer Engineering Student",
             "alumniOf": {
               "@type": "CollegeOrUniversity",
-              "name": "Costa Rica Institute of Technology",
+              "name": "Instituto Tecnológico de Costa Rica",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Limón",
                 "addressCountry": "Costa Rica"
               }
-            },
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "150m east from Pandora Oeste School, Valle La Estrella",
-              "addressLocality": "Limón",
-              "addressCountry": "Costa Rica"
             },
             "telephone": "+506 6067 8713",
             "sameAs": [
@@ -46,6 +41,7 @@ const App: React.FC = () => {
           <Route path="/universityProjects" element={<UniversityProjects />} />
           <Route path="/course/:id" element={<Course />} />
           <Route path="/personalProjects" element={<UniversityProjects />} />
+          <Route path="/comments" element={<Comment />} />
         </Routes>
       </BrowserRouter>
     </>
