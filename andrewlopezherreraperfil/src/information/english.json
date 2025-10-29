@@ -167,6 +167,7 @@
     "technologies": "Technologies Used",
     "repository": "Repository",
     "functionality": "Functionality",
+    "viewWebsite": "View Website",
     "courses": {
       "computingArchitecture": {
         "name": "Computer Architecture",
