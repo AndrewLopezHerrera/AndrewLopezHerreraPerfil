@@ -250,11 +250,12 @@
                         "id": "processSchedulerSimulator"
                     },
                     {
-                        "name": "Simulador de gestión de memoria",
-                        "type": "Proyecto",
-                        "dueDate": "15 de octubre del 2025",
-                        "description": "Simulador en Java que implementa varios algoritmos de gestión de memoria, incluyendo paginación, segmentación y memoria virtual.",
-                        "technologies": ["Java", "Swing", "Windows"],
+                        "name": "Simulador de Administrador de Memoria Round Robin Egoísta",
+                        "type": "Tarea",
+                        "dueDate": "16 de octubre del 2025",
+                        "description": "Simulador React que implementa el algoritmo de administración de memoria Round Robin Egoísta. Este sitio web no es responsivo, ya que el objetivo principal era aprender el algoritmo y su implementación.",
+                        "technologies": ["TypeScript", "React", "Vercel", "Linux", "CSS"],
+                        "website": "https://demostraci-n-robin-round-egoista.vercel.app/",
                         "git": "https://github.com/AndrewLopezHerrera/Demostraci-nRobinRoundEgoista"
                     }
                 ]

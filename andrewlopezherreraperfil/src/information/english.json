@@ -251,7 +251,7 @@
             "name": "Selfish Round Robin Memory Management Simulator",
             "type": "Assignment",
             "dueDate": "October 16, 2025",
-            "description": "Java simulator implementing the Selfish Round Robin memory management algorithm. This website is not responsive, because the principle objective was learning the algorithm and its implementation.",
+            "description": "React simulator implementing the Selfish Round Robin memory management algorithm. This website is not responsive, because the principle objective was learning the algorithm and its implementation.",
             "technologies": ["TypeScript", "React", "Vercel", "Linux", "CSS"],
             "git": "https://github.com/AndrewLopezHerrera/Demostraci-nRobinRoundEgoista",
             "website": "https://demostraci-n-robin-round-egoista.vercel.app/",
@@ -307,7 +307,52 @@
             "description": "The same page from Lab 3, but now using media queries to make the page responsive.",
             "technologies": ["HTML", "CSS", "Media Queries", "Netlify"],
             "git": "https://github.com/AndrewLopezHerrera/Laboratorio2PaginasWeb.git",
-            "id": "lab5ResponsiveWebPage"
+            "id": "lab5ResponsiveWebPage",
+            "website": "https://laboratorio2-paginas-web.vercel.app/"
+          },
+          {
+            "name": "Project 1 - Prototype of a banking entity",
+            "type": "Project",
+            "dueDate": "September 30, 2025",
+            "description": "This project consists of developing a prototype website for a fictional banking entity called Banco Órbita. The site must be responsive and include the following sections: Home, Login, Password Recovery, User Dashboard, Transfers Module, PIN Inquiry, and Account Review. The username and password to log in are usuario@ejemplo.com and 123456 respectively; all verification codes are 123456.",
+            "technologies": ["React", "CSS", "Media Queries", "Netlify", "GitHub"],
+            "git": "https://github.com/AndrewLopezHerrera/Laboratorio2PaginasWeb.git",
+            "id": "lab5ResponsiveWebPage",
+            "website": "https://bancoorbita.netlify.app/"
+          },
+          {
+            "name": "Lab 6 - Learning to use events in JavaScript",
+            "type": "Lab",
+            "dueDate": "September 19, 2025",
+            "description": "Lab focused on the use of events in JavaScript to create interactivity in web pages.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "id": "lab6JavaScriptEvents"
+          },
+          {
+            "name": "Lab 7 - Presentation on APIs",
+            "type": "Lab",
+            "dueDate": "September 24, 2025",
+            "description": "Lab focused on the types of APIs, how they work, and usage examples.",
+            "technologies": ["Canva"],
+            "id": "lab7ApiExhibition"
+          },
+          {
+            "name": "Lab 8 - Creation and testing of a RESTful API",
+            "type": "Lab",
+            "dueDate": "October 3, 2025",
+            "description": "Lab focused on creating and testing a RESTful API using Node.js, Express, and Postman.",
+            "technologies": ["Node.js", "Express", "JavaScript", "Postman"],
+            "git": "https://github.com/AndrewLopezHerrera/Laboratorio8DesarrolloAPI.git",
+            "id": "lab8RestApi"
+          },
+          {
+            "name": "Lab 9 - Creation of an API with GraphQL",
+            "type": "Lab",
+            "dueDate": "October 12, 2025",
+            "description": "Lab focused on creating an API using GraphQL and Apollo Server. The API was also tested using Postman.",
+            "technologies": ["Node.js", "Express", "JavaScript", "GraphQL", "Apollo Server"],
+            "git": "https://github.com/AndrewLopezHerrera/Laboratorio9DesarrolloWeb.git",
+            "id": "lab9GraphQLApi"
           }
         ]
       },
