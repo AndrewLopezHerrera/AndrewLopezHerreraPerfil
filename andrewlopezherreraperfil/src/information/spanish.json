@@ -248,6 +248,14 @@
                         "technologies": ["Java", "Swing", "Windows"],
                         "git": "https://github.com/AndrewLopezHerrera/MiniPCVirtualTarea1.git",
                         "id": "processSchedulerSimulator"
+                    },
+                    {
+                        "name": "Simulador de gestión de memoria",
+                        "type": "Proyecto",
+                        "dueDate": "15 de octubre del 2025",
+                        "description": "Simulador en Java que implementa varios algoritmos de gestión de memoria, incluyendo paginación, segmentación y memoria virtual.",
+                        "technologies": ["Java", "Swing", "Windows"],
+                        "git": "https://github.com/AndrewLopezHerrera/Demostraci-nRobinRoundEgoista"
                     }
                 ]
             },
