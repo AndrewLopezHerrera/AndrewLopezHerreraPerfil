@@ -168,6 +168,9 @@
     "repository": "Repository",
     "functionality": "Functionality",
     "viewWebsite": "View Website",
+    "searchName": "Search by Name",
+    "searchCode": "Search by Course Code",
+    "searchLine": "Search by Course Area",
     "courses": {
       "computingArchitecture": {
         "name": "Computer Architecture",

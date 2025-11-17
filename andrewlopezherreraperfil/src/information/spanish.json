@@ -168,6 +168,9 @@
         "technologies": "Tecnologías utilizadas",
         "repository": "Repositorio",
         "viewWebsite": "Ver Sitio Web",
+        "searchName": "Buscar por Nombre",
+        "searchCode": "Buscar por Código de Curso",
+        "searchLine": "Buscar por Línea del Curso",
         "courses": {
             "computingArchitecture": {
                 "name": "Arquitectura de Computadores",
