@@ -32,7 +32,7 @@ const TechnicalKnowledge: React.FC = () => {
 
   return (
     <section style={{ width: "98%"}}>
-      <h2 className="profileTittles">Conocimiento técnico</h2>
+      <h2 className="profileTittles">{t("profile.technicalknowledge.title")}</h2>
       <Collapse accordion items={items}/>
     </section>
   );

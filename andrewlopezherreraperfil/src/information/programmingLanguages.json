@@ -1,7 +1,7 @@
 [
     {
         "name": "Python",
-        "experience": 90,
+        "experience": 80,
         "image": "assets/programminglanguages/pythonlogo.png"
     },
     {
@@ -11,7 +11,7 @@
     },
     {
         "name": "C",
-        "experience": 85,
+        "experience": 75,
         "image": "assets/programminglanguages/clogo.png"
     },
     {

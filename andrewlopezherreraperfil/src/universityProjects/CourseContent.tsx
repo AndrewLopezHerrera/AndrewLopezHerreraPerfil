@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
 import { Button, Collapse, Input, List, Row } from "antd";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import i18n from "../i18n/i18n";
 import { EyeOutlined } from "@ant-design/icons";
 import "./CourseContent.css";

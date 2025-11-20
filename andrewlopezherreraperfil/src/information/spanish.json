@@ -357,6 +357,51 @@
                         "technologies": ["Node.js", "Express", "JavaScript", "GraphQL", "Apollo Server"],
                         "git": "https://github.com/AndrewLopezHerrera/Laboratorio9DesarrolloWeb.git",
                         "id": "lab9GraphQLApi"
+                    },
+                    {
+                        "name": "Proyecto 2 - API para el Banco Órbita",
+                        "type": "Proyecto",
+                        "dueDate": "2 de noviembre del 2025",
+                        "description": "Desarrollo de una API para el Banco Órbita que permite gestionar cuentas, transacciones y clientes de manera segura y eficiente.",
+                        "technologies": ["Deno", "Oak", "TypeScript", "PostgreSQL", "Cloudflare Tunnel", "Tailscale", "Git", "GitHub", "Orange Pi Zero 3"],
+                        "git": "https://github.com/AndrewLopezHerrera/ProyectoIIDisenoPaginasWeb.git",
+                        "id": "proyecto2ApiBancoOrbita"
+                    },
+                    {
+                        "name": "Laboratorio 10 - Cliente web que consume una API segura",
+                        "type": "Laboratorio",
+                        "dueDate": "24 de octubre del 2025",
+                        "description": "Desarrollar un componente en React que consuma un API protegido mediante API Key, aplicando los hooks useState y useEffect para manejar estados, efectos y peticiones asíncronas.",
+                        "technologies": ["React", "CSS", "JavaScript"],
+                        "git": "https://github.com/AndrewLopezHerrera/Laboratorio10DesarrolloWeb.git",
+                        "id": "lab10WebAppSecurity"
+                    },
+                    {
+                        "name": "Laboratorio 11 - Quiz",
+                        "type": "Laboratorio",
+                        "dueDate": "26 de octubre del 2025",
+                        "description": "Quiz en línea para evaluar los conocimientos adquiridos en el curso de Introducción al Desarrollo de Páginas Web.",
+                        "technologies": ["TEC Digital"],
+                        "id": "lab11Quiz"
+                    },
+                    {
+                        "name": "Laboratorio 12 - Exposición comparativa entre Vue.js y React.js",
+                        "type": "Laboratorio",
+                        "dueDate": "31 de octubre del 2025",
+                        "description": "Exposición comparativa entre los frameworks Vue.js y React.js, destacando sus características, ventajas y desventajas.",
+                        "technologies": ["Canva"],
+                        "id": "lab12VueReactComparison",
+                        "website": "https://estudianteccr-my.sharepoint.com/personal/andrewlopezherrera_estudiantec_cr/_layouts/15/stream.aspx?id=%2Fpersonal%2Fandrewlopezherrera_estudiantec_cr%2FDocuments%2FTecnol%C3%B3gico+de+Costa+Rica%2F13.+X+Semestre%2FIntroducci%C3%B3n+al+Desarrollo+de+P%C3%A1ginas+Web%2FExposici%C3%B3n+Vue+js.mp4&ga=1&startedResponseCatch=true&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.36416ca2-f7eb-4a9d-ac7b-e49d6352fa88"
+                    },
+                    {
+                        "name": "Laboratorio 13 - Chatbot con IA",
+                        "type": "Laboratorio",
+                        "dueDate": "12 de noviembre del 2025",
+                        "description": "Diseñar e implementar un asistente conversacional inteligente que sea capaz de responder preguntas sobre el proyecto del banco simulado, basándose en su modelo de datos y documentación interna, complementando las respuestas con información generada por la API de OpenAI para mantener conversaciones naturales y sugerir posibles continuaciones de diálogo.",
+                        "technologies": ["JavaScript", "React", "OpenAI", "Vercel", "CSS"],
+                        "git": "https://github.com/HillaryMalespin/Proyecto_Dise-o_Web.git",
+                        "website": "https://bancoorbita.netlify.app/",
+                        "id": "lab13ChatbotAI"
                     }
                 ]
             },
@@ -393,6 +438,25 @@
                         "technologies": ["SQLServer", "Management Studio", "Node.js", "Express", "TypeScript", "React", "Next.js", "CSS"],
                         "git": "https://github.com/AndrewLopezHerrera/Prueba-Aseguramiento",
                         "id": "wideWorldImporters"
+                    }
+                ]
+            },
+            "operationsResearch": {
+                "name": "Investigación de Operaciones",
+                "courseCode": "IC6400",
+                "semester": "II Semestre 2025",
+                "description": "Curso que introduce los conceptos y técnicas fundamentales de la investigación de operaciones, incluyendo programación lineal, teoría de colas y simulación.",
+                "line": "Matemáticas aplicadas",
+                "projects": [
+                    {
+                        "name": "Programación Dinámica - Varios Algoritmos",
+                        "type": "Proyecto",
+                        "dueDate": "14 de noviembre del 2025",
+                        "description": "Implementación de los algoritmos de programación dinámica para resolver problemas de reemplazo de equipos, árboles binarios óptimos, series deportivas y multiplicación de matrices.",
+                        "technologies": ["React", "Vue", "JavaScript", "TypeScript", "Vite", "CSS", "Vercel"],
+                        "git": "https://github.com/AndrewLopezHerrera/ProyectoInvestigacionDeOperaciones",
+                        "id": "operationsResearchAlgorithms",
+                        "website": "https://proyecto-investigacion-de-operacion.vercel.app/"
                     }
                 ]
             }

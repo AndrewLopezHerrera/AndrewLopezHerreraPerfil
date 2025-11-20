@@ -34,6 +34,8 @@ const UniversityProjectsContent : React.FC = () => {
         setCourses(filteredCourses);
     }, [searchName, searchCode, searchLine, t]);
 
+    console.log(courses);
+
     return (
         <section className="containerUniversityProjects">
             <h1>{t('universityProjects.title')}</h1>

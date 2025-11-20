@@ -26,5 +26,9 @@
     {
         "name": "databasesII",
         "image": "assets/courses/databasesII.png"
+    },
+    {
+        "name": "operationsResearch",
+        "image": "assets/courses/databasesII.png"
     }
 ]
