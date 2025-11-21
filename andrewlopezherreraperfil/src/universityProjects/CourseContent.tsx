@@ -95,12 +95,12 @@ const CourseContent: React.FC = () => {
             <h1>{t('universityProjects.courses.' + id + '.name')}</h1>
             <Row className="rowProjects" gutter={[32, 32]} justify={'space-around'} style={{ width: "100%", margin: 0 }}>
                 <Input
-                    placeholder="Buscar por tipo" style={{ maxWidth: 400, marginBottom: 16 }}
+                    placeholder={t("universityProjects.searchType")} style={{ maxWidth: 400, marginBottom: 16 }}
                     value={searchType}
                     onChange={e => setSearchType(e.target.value)}
                 />
                 <Input
-                    placeholder="Buscar por tecnologías" style={{ maxWidth: 400, marginBottom: 16 }}
+                    placeholder={t("universityProjects.searchTechnologies")} style={{ maxWidth: 400, marginBottom: 16 }}
                     value={searchTech}
                     onChange={e => setSearchTech(e.target.value)}
                 />

@@ -1,9 +1,9 @@
+import Base from "../base/Base";
+import PersonalProjectsContent from "./PersonalProjectsContent";
+
 const PersonalProjects : React.FC = () => {
     return (
-        <div>
-            <h1>Proyectos Personales</h1>
-            <p>Contenido del proyecto PersonalProjects.</p>
-        </div>
+        <Base frame={<PersonalProjectsContent />}></Base>
     );
 }
 

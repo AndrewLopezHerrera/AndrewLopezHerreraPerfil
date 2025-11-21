@@ -5,6 +5,7 @@ import UniversityProjects from "./universityProjects/UniversityProjects";
 import Course from "./universityProjects/Course";
 import Comment from "./comments/Comment";
 import { Helmet } from "react-helmet";
+import PersonalProjects from "./personalProjects/PersonalProjects";
 
 const App: React.FC = () => {
   return (
@@ -40,7 +41,8 @@ const App: React.FC = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/universityProjects" element={<UniversityProjects />} />
           <Route path="/course/:id" element={<Course />} />
-          <Route path="/personalProjects" element={<UniversityProjects />} />
+          <Route path="/personalProjects" element={<PersonalProjects />} />
+          <Route path="/personal-project/:name" element={<PersonalProject />} />
           <Route path="/comments" element={<Comment />} />
         </Routes>
       </BrowserRouter>

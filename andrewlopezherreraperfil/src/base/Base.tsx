@@ -6,6 +6,8 @@ import {
   HomeOutlined,
   UserOutlined,
   ProjectOutlined,
+  CommentOutlined,
+  SolutionOutlined
 } from '@ant-design/icons';
 import { Button, Layout, Menu, theme, Divider, Image, Radio } from 'antd';
 import morning from '../assets/greetings/iconoManana.png';
@@ -168,8 +170,13 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
                 label: t("base.universityProjects"),
               },
               {
+                key: '4',
+                icon: <SolutionOutlined />,
+                label: t("base.personalProjects"),
+              },
+              {
                 key: '5',
-                icon: <ProjectOutlined />,
+                icon: <CommentOutlined />,
                 label: t("base.comments"),
               }
             ]}

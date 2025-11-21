@@ -1,465 +1,618 @@
 {
-  "home": {
-    "title": "Home",
-    "introduction": "Hello, I am Andrew López Herrera. I am a Computer Engineering student at the Limón Academic Center of the Costa Rica Institute of Technology. This is a professional portfolio designed to showcase my academic and professional activities. Here you will find both technical and soft skills, as well as personal and academic projects."
-  },
   "base": {
-    "home": "Home",
-    "languageSpanish": "Spanish",
-    "languageEnglish": "English",
-    "greetingMorning": "Good morning",
+    "comments": "Comments",
     "greetingAfternoon": "Good afternoon",
     "greetingEvening": "Good evening",
-    "profile": "Profile",
-    "universityProjects": "University Projects",
+    "greetingMorning": "Good morning",
+    "home": "Home",
+    "languageEnglish": "English",
+    "languageSpanish": "Spanish",
     "personalProjects": "Personal Projects",
-    "comments": "Comments"
+    "profile": "Profile",
+    "universityProjects": "University Projects"
+  },
+  "home": {
+    "introduction": "Hello, I am Andrew López Herrera. I am a Computer Engineering student at the Limón Academic Center of the Costa Rica Institute of Technology. This is a professional portfolio designed to showcase my academic and professional activities. Here you will find both technical and soft skills, as well as personal and academic projects.",
+    "title": "Home"
+  },
+  "personalProjects": {
+    "description": "Here are some of my personal projects that I have developed to enhance my skills and explore new technologies.",
+    "descriptionProject": "Project Description",
+    "projects": [
+      {
+        "fullDescription": "This project consisted of creating a control system using web sockets for a robotic arm. The system is composed of five main components: the robotic arm that uses an ESP32 board, a router that provides the network through which the other components can connect, a Node.js server installed on an Orange Pi Zero 3, an Arduino board with an HU-M16 shield that provides joysticks to control the arm, and finally a PC that connects the Arduino to the server using Python and TKinter for the graphical interface.",
+        "id": "roboticArmWebSockets",
+        "name": "Robotic Arm Controlled via Web Sockets",
+        "repository": "https://github.com/AndrewLopezHerrera/Brazo_Medico_A_Distacia",
+        "smallDescription": "Robotic arm project controlled via web sockets using an Arduino board, an ESP32 board, and a Node.js server.",
+        "technologies": [
+          "Arduino",
+          "ESP32",
+          "Orange Pi Zero 3",
+          "Node.js",
+          "Web Sockets",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Python"
+        ]
+      }
+    ],
+    "technologiesUsed": "Technologies Used",
+    "title": "Personal Projects",
+    "viewProject": "View Project",
+    "viewRepository": "View Repository",
+    "viewWebsite": "View Website"
   },
   "profile": {
-    "presentation": {
-      "title": "Biography",
-      "name": "Andrew López Herrera",
-      "career": "Computer Engineering Student",
-      "biography": "I am a Computer Engineering student currently studying at the Limón Academic Center of the Costa Rica Institute of Technology. I am interested in topics such as robotics in healthcare, software security, web servers, compilers as a way to preserve indigenous languages, and artificial intelligence for the conservation of sea turtles. In short, I aim to improve the quality of life for people and living beings by using current technology or creating new technology.",
-      "personalData": {
-        "phoneLabel": "Phone",
-        "phone": "+506 6067 8713",
-        "emailLabel": "Email",
-        "email": "andrewlopezherrera@proton.me",
-        "websiteLabel": "Website",
-        "website": "https://andrewlopezherrera.vercel.app"
-      }
-    },
-    "technicalknowledge": {
-      "title": "Technical Knowledge",
-      "programmingLanguages": {
-        "title": "Experience in Programming Languages"
-      },
-      "frameworks": {
-        "title": "Experience in Frameworks"
-      },
-      "databases": {
-        "title": "Experience in Databases"
-      },
-      "developmentBoards": {
-        "title": "Experience in Development Boards"
-      }
-    },
-    "softSkills": {
-      "title": "Soft Skills",
-      "list": [
-        {
-            "title": "Teaching Complex Topics",
-            "description": "I have provided tutoring to help students understand difficult concepts and improve their programming skills."
-        },
-        {
-            "title": "Social Responsibility",
-            "description": "I have participated by teaching basic Excel classes to indigenous Bribri women in the Talamanca community, Costa Rica."
-        },
-        {
-            "title": "Teamwork",
-            "description": "I have experience working in multidisciplinary teams, collaborating with others to achieve common goals."
-        }
-      ]
-    },
-    "certificates": {
-      "title": "Certificates",
-      "viewCertificate": "View Certificate",
-      "courses": {
-        "programmingWorkshop": {
-          "title": "Tutoring - Programming Workshop",
-          "institute": "Instituto Tecnológico de Costa Rica",
-          "description": "Certified for tutoring the Programming Workshop course, taught at the Limón Academic Center of the Instituto Tecnológico de Costa Rica during the first semester of 2023."
-        },
-        "introductionToProgramming": {
-          "title": "Tutoring - Introduction to Programming",
-          "institute": "Instituto Tecnológico de Costa Rica",
-          "description": "Certified for tutoring the Introduction to Programming course, taught at the Limón Academic Center of the Instituto Tecnológico de Costa Rica during the first semester of 2023."
-        },
-        "computingElements": {
-          "title": "Tutoring - Computing Elements",
-          "institute": "Instituto Tecnológico de Costa Rica",
-          "description": "Certified for tutoring the Computing Elements course, taught at the Limón Academic Center of the Instituto Tecnológico de Costa Rica during the first semester of 2024."
-        },
-        "attentionToEmotionalAndAcademicNeeds": {
-          "title": "Training - Attention to Emotional and Academic Needs",
-          "institute": "Instituto Tecnológico de Costa Rica",
-          "description": "Certified for participating in the training 'Attention to Emotional and Academic Needs', held at the Instituto Tecnológico de Costa Rica."
-        }
-      }
-    },
-    "professionalnetworks": {
-      "title": "Professional Networks",
-      "viewNetwork": "View Network",
-      "LinkedIn": {
-        "description": "Connect with me on LinkedIn to explore professional opportunities and share knowledge.",
-        "viewNetwork": "View LinkedIn"
-      },
-      "GitHub": {
-        "description": "Visit my GitHub profile to see my projects and open-source contributions.",
-        "viewNetwork": "View GitHub"
-      }
-    },
-    "technicalInterests": {
-      "title": "Technical Interests",
-      "list": [
-        "Robotics in the medical field to improve patient care.",
-        "Creating programming languages as a way to preserve indigenous languages.",
-        "Artificial intelligence as a tool for finding turtle nests for their preservation.",
-        "Internet of Things to automate home processes and provide real-time information, for example, weather updates for hanging clothes."
-      ]
-    },
-    "curriculumVitae": {
-      "title": "Curriculum Vitae",
-      "viewCV": "View CV",
-      "generating": "Generating..."
-    },
-    "references": {
-      "title": "References",
-      "list": [
-        {
-          "name": "Yanielca Araya Gaboa",
-          "career": "Industrial Production Engineer",
-          "jobTitle": "Process Optimization Analyst",
-          "company": "BAC LATAM",
-          "email": "yaniaraya@gmail.com",
-          "phone": "+506 86866814"
-        },
-        {
-          "name": "Cristian Campos Agüero MGP, MBA",
-          "career": "Computer Engineer",
-          "jobTitle": "Professor - Researcher",
-          "company": "Instituto Tecnológico de Costa Rica",
-          "email": "crcampos@itcr.ac.cr",
-          "phone": "+506 8802 5569"
-        }
-      ]
-    },
-    "academicBackground" : {
+    "academicBackground": {
       "title": "Academic Background",
       "titles": [
         {
           "degree": "Bachiller en Ingeniería en Computación",
           "institution": "Instituto Tecnológico de Costa Rica",
-          "year" : "2021 - penultimate semester"
+          "year": "2021 - penultimate semester"
         },
         {
           "degree": "Tecnico Medio en Contabilidad",
           "institution": "Instituto Tecnológico de Costa Rica",
-          "year" : "2017 - 2020"
+          "year": "2017 - 2020"
         }
       ]
+    },
+    "certificates": {
+      "courses": {
+        "attentionToEmotionalAndAcademicNeeds": {
+          "description": "Certified for participating in the training 'Attention to Emotional and Academic Needs', held at the Instituto Tecnológico de Costa Rica.",
+          "institute": "Instituto Tecnológico de Costa Rica",
+          "title": "Training - Attention to Emotional and Academic Needs"
+        },
+        "computingElements": {
+          "description": "Certified for tutoring the Computing Elements course, taught at the Limón Academic Center of the Instituto Tecnológico de Costa Rica during the first semester of 2024.",
+          "institute": "Instituto Tecnológico de Costa Rica",
+          "title": "Tutoring - Computing Elements"
+        },
+        "introductionToProgramming": {
+          "description": "Certified for tutoring the Introduction to Programming course, taught at the Limón Academic Center of the Instituto Tecnológico de Costa Rica during the first semester of 2023.",
+          "institute": "Instituto Tecnológico de Costa Rica",
+          "title": "Tutoring - Introduction to Programming"
+        },
+        "programmingWorkshop": {
+          "description": "Certified for tutoring the Programming Workshop course, taught at the Limón Academic Center of the Instituto Tecnológico de Costa Rica during the first semester of 2023.",
+          "institute": "Instituto Tecnológico de Costa Rica",
+          "title": "Tutoring - Programming Workshop"
+        }
+      },
+      "title": "Certificates",
+      "viewCertificate": "View Certificate"
+    },
+    "curriculumVitae": {
+      "generating": "Generating...",
+      "title": "Curriculum Vitae",
+      "viewCV": "View CV"
+    },
+    "presentation": {
+      "biography": "I am a Computer Engineering student currently studying at the Limón Academic Center of the Costa Rica Institute of Technology. I am interested in topics such as robotics in healthcare, software security, web servers, compilers as a way to preserve indigenous languages, and artificial intelligence for the conservation of sea turtles. In short, I aim to improve the quality of life for people and living beings by using current technology or creating new technology.",
+      "career": "Computer Engineering Student",
+      "name": "Andrew López Herrera",
+      "personalData": {
+        "email": "andrewlopezherrera@proton.me",
+        "emailLabel": "Email",
+        "phone": "+506 6067 8713",
+        "phoneLabel": "Phone",
+        "website": "https://andrewlopezherrera.vercel.app",
+        "websiteLabel": "Website"
+      },
+      "title": "Biography"
+    },
+    "professionalnetworks": {
+      "GitHub": {
+        "description": "Visit my GitHub profile to see my projects and open-source contributions.",
+        "viewNetwork": "View GitHub"
+      },
+      "LinkedIn": {
+        "description": "Connect with me on LinkedIn to explore professional opportunities and share knowledge.",
+        "viewNetwork": "View LinkedIn"
+      },
+      "title": "Professional Networks",
+      "viewNetwork": "View Network"
+    },
+    "references": {
+      "list": [
+        {
+          "career": "Industrial Production Engineer",
+          "company": "BAC LATAM",
+          "email": "yaniaraya@gmail.com",
+          "jobTitle": "Process Optimization Analyst",
+          "name": "Yanielca Araya Gaboa",
+          "phone": "+506 86866814"
+        },
+        {
+          "career": "Computer Engineer",
+          "company": "Instituto Tecnológico de Costa Rica",
+          "email": "crcampos@itcr.ac.cr",
+          "jobTitle": "Professor - Researcher",
+          "name": "Cristian Campos Agüero MGP, MBA",
+          "phone": "+506 8802 5569"
+        }
+      ],
+      "title": "References"
+    },
+    "softSkills": {
+      "list": [
+        {
+          "description": "I have provided tutoring to help students understand difficult concepts and improve their programming skills.",
+          "title": "Teaching Complex Topics"
+        },
+        {
+          "description": "I have participated by teaching basic Excel classes to indigenous Bribri women in the Talamanca community, Costa Rica.",
+          "title": "Social Responsibility"
+        },
+        {
+          "description": "I have experience working in multidisciplinary teams, collaborating with others to achieve common goals.",
+          "title": "Teamwork"
+        }
+      ],
+      "title": "Soft Skills"
+    },
+    "technicalInterests": {
+      "list": [
+        "Robotics in the medical field to improve patient care.",
+        "Creating programming languages as a way to preserve indigenous languages.",
+        "Artificial intelligence as a tool for finding turtle nests for their preservation.",
+        "Internet of Things to automate home processes and provide real-time information, for example, weather updates for hanging clothes."
+      ],
+      "title": "Technical Interests"
+    },
+    "technicalknowledge": {
+      "databases": {
+        "title": "Experience in Databases"
+      },
+      "developmentBoards": {
+        "title": "Experience in Development Boards"
+      },
+      "frameworks": {
+        "title": "Experience in Frameworks"
+      },
+      "programmingLanguages": {
+        "title": "Experience in Programming Languages"
+      },
+      "title": "Technical Knowledge"
     }
   },
   "universityProjects": {
-    "title": "University Projects - Courses",
-    "viewProjects": "View Projects",
-    "nameCourse": "Course Name",
     "courseCode": "Course Code",
-    "semester": "Semester Taken",
-    "description": "Course Description",
-    "line": "Course Area",
-    "viewRepository": "View Repository",
-    "viewFunction": "View Functionality",
-    "type": "Evaluation Type",
-    "dueDate": "Due Date",
-    "projectDescription": "Project Description",
-    "technologies": "Technologies Used",
-    "repository": "Repository",
-    "functionality": "Functionality",
-    "viewWebsite": "View Website",
-    "searchName": "Search by Name",
-    "searchCode": "Search by Course Code",
-    "searchLine": "Search by Course Area",
     "courses": {
-      "computingArchitecture": {
-        "name": "Computer Architecture",
-        "courseCode": "IC3101",
-        "semester": "First Semester 2023",
-        "description": "Course covering the architecture and organization of computers, including topics such as data representation, instruction set, processor architecture, memory, and input/output systems.",
-        "line": "Computer Science",
-        "projects": [
-          {
-            "name": "Battleship",
-            "type": "Project",
-            "dueDate": "May 21, 2023",
-            "description": "Battleship game implemented in ARM32 assembly language.",
-            "technologies": ["ARM32", "Assembly"],
-            "git": "https://git.mora.co.cr/andrewlopezherrera/battleship.git",
-            "id": "battleship"
-          }
-        ]
-      },
-      "dataStructure": {
-        "name": "Data Structures",
-        "courseCode": "IC2001",
-        "semester": "Second Semester 2022",
-        "description": "Course covering the fundamental concepts of data structures, including lists, stacks, queues, trees, and graphs, as well as algorithms to manipulate these structures.",
-        "line": "Computer Science",
-        "projects": [
-          {
-            "name": "XML Library",
-            "type": "Project",
-            "dueDate": "October 20, 2022",
-            "description": "C++ library for manipulating XML files, including functions to read and modify XML in memory. Also supports self-balancing binary trees (AVL).",
-            "technologies": ["C++", "XML", "g++", "Linux"],
-            "git": "https://git.mora.co.cr/andrewlopezherrera/iiproyecto-estructuras-de-datos.git",
-            "id": "xmlLibrary"
-          },
-          {
-            "name": "Graph Viewer",
-            "type": "Project",
-            "dueDate": "November 24, 2022",
-            "description": "Desktop application to visualize graphs and adjacency matrices. Allows loading graphs from text files, creating graphs, and displaying them graphically.",
-            "technologies": ["C++", "Qt", "Linux"],
-            "git": "https://git.mora.co.cr/andrewlopezherrera/proyecto-iii-estructuras-de-datos.git",
-            "id": "graphViewer"
-          }
-        ]
-      },
       "compilersAndInterpreters": {
-        "name": "Compilers and Interpreters",
         "courseCode": "IC5701",
-        "semester": "First Semester 2025",
         "description": "Course introducing the fundamental concepts and techniques for designing and implementing compilers and interpreters, including lexical analysis, syntax analysis, and code generation.",
         "line": "Computer Science",
+        "name": "Compilers and Interpreters",
         "projects": [
           {
-            "name": "OLIAC Compiler",
-            "type": "Project",
-            "dueDate": "June 28, 2025",
             "description": "OLIAC is a programming language invented in the Compilers and Interpreters course. The compiler is implemented in Java with JavaCup and generates MIPS assembly code.",
-            "technologies": ["Java", "JavaCup", "MIPS", "QtSpim", "Windows"],
+            "dueDate": "June 28, 2025",
             "git": "https://git.mora.co.cr/andrewlopezherrera/oliac-compiler.git",
-            "id": "oliacCompiler"
+            "id": "oliacCompiler",
+            "name": "OLIAC Compiler",
+            "technologies": [
+              "Java",
+              "JavaCup",
+              "MIPS",
+              "QtSpim",
+              "Windows"
+            ],
+            "type": "Project"
           }
-        ]
+        ],
+        "semester": "First Semester 2025"
       },
-      "operatingSystemsPrinciples": {
-        "name": "Operating Systems Principles",
-        "courseCode": "IC6600",
-        "semester": "Second Semester 2025",
-        "description": "Course covering the fundamental principles and concepts of operating systems, including process management, memory management, file systems, and security.",
+      "computingArchitecture": {
+        "courseCode": "IC3101",
+        "description": "Course covering the architecture and organization of computers, including topics such as data representation, instruction set, processor architecture, memory, and input/output systems.",
         "line": "Computer Science",
+        "name": "Computer Architecture",
         "projects": [
           {
-            "name": "Process Scheduler Simulator",
-            "type": "Assignment",
-            "dueDate": "September 8, 2025",
-            "description": "Java simulator implementing various process scheduling algorithms, including FIFO, SJF, Round Robin, and Multilevel.",
-            "technologies": ["Java", "Swing", "Windows"],
-            "git": "https://github.com/AndrewLopezHerrera/MiniPCVirtualTarea1.git",
-            "id": "processSchedulerSimulator"
+            "description": "Battleship game implemented in ARM32 assembly language.",
+            "dueDate": "May 21, 2023",
+            "git": "https://git.mora.co.cr/andrewlopezherrera/battleship.git",
+            "id": "battleship",
+            "name": "Battleship",
+            "technologies": [
+              "ARM32",
+              "Assembly"
+            ],
+            "type": "Project"
+          }
+        ],
+        "semester": "First Semester 2023"
+      },
+      "databasesII": {
+        "courseCode": "IC4302",
+        "description": "Course covering advanced database concepts, including database design, advanced SQL, transactions, and recovery.",
+        "line": "Databases",
+        "name": "Databases II",
+        "projects": [
+          {
+            "description": "Implementation of the Wide World Importers database, including tables, relationships, stored procedures, views, and indexes.",
+            "dueDate": "November 3, 2024",
+            "git": "https://github.com/AndrewLopezHerrera/Prueba-Aseguramiento",
+            "id": "wideWorldImporters",
+            "name": "Wide World Importers",
+            "technologies": [
+              "SQLServer",
+              "Management Studio",
+              "Node.js",
+              "Express",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "CSS"
+            ],
+            "type": "Project"
+          }
+        ],
+        "semester": "Second Semester 2024"
+      },
+      "dataStructure": {
+        "courseCode": "IC2001",
+        "description": "Course covering the fundamental concepts of data structures, including lists, stacks, queues, trees, and graphs, as well as algorithms to manipulate these structures.",
+        "line": "Computer Science",
+        "name": "Data Structures",
+        "projects": [
+          {
+            "description": "C++ library for manipulating XML files, including functions to read and modify XML in memory. Also supports self-balancing binary trees (AVL).",
+            "dueDate": "October 20, 2022",
+            "git": "https://git.mora.co.cr/andrewlopezherrera/iiproyecto-estructuras-de-datos.git",
+            "id": "xmlLibrary",
+            "name": "XML Library",
+            "technologies": [
+              "C++",
+              "XML",
+              "g++",
+              "Linux"
+            ],
+            "type": "Project"
           },
           {
-            "name": "Selfish Round Robin Memory Management Simulator",
-            "type": "Assignment",
-            "dueDate": "October 16, 2025",
-            "description": "React simulator implementing the Selfish Round Robin memory management algorithm. This website is not responsive, because the principle objective was learning the algorithm and its implementation.",
-            "technologies": ["TypeScript", "React", "Vercel", "Linux", "CSS"],
-            "git": "https://github.com/AndrewLopezHerrera/Demostraci-nRobinRoundEgoista",
-            "website": "https://demostraci-n-robin-round-egoista.vercel.app/",
-            "id": "selfishRoundRobinMemoryManagementSimulator"
+            "description": "Desktop application to visualize graphs and adjacency matrices. Allows loading graphs from text files, creating graphs, and displaying them graphically.",
+            "dueDate": "November 24, 2022",
+            "git": "https://git.mora.co.cr/andrewlopezherrera/proyecto-iii-estructuras-de-datos.git",
+            "id": "graphViewer",
+            "name": "Graph Viewer",
+            "technologies": [
+              "C++",
+              "Qt",
+              "Linux"
+            ],
+            "type": "Project"
           }
-        ]
+        ],
+        "semester": "Second Semester 2022"
+      },
+      "engineeringSoftwareProject": {
+        "courseCode": "IC7841",
+        "description": "Course where all the concepts learned throughout the degree are applied to develop a complete software project, from planning to implementation and maintenance.",
+        "line": "Software Engineering",
+        "name": "Software Engineering Project",
+        "projects": [
+          {
+            "description": "Inventory and billing management system developed for SRL Technology. The system allows control of products, clients, and invoices, as well as adding, modifying, and deleting products and invoices.",
+            "dueDate": "December 15, 2024",
+            "git": "https://github.com/AndrewLopezHerrera/SRLGestock.git",
+            "id": "srlGestock",
+            "name": "SRL GESTOCK",
+            "technologies": [
+              "React",
+              "Vite",
+              "TypeScript",
+              "Deno",
+              "Oak",
+              "PostgreSQL",
+              "Tauri",
+              "CSS",
+              "Ant Design",
+              "UpCloud",
+              "Git",
+              "GitHub",
+              "SSH"
+            ],
+            "type": "Project"
+          }
+        ],
+        "semester": "First Semester 2025"
       },
       "introductionToWebPageDevelopment": {
-        "name": "Introduction to Web Page Development",
         "courseCode": "IC8057",
-        "semester": "Second Semester 2025",
         "description": "Course introducing the fundamental concepts and technologies for web development, including HTML, CSS, JavaScript, and popular frameworks.",
         "line": "Software Engineering",
+        "name": "Introduction to Web Page Development",
         "projects": [
           {
-            "name": "Lab 1 - Markdown Research",
-            "type": "Lab",
-            "dueDate": "August 10, 2024",
             "description": "Research on the features of modern web development, as well as the tools and technologies currently used. The report must be written in Markdown and include screenshots.",
-            "technologies": ["Markdown"],
+            "dueDate": "August 10, 2024",
             "git": "https://github.com/AndrewLopezHerrera/desarrollo-moderno-Andrew.git",
-            "id": "lab1Markdown"
+            "id": "lab1Markdown",
+            "name": "Lab 1 - Markdown Research",
+            "technologies": [
+              "Markdown"
+            ],
+            "type": "Lab"
           },
           {
-            "name": "Lab 2 - Static Web Page",
-            "type": "Lab",
-            "dueDate": "August 16, 2024",
             "description": "Development of a static web page using HTML. The page should only contain the HTML structure.",
-            "technologies": ["HTML", "Netlify"],
-            "id": "lab2StaticWebPage"
+            "dueDate": "August 16, 2024",
+            "id": "lab2StaticWebPage",
+            "name": "Lab 2 - Static Web Page",
+            "technologies": [
+              "HTML",
+              "Netlify"
+            ],
+            "type": "Lab"
           },
           {
-            "name": "Lab 3 - Dynamic Web Page",
-            "type": "Lab",
-            "dueDate": "August 25, 2024",
             "description": "The same page from Lab 2, but now using CSS for design and layout.",
-            "technologies": ["HTML", "CSS", "Netlify"],
+            "dueDate": "August 25, 2024",
             "git": "https://github.com/AndrewLopezHerrera/Laboratorio2PaginasWeb/tree/lab3-selectores-boxmodel",
-            "id": "lab3CSSWebPage"
+            "id": "lab3CSSWebPage",
+            "name": "Lab 3 - Dynamic Web Page",
+            "technologies": [
+              "HTML",
+              "CSS",
+              "Netlify"
+            ],
+            "type": "Lab"
           },
           {
-            "name": "Lab 4 - Questionnaire",
-            "type": "Lab",
-            "dueDate": "August 29, 2024",
             "description": "A questionnaire made by the professor about the POUR principle, accessibility, and solving a case with sprints.",
-            "technologies": ["TEC Digital"],
-            "id": "lab4Questionnaire"
+            "dueDate": "August 29, 2024",
+            "id": "lab4Questionnaire",
+            "name": "Lab 4 - Questionnaire",
+            "technologies": [
+              "TEC Digital"
+            ],
+            "type": "Lab"
           },
           {
-            "name": "Lab 5 - Responsive Web Page",
-            "type": "Lab",
-            "dueDate": "September 7, 2024",
             "description": "The same page from Lab 3, but now using media queries to make the page responsive.",
-            "technologies": ["HTML", "CSS", "Media Queries", "Netlify"],
+            "dueDate": "September 7, 2024",
             "git": "https://github.com/AndrewLopezHerrera/Laboratorio2PaginasWeb.git",
             "id": "lab5ResponsiveWebPage",
+            "name": "Lab 5 - Responsive Web Page",
+            "technologies": [
+              "HTML",
+              "CSS",
+              "Media Queries",
+              "Netlify"
+            ],
+            "type": "Lab",
             "website": "https://laboratorio2-paginas-web.vercel.app/"
           },
           {
-            "name": "Project 1 - Prototype of a banking entity",
-            "type": "Project",
-            "dueDate": "September 30, 2025",
             "description": "This project consists of developing a prototype website for a fictional banking entity called Banco Órbita. The site must be responsive and include the following sections: Home, Login, Password Recovery, User Dashboard, Transfers Module, PIN Inquiry, and Account Review. The username and password to log in are usuario@ejemplo.com and 123456 respectively; all verification codes are 123456.",
-            "technologies": ["React", "CSS", "Media Queries", "Netlify", "GitHub"],
+            "dueDate": "September 30, 2025",
             "git": "https://github.com/AndrewLopezHerrera/Laboratorio2PaginasWeb.git",
             "id": "lab5ResponsiveWebPage",
+            "name": "Project 1 - Prototype of a banking entity",
+            "technologies": [
+              "React",
+              "CSS",
+              "Media Queries",
+              "Netlify",
+              "GitHub"
+            ],
+            "type": "Project",
             "website": "https://bancoorbita.netlify.app/"
           },
           {
-            "name": "Lab 6 - Learning to use events in JavaScript",
-            "type": "Lab",
-            "dueDate": "September 19, 2025",
             "description": "Lab focused on the use of events in JavaScript to create interactivity in web pages.",
-            "technologies": ["HTML", "CSS", "JavaScript"],
-            "id": "lab6JavaScriptEvents"
+            "dueDate": "September 19, 2025",
+            "id": "lab6JavaScriptEvents",
+            "name": "Lab 6 - Learning to use events in JavaScript",
+            "technologies": [
+              "HTML",
+              "CSS",
+              "JavaScript"
+            ],
+            "type": "Lab"
           },
           {
-            "name": "Lab 7 - Presentation on APIs",
-            "type": "Lab",
-            "dueDate": "September 24, 2025",
             "description": "Lab focused on the types of APIs, how they work, and usage examples.",
-            "technologies": ["Canva"],
-            "id": "lab7ApiExhibition"
+            "dueDate": "September 24, 2025",
+            "id": "lab7ApiExhibition",
+            "name": "Lab 7 - Presentation on APIs",
+            "technologies": [
+              "Canva"
+            ],
+            "type": "Lab"
           },
           {
-            "name": "Lab 8 - Creation and testing of a RESTful API",
-            "type": "Lab",
-            "dueDate": "October 3, 2025",
             "description": "Lab focused on creating and testing a RESTful API using Node.js, Express, and Postman.",
-            "technologies": ["Node.js", "Express", "JavaScript", "Postman"],
+            "dueDate": "October 3, 2025",
             "git": "https://github.com/AndrewLopezHerrera/Laboratorio8DesarrolloAPI.git",
-            "id": "lab8RestApi"
+            "id": "lab8RestApi",
+            "name": "Lab 8 - Creation and testing of a RESTful API",
+            "technologies": [
+              "Node.js",
+              "Express",
+              "JavaScript",
+              "Postman"
+            ],
+            "type": "Lab"
           },
           {
-            "name": "Lab 9 - Creation of an API with GraphQL",
-            "type": "Lab",
-            "dueDate": "October 12, 2025",
             "description": "Lab focused on creating an API using GraphQL and Apollo Server. The API was also tested using Postman.",
-            "technologies": ["Node.js", "Express", "JavaScript", "GraphQL", "Apollo Server"],
+            "dueDate": "October 12, 2025",
             "git": "https://github.com/AndrewLopezHerrera/Laboratorio9DesarrolloWeb.git",
-            "id": "lab9GraphQLApi"
+            "id": "lab9GraphQLApi",
+            "name": "Lab 9 - Creation of an API with GraphQL",
+            "technologies": [
+              "Node.js",
+              "Express",
+              "JavaScript",
+              "GraphQL",
+              "Apollo Server"
+            ],
+            "type": "Lab"
           },
           {
-            "name": "Project 2 - API for Banco Órbita",
-            "type": "Project",
-            "dueDate": "November 2, 2025",
             "description": "Development of an API for Banco Órbita that allows managing accounts, transactions, and clients securely and efficiently.",
-            "technologies": ["Deno", "Oak", "TypeScript", "PostgreSQL", "Cloudflare Tunnel", "Tailscale", "Git", "GitHub", "Orange Pi Zero 3"],
+            "dueDate": "November 2, 2025",
             "git": "https://github.com/AndrewLopezHerrera/ProyectoIIDisenoPaginasWeb.git",
-            "id": "proyecto2ApiBancoOrbita"
+            "id": "proyecto2ApiBancoOrbita",
+            "name": "Project 2 - API for Banco Órbita",
+            "technologies": [
+              "Deno",
+              "Oak",
+              "TypeScript",
+              "PostgreSQL",
+              "Cloudflare Tunnel",
+              "Tailscale",
+              "Git",
+              "GitHub",
+              "Orange Pi Zero 3"
+            ],
+            "type": "Project"
           },
           {
-            "name": "Lab 10 - Web client consuming a secure API",
-            "type": "Lab",
-            "dueDate": "October 24, 2025",
             "description": "Develop a React component that consumes an API protected by an API Key, applying the useState and useEffect hooks to manage states, effects, and asynchronous requests.",
-            "technologies": ["React", "CSS", "JavaScript"],
+            "dueDate": "October 24, 2025",
             "git": "https://github.com/AndrewLopezHerrera/Laboratorio10DesarrolloWeb.git",
-            "id": "lab10WebAppSecurity"
+            "id": "lab10WebAppSecurity",
+            "name": "Lab 10 - Web client consuming a secure API",
+            "technologies": [
+              "React",
+              "CSS",
+              "JavaScript"
+            ],
+            "type": "Lab"
           },
           {
-            "name": "Lab 11 - Quiz",
-            "type": "Lab",
-            "dueDate": "October 26, 2025",
             "description": "Online quiz to assess the knowledge acquired in the Introduction to Web Development course.",
-            "technologies": ["TEC Digital"],
-            "id": "lab11Quiz"
+            "dueDate": "October 26, 2025",
+            "id": "lab11Quiz",
+            "name": "Lab 11 - Quiz",
+            "technologies": [
+              "TEC Digital"
+            ],
+            "type": "Lab"
           },
           {
-            "name": "Lab 12 - Comparative presentation between Vue.js and React.js",
-            "type": "Lab",
-            "dueDate": "October 31, 2025",
             "description": "Comparative presentation between the Vue.js and React.js frameworks, highlighting their features, advantages, and disadvantages.",
-            "technologies": ["Canva"],
+            "dueDate": "October 31, 2025",
             "id": "lab12VueReactComparison",
+            "name": "Lab 12 - Comparative presentation between Vue.js and React.js",
+            "technologies": [
+              "Canva"
+            ],
+            "type": "Lab",
             "website": "https://estudianteccr-my.sharepoint.com/personal/andrewlopezherrera_estudiantec_cr/_layouts/15/stream.aspx?id=%2Fpersonal%2Fandrewlopezherrera_estudiantec_cr%2FDocuments%2FTecnol%C3%B3gico+de+Costa+Rica%2F13.+X+Semestre%2FIntroducci%C3%B3n+al+Desarrollo+de+P%C3%A1ginas+Web%2FExposici%C3%B3n+Vue+js.mp4&ga=1&startedResponseCatch=true&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.36416ca2-f7eb-4a9d-ac7b-e49d6352fa88"
           },
           {
-            "name": "Lab 13 - Chatbot with AI",
-            "type": "Lab",
-            "dueDate": "November 12, 2025",
             "description": "Design and implement an intelligent conversational assistant capable of answering questions about the simulated bank project, based on its data model and internal documentation, complementing the answers with information generated by the OpenAI API to maintain natural conversations and suggest possible dialogue continuations.",
-            "technologies": ["JavaScript", "React", "OpenAI", "Vercel", "CSS"],
+            "dueDate": "November 12, 2025",
             "git": "https://github.com/HillaryMalespin/Proyecto_Dise-o_Web.git",
-            "website": "https://bancoorbita.netlify.app/",
-            "id": "lab13ChatbotAI"
+            "id": "lab13ChatbotAI",
+            "name": "Lab 13 - Chatbot with AI",
+            "technologies": [
+              "JavaScript",
+              "React",
+              "OpenAI",
+              "Vercel",
+              "CSS"
+            ],
+            "type": "Lab",
+            "website": "https://bancoorbita.netlify.app/"
           }
-        ]
+        ],
+        "semester": "Second Semester 2025"
       },
-      "engineeringSoftwareProject": {
-        "name": "Software Engineering Project",
-        "courseCode": "IC7841",
-        "semester": "First Semester 2025",
-        "description": "Course where all the concepts learned throughout the degree are applied to develop a complete software project, from planning to implementation and maintenance.",
-        "line": "Software Engineering",
+      "operatingSystemsPrinciples": {
+        "courseCode": "IC6600",
+        "description": "Course covering the fundamental principles and concepts of operating systems, including process management, memory management, file systems, and security.",
+        "line": "Computer Science",
+        "name": "Operating Systems Principles",
         "projects": [
           {
-            "name": "SRL GESTOCK",
-            "type": "Project",
-            "dueDate": "December 15, 2024",
-            "description": "Inventory and billing management system developed for SRL Technology. The system allows control of products, clients, and invoices, as well as adding, modifying, and deleting products and invoices.",
-            "technologies": ["React", "Vite", "TypeScript", "Deno", "Oak", "PostgreSQL", "Tauri", "CSS", "Ant Design", "UpCloud", "Git", "GitHub", "SSH"],
-            "git": "https://github.com/AndrewLopezHerrera/SRLGestock.git",
-            "id": "srlGestock"
-          }
-        ]
-      },
-      "databasesII": {
-        "name": "Databases II",
-        "courseCode": "IC4302",
-        "semester": "Second Semester 2024",
-        "description": "Course covering advanced database concepts, including database design, advanced SQL, transactions, and recovery.",
-        "line": "Databases",
-        "projects": [
+            "description": "Java simulator implementing various process scheduling algorithms, including FIFO, SJF, Round Robin, and Multilevel.",
+            "dueDate": "September 8, 2025",
+            "git": "https://github.com/AndrewLopezHerrera/MiniPCVirtualTarea1.git",
+            "id": "processSchedulerSimulator",
+            "name": "Process Scheduler Simulator",
+            "technologies": [
+              "Java",
+              "Swing",
+              "Windows"
+            ],
+            "type": "Assignment"
+          },
           {
-            "name": "Wide World Importers",
-            "type": "Project",
-            "dueDate": "November 3, 2024",
-            "description": "Implementation of the Wide World Importers database, including tables, relationships, stored procedures, views, and indexes.",
-            "technologies": ["SQLServer", "Management Studio", "Node.js", "Express", "TypeScript", "React", "Next.js", "CSS"],
-            "git": "https://github.com/AndrewLopezHerrera/Prueba-Aseguramiento",
-            "id": "wideWorldImporters"
+            "description": "React simulator implementing the Selfish Round Robin memory management algorithm. This website is not responsive, because the principle objective was learning the algorithm and its implementation.",
+            "dueDate": "October 16, 2025",
+            "git": "https://github.com/AndrewLopezHerrera/Demostraci-nRobinRoundEgoista",
+            "id": "selfishRoundRobinMemoryManagementSimulator",
+            "name": "Selfish Round Robin Memory Management Simulator",
+            "technologies": [
+              "TypeScript",
+              "React",
+              "Vercel",
+              "Linux",
+              "CSS"
+            ],
+            "type": "Assignment",
+            "website": "https://demostraci-n-robin-round-egoista.vercel.app/"
           }
-        ]
+        ],
+        "semester": "Second Semester 2025"
       },
       "operationsResearch": {
-        "name": "Operations Research",
         "courseCode": "IC6400",
-        "semester": "Second Semester 2025",
         "description": "Course that introduces the fundamental concepts and techniques of operations research, including linear programming, queueing theory, and simulation.",
         "line": "Applied Mathematics",
+        "name": "Operations Research",
         "projects": [
           {
-            "name": "Dynamic Programming - Various Algorithms",
-            "type": "Project",
-            "dueDate": "November 14, 2025",
             "description": "Implementation of dynamic programming algorithms to solve problems such as equipment replacement, optimal binary trees, sports series, and matrix multiplication.",
-            "technologies": ["React", "Vue", "JavaScript", "TypeScript", "Vite", "CSS", "Vercel"],
+            "dueDate": "November 14, 2025",
             "git": "https://github.com/AndrewLopezHerrera/ProyectoInvestigacionDeOperaciones",
             "id": "operationsResearchAlgorithms",
+            "name": "Dynamic Programming - Various Algorithms",
+            "technologies": [
+              "React",
+              "Vue",
+              "JavaScript",
+              "TypeScript",
+              "Vite",
+              "CSS",
+              "Vercel"
+            ],
+            "type": "Project",
             "website": "https://proyecto-investigacion-de-operacion.vercel.app/"
           }
-        ]
+        ],
+        "semester": "Second Semester 2025"
       }
-    }
+    },
+    "description": "Course Description",
+    "dueDate": "Due Date",
+    "functionality": "Functionality",
+    "line": "Course Area",
+    "nameCourse": "Course Name",
+    "projectDescription": "Project Description",
+    "repository": "Repository",
+    "searchCode": "Search by Course Code",
+    "searchLine": "Search by Course Area",
+    "searchName": "Search by Name",
+    "searchTechnologies": "Search by Technologies Used",
+    "searchType": "Search by Evaluation Type",
+    "semester": "Semester Taken",
+    "technologies": "Technologies Used",
+    "title": "University Projects - Courses",
+    "type": "Evaluation Type",
+    "viewFunction": "View Functionality",
+    "viewProjects": "View Projects",
+    "viewRepository": "View Repository",
+    "viewWebsite": "View Website"
   }
 }
