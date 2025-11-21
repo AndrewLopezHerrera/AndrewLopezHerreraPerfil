@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./PersonalProjectsContent.css";
 import { useTranslation } from "react-i18next";
 import { Button, Card, Col, List, Row } from "antd";
 import { EyeOutlined } from "@ant-design/icons";
@@ -14,11 +13,10 @@ const PersonalProjectsContent: React.FC = () => {
 
     useEffect(() => {
         setProjects(t("personalProjects.projects", { returnObjects: true }) as PersonalProject[]);
-        console.log(projects);
     }, [i18n.language]);
 
     const navigateToProject = (project: PersonalProject) => {
-        navigate(`/personal-project/${project.name}`);
+        navigate(`/personal-project/${project.id}`);
     };
 
     return (

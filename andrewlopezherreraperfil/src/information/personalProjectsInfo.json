@@ -1,14 +1,14 @@
 {
   "roboticArmWebSockets": {
     "images": [
-      "public\\assets\\personalprojects\\roboticarm\\Diagrama de clase Joysticks.png",
-      "public\\assets\\personalprojects\\roboticarm\\Diagrama de clases Aplicación PC.png",
-      "public\\assets\\personalprojects\\roboticarm\\Diagrama de clases ESP32.png",
-      "public\\assets\\personalprojects\\roboticarm\\Diagrama de clases Sevidor.png",
-      "public\\assets\\personalprojects\\roboticarm\\Diagrama de implementación.png"
+      "/assets/personalprojects/roboticarm/Diagrama de clase Joysticks.png",
+      "/assets/personalprojects/roboticarm/Diagrama de clases Aplicación PC.png",
+      "/assets/personalprojects/roboticarm/Diagrama de clases ESP32.png",
+      "/assets/personalprojects/roboticarm/Diagrama de clases Sevidor.png",
+      "/assets/personalprojects/roboticarm/Diagrama de implementación.png"
     ],
     "videos": [
-      "public\\assets\\personalprojects\\roboticarm\\Robotic_Arm_Video.mp4"
+      "/assets/personalprojects/roboticarm/Robotic_Arm_Video.mp4"
     ]
   }
 }
