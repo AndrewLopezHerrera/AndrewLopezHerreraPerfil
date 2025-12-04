@@ -32,13 +32,6 @@ const ProgrammingLanguage: React.FC = () => {
             >
               <Meta
                 title={programmingLanguage.name}
-                description={
-                  <Progress
-                    percent={programmingLanguage.experience}
-                    showInfo={true}
-                    strokeColor="#e05809"
-                  />
-                }
               />
             </Card>
           </Col>

@@ -31,13 +31,6 @@ const Frameworks : React.FC = () => {
             >
               <Meta
                 title={framework.name}
-                description={
-                  <Progress
-                    percent={framework.experience}
-                    showInfo={true}
-                    strokeColor="#e05809"
-                  />
-                }
               />
             </Card>
           </Col>

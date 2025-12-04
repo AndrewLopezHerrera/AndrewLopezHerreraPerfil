@@ -31,13 +31,6 @@ const DevelopmentBoards : React.FC = () => {
                      >
                      <Meta
                         title={developmentBoard.name}
-                        description={
-                           <Progress
-                           percent={developmentBoard.experience}
-                           showInfo={true}
-                           strokeColor="#e05809"
-                           />
-                        }
                      />
                      </Card>
                   </Col>

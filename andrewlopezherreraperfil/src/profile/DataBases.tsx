@@ -32,13 +32,6 @@ const DataBases: React.FC = () => {
             >
               <Meta
                 title={dataBase.name}
-                description={
-                  <Progress
-                    percent={dataBase.experience}
-                    showInfo={true}
-                    strokeColor="#e05809"
-                  />
-                }
               />
             </Card>
           </Col>
