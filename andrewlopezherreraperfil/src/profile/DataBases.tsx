@@ -1,4 +1,4 @@
-import { Card, Col, Progress, Row } from "antd";
+import { Card, Col, Row } from "antd";
 import { useTranslation } from "react-i18next";
 import dataBasesJSON from "../information/databases.json";
 import Meta from "antd/es/card/Meta";
