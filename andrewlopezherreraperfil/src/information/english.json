@@ -9,7 +9,8 @@
     "languageSpanish": "Spanish",
     "personalProjects": "Personal Projects",
     "profile": "Profile",
-    "universityProjects": "University Projects"
+    "universityProjects": "University Projects",
+    "presentations": "Conference papers"
   },
   "home": {
     "introduction": "Hello, I am Andrew López Herrera. I am a Computer Engineering student at the Limón Academic Center of the Costa Rica Institute of Technology. This is a professional portfolio designed to showcase my academic and professional activities. Here you will find both technical and soft skills, as well as personal and academic projects.",
@@ -614,5 +615,35 @@
     "viewProjects": "View Projects",
     "viewRepository": "View Repository",
     "viewWebsite": "View Website"
+  },
+  "presentations": {
+    "description": "Community and academic talks and presentations focused on knowledge dissemination and idea exchange.",
+    "title": "Community and Academic Presentations",
+    "presentations": {
+      "presentationsotmcolombia2026": {
+        "description": "This community presentation, presented at the State of the Map Colombia 2026, introduces three new functionalities that have been developed for the OSMTracker mobile mapping application.",
+        "title": "Three New Ways to Map with OSMTracker",
+        "completeDescription": "Presentation at SotMCol26 on OSMTracker, an open-source mobile application widely used in Latin America to collect geospatial information for community mapping projects. Despite its usefulness, the tool has certain limitations that impact data processing and usage. This paper presents three new features designed to address these limitations and support mapping processes across the region. New buttons for structured data capture: allow users to record numerical and categorical values paired with a clear context—such as 'Height: 5 meters' or 'Species: Oak'—instead of plain free text. This ensures the collected data is significantly easier to process post-mapping. Observation grouping into a single waypoint: attaches multiple data points (tags, notes, numbers, audio, photos, or structured data) to a single geographic coordinate, preventing data fragmentation across multiple points. Direct OpenStreetMap note creation from OSMTracker: streamlines collaboration and distributed mapping, enabling other mappers to act on observations directly within the OSM map. These enhancements were developed at the Experimental Laboratory for Computing and Communities (LabComún) of the Costa Rica Institute of Technology, with the participation of Computer Engineering students. They were implemented to preserve OSMTracker's original data collection workflow and user experience, avoiding unnecessary learning curves. The result is a more powerful tool that retains its characteristic simplicity.",
+        "photos": {
+          "groupphoto": {
+            "title": "Group photo of the participants of the State of the Map Colombia 2026"
+          },
+          "groupphoto2": {
+            "title": "Group photo of the participants of the State of the Map Colombia 2026"
+          },
+          "photoBogota": {
+            "title": "Photo of the city of Bogotá, Colombia, captured with a drone during the State of the Map Colombia 2026"
+          },
+          "presentation": {
+            "title": "Photo of another presenter's presentation at the State of the Map Colombia 2026"
+          },
+          "meinsotm": {
+            "title": "Photo of Andrew López Herrera at the State of the Map Colombia 2026"
+          }
+        }
+      }
+    },
+    "buttonDocument": "View the presentation document",
+    "buttonPresentation": "View the presentation"
   }
 }

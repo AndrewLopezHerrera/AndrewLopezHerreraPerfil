@@ -9,7 +9,8 @@
         "languageSpanish": "Español",
         "personalProjects": "Proyectos Personales",
         "profile": "Perfil",
-        "universityProjects": "Proyectos Universitarios"
+        "universityProjects": "Proyectos Universitarios",
+        "presentations": "Ponencias"
     },
     "home": {
         "introduction": "Hola, soy Andrew López Herrera. Soy estudiante de Ingeniería en Computación en el Centro Académico de Limón del Instituto Tecnológico de Costa Rica. Este es un portafolio profesional diseñado para mostrar mis actividades académicas y profesionales. Aquí encontrarás tanto habilidades técnicas como blandas, así como proyectos personales y académicos.",
@@ -612,5 +613,35 @@
         "viewProjects": "Ver Proyectos",
         "viewRepository": "Ver Repositorio",
         "viewWebsite": "Ver Sitio Web"
+    },
+    "presentations": {
+        "title": "Ponencias comunitarias y académicas",
+        "description": "Charlas y presentaciones académicas y comunitarias enfocadas en la divulgación de conocimiento y el intercambio de ideas.",
+        "presentations": {
+            "presentationsotmcolombia2026": {
+                "title": "Tres nuevas formas de mapear con OSMTracker",
+                "completeDescription": "Presentación en el SotMCol26 sobre OSMTracker que es una aplicación móvil de software libre ampliamente utilizada en América Latina para recolectar información geoespacial en proyectos de mapeo comunitario. A pesar de su utilidad, la herramienta tiene algunas limitaciones que repercuten en el procesamiento y uso de los datos. Esta ponencia presenta tres nuevas funcionalidades diseñadas para resolver limitaciones y así contribuir a los procesos de mapeo en la región. Nuevos botones para captura de datos estructurados: permiten registrar valores numéricos y categóricos asociados a un contexto claro, como 'Altura: 5 metros' o 'Especie: Roble', en lugar de solo texto libre. Esto permite que los datos recolectados sean más fáciles de procesar luego de un mapeo. Agrupación de observaciones en un solo waypoint: asociar múltiples datos (etiquetas, notas, números, audios, fotos o datos estructurados) a una única coordenada geográfica. Así, se evita la dispersión de datos en múltiples puntos. Creación de notas en OpenStreetMap directamente desde OSMTracker: facilita la colaboración y el mapeo distribuido, permitiendo que otras personas mapeadoras puedan actuar sobre las observaciones directamente en el mapa de OSM. Estas mejoras han sido desarrolladas en el Laboratorio Experimental de Computación y Comunidades (LabComún) del Instituto Tecnológico de Costa Rica, con la participación de estudiantes de Ingeniería en Computación. Se han implementado con la intención de mantener el flujo de captura de datos del OSMTracker, preservando la experiencia de usuario y evitando curvas de aprendizaje innecesarias. El resultado es una herramienta más potente, sin perder la simplicidad que la caracteriza.",
+                "description": "Esta ponencia comunitaria, presentada en el State of the Map Colombia 2026, presenta tres nuevas funcionalidades que se le han desarrollado a la aplicación de mapeo móvil OSMTracker.",
+                "photos": {
+                    "groupphoto": {
+                        "title": "Foto grupal de los participantes del State of the Map Colombia 2026"
+                    },
+                    "groupphoto2": {
+                        "title": "Foto grupal de los participantes del State of the Map Colombia 2026"
+                    },
+                    "photoBogota": {
+                        "title": "Foto de la ciudad de Bogotá, Colombia, capturada desde un dron durante el State of the Map Colombia 2026"
+                    },
+                    "presentation": {
+                        "title": "Foto de la ponencia de otro ponente en el State of the Map Colombia 2026"
+                    },
+                    "meinsotm": {
+                        "title": "Foto de Andrew López Herrera en el State of the Map Colombia 2026"
+                    }
+                }
+            }
+        },
+        "buttonDocument": "Ver documento de la ponencia",
+        "buttonPresentation": "Ver presentación de la ponencia"
     }
 }

@@ -39,7 +39,7 @@ const ViewPersonalProjectContent: React.FC = () => {
         </div>
       </div>
       <div className="carouselPersonalProjectContent">
-        <Carousel autoplay >
+        <Carousel arrows autoplay={{ dotDuration: true }} autoplaySpeed={5000} >
           {images.map((image, index) => (
             <div key={index} className="divImagesCarousel">
               <Image src={image} alt={`Project Image ${index + 1}`} />

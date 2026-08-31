@@ -7,7 +7,8 @@ import {
   UserOutlined,
   ProjectOutlined,
   CommentOutlined,
-  SolutionOutlined
+  SolutionOutlined,
+  RocketOutlined,
 } from '@ant-design/icons';
 import { Button, Layout, Menu, theme, Divider, Image, Radio } from 'antd';
 import morning from '../assets/greetings/iconoManana.png';
@@ -33,13 +34,12 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
 
-  // Escucha cambios de tamaño para modo móvil
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 767px)');
     const handler = (e: MediaQueryListEvent) => {
       setIsMobile(e.matches);
     };
-    // Compatibilidad con navegadores antiguos
+    
     if (mediaQuery.addEventListener) {
       mediaQuery.addEventListener('change', handler);
     } else {
@@ -81,6 +81,9 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
         navigator('/personalProjects');
         break;
       case '5':
+        navigator('/presentations');
+        break;
+      case '6':
         navigator('/comments');
         break;
       default:
@@ -90,8 +93,8 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
   }
 
   const changeVisibility = () => {
-    if (!isMobile) return true; // Desktop siempre visible
-    return collapsed; // En móvil, solo visible cuando el sider está colapsado
+    if (!isMobile) return true;
+    return collapsed;
   };
 
   const giveImageGreeting = () : void => {
@@ -171,11 +174,16 @@ const Base: React.FC<{ frame: ReactElement }> = ({ frame }) => {
               },
               {
                 key: '4',
-                icon: <SolutionOutlined />,
+                icon: <RocketOutlined />,
                 label: t("base.personalProjects"),
               },
               {
                 key: '5',
+                icon: <SolutionOutlined />,
+                label: t("base.presentations"),
+              },
+              {
+                key: '6',
                 icon: <CommentOutlined />,
                 label: t("base.comments"),
               }

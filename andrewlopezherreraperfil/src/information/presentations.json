@@ -1,0 +1,31 @@
+[
+  {
+    "id": "presentationsotmcolombia2026",
+    "image": "/assets/presentations/sotmcolombia2026/LogoSotMColombia2026.jpg",
+    "video": "https://youtu.be/HenVt1VhhPQ",
+    "documentPDF": "",
+    "documentPresentation": "/SotMCol26_-_4_-_Andrew_López_-_Tres_nuevas_formas_de_mapear_con_OSMTracker-_datos_estructurados,_agrupación_de_observaciones_y_notas_OSM.pdf",
+    "photoEvent": [
+      {
+        "id": "groupphoto",
+        "image": "/assets/presentations/sotmcolombia2026/groupphoto.jpeg"
+      },
+      {
+        "id": "groupphoto2",
+        "image": "/assets/presentations/sotmcolombia2026/groupphoto2.jpeg"
+      },
+      {
+        "id": "photoBogota",
+        "image": "/assets/presentations/sotmcolombia2026/photoBogota.jpeg"
+      },
+      {
+        "id": "presentation",
+        "image": "/assets/presentations/sotmcolombia2026/presentation.jpeg"
+      },
+      {
+        "id": "meinsotm",
+        "image": "/assets/presentations/sotmcolombia2026/meinsotm.jpeg"
+      }
+    ]
+  }
+]

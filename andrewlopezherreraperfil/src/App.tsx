@@ -7,6 +7,8 @@ import Comment from "./comments/Comment";
 import { Helmet } from "react-helmet";
 import PersonalProjects from "./personalProjects/PersonalProjects";
 import ViewPersonalProject from "./personalProjects/ViewPersonaProject";
+import Presentations from "./presentations/Presentations";
+import PresentationInformation from "./presentations/PresentationInformation";
 
 const App: React.FC = () => {
   return (
@@ -44,6 +46,8 @@ const App: React.FC = () => {
           <Route path="/course/:id" element={<Course />} />
           <Route path="/personalProjects" element={<PersonalProjects />} />
           <Route path="/personal-project/:id" element={<ViewPersonalProject />} />
+          <Route path="/presentations" element={<Presentations />} />
+          <Route path="/presentations/:id" element={<PresentationInformation />} />
           <Route path="/comments" element={<Comment />} />
         </Routes>
       </BrowserRouter>
