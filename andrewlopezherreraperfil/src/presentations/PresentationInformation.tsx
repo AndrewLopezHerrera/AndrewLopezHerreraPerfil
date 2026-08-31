@@ -1,6 +1,5 @@
-import react from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import type PresentationsInterface from "./PresentationInterface";
 import presentationsData from "../information/presentations.json";
 import Base from "../base/Base";
@@ -10,9 +9,7 @@ import { FilePdfOutlined } from "@ant-design/icons";
 
 const PresentationInformationAux: React.FC = () => {
   const { t } = useTranslation();
-  const navigate = useNavigate();
   const { id } = useParams<{ id: string }>();
-
   const presentation = presentationsData.find((p) => p.id === id);
 
   if (!presentation) {
@@ -38,7 +35,7 @@ const PresentationInformationAux: React.FC = () => {
       <div>
         <p>{presentationInfo.completeDescription}</p>
         <div className="containerCardsPresentations">
-          {presentationInfo.photoEvent.map((photo, index) => (
+          {presentationInfo.photoEvent.map((photo) => (
             <Card
               hoverable
               variant="borderless"
