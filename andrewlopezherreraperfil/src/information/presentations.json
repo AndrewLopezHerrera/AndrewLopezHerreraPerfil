@@ -2,7 +2,7 @@
   {
     "id": "presentationsotmcolombia2026",
     "image": "/assets/presentations/sotmcolombia2026/LogoSotMColombia2026.jpg",
-    "video": "/Ponencia_SotM_Colombia_2026_reduced.mp4",
+    "video": "https://www.youtube.com/embed/HenVt1VhhPQ",
     "documentPDF": "",
     "documentPresentation": "/SotMCol26_-_4_-_Andrew_López_-_Tres_nuevas_formas_de_mapear_con_OSMTracker-_datos_estructurados,_agrupación_de_observaciones_y_notas_OSM.pdf",
     "photoEvent": [
