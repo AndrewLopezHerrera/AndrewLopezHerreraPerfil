@@ -13,7 +13,7 @@
         "presentations": "Ponencias"
     },
     "home": {
-        "introduction": "Hola, soy Andrew López Herrera. Soy estudiante de Ingeniería en Computación en el Centro Académico de Limón del Instituto Tecnológico de Costa Rica. Este es un portafolio profesional diseñado para mostrar mis actividades académicas y profesionales. Aquí encontrarás tanto habilidades técnicas como blandas, así como proyectos personales y académicos.",
+        "introduction": "Hola, soy Andrew López Herrera. Soy ingeniero en computación egresado del Instituto Tecnológico de Costa Rica. Este es un portafolio profesional diseñado para mostrar mis actividades académicas y profesionales. Aquí encontrarás tanto habilidades técnicas como blandas, así como proyectos personales y académicos.",
         "title": "Inicio"
     },
     "personalProjects": {
@@ -50,9 +50,9 @@
             "title": "Formación académica",
             "titles": [
                 {
-                    "degree": "Bachiller en Ingeniería en Computación",
+                    "degree": "Bachillerato Universitario en Ingeniería en Computación",
                     "institution": "Instituto Tecnológico de Costa Rica",
-                    "year": "2021 - último semestre"
+                    "year": "2021 - 2026"
                 },
                 {
                     "degree": "Técnico Medio en Contabilidad",
