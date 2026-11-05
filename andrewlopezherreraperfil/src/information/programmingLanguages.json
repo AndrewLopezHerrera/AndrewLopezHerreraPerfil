@@ -20,6 +20,11 @@
         "image": "assets/programminglanguages/c++logo.png"
     },
     {
+        "name": "Apex",
+        "experience": 85,
+        "image": "assets/programminglanguages/salesforcelogo.png"
+    },
+    {
         "name": "JavaScript",
         "experience": 80,
         "image": "assets/programminglanguages/javascriptlogo.png"
@@ -38,10 +43,5 @@
         "name": "TypeScript",
         "experience": 85,
         "image": "assets/programminglanguages/typescriptlogo.png"
-    },
-    {
-        "name": "Apex",
-        "experience": 85,
-        "image": "assets/programminglanguages/salesforcelogo.png"
     }
 ]
